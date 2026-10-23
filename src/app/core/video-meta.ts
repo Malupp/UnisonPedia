@@ -16,6 +16,9 @@ export interface VideoObservation {
   conditions: string;
   skillNames: string[];
   itemIds: string[];
+  modes?: import("../domain/contracts").Mode[];
+  roles?: import("../domain/contracts").Role[];
+  requirements?: ({kind: "element"; element: string; gearKind: "weapon" | "defence"; target: number} | {kind: "potential"; target: number})[];
   evidence: { video: string; seconds: number }[];
 }
 export interface VideoCollection {

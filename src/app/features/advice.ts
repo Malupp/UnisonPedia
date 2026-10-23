@@ -1,13 +1,14 @@
 import { Component, inject, signal, effect, computed } from "@angular/core";
 import { RouterLink } from "@angular/router";
 import { Store } from "../core/store";
+import { GoalsComponent } from "./goals";
 import { normalizeMode } from "../domain/contracts";
 import { EvaluationComponent } from "./detail";
 import { evaluateItem, evaluateBuildReplacement } from "../domain/evaluation";
 import { Item, Evaluation, Copy } from "../domain/contracts";
 @Component({
   standalone: true,
-  imports: [RouterLink, EvaluationComponent],
+  imports: [RouterLink, EvaluationComponent, GoalsComponent],
   template: `<div class="page-heading">
       <span class="eyebrow">IL VALORE DIPENDE DAL TUO SET</span>
       <h1>Consigli, con un perché.</h1>
@@ -17,6 +18,8 @@ import { Item, Evaluation, Copy } from "../domain/contracts";
         {{ roleLabels[s.profile().role] }}
       </p>
     </div>
+    <label class="build-choice">Configurazione da analizzare<select [value]="buildId()" (change)="chooseBuild($event)"><option value="">Solo profilo e inventario</option>@for(b of modeBuilds();track b.id){<option [value]="b.id">{{b.name}}</option>}</select></label>
+    <app-goals [buildId]="selectedBuild()?.id??null" />
     @if (!s.profile().classId) {
       <div class="message warning">
         Scegli la classe nel contesto qui sopra per una valutazione specifica.
@@ -37,8 +40,8 @@ import { Item, Evaluation, Copy } from "../domain/contracts";
       </div>
     } @else {
       <div class="message">
-        Queste valutazioni usano lo stato delle copie e la prima configurazione
-        della modalità scelta. Senza una sostituzione dichiarata non viene
+        Queste valutazioni usano lo stato delle copie e la configurazione
+        selezionata. Senza una build selezionata il riferimento è il solo profilo. Senza una sostituzione dichiarata non viene
         inventato un miglioramento numerico.
       </div>
       @if (loading()) {
@@ -119,6 +122,10 @@ import { Item, Evaluation, Copy } from "../domain/contracts";
 })
 export class AdviceComponent {
   s = inject(Store);
+  buildId=signal("");
+  modeBuilds=computed(()=>this.s.state().builds.filter(b=>normalizeMode(b.mode)===normalizeMode(this.s.profile().mode)));
+  selectedBuild=computed(()=>this.modeBuilds().find(b=>b.id===this.buildId()));
+  chooseBuild(e:Event){this.buildId.set((e.target as HTMLSelectElement).value);}
   rows = signal<
     {
       copy: Copy;
@@ -136,11 +143,7 @@ export class AdviceComponent {
     support: "Cura / Supporto",
   };
   assigned = computed(() => {
-    const b = this.s
-      .state()
-      .builds.find(
-        (b) => normalizeMode(b.mode) === normalizeMode(this.s.profile().mode),
-      );
+    const b = this.selectedBuild();
     return this.s
       .state()
       .copies.filter((c) => b?.slots.some((s) => s.copyId === c.copyId));
@@ -155,9 +158,7 @@ export class AdviceComponent {
     const epoch = ++this.epoch;
     this.loading.set(true);
     this.replacement.set(null);
-    const build = state.builds.find(
-      (b) => normalizeMode(b.mode) === normalizeMode(state.profile.mode),
-    ),
+    const build = this.selectedBuild(),
       counts: Record<string, number> = {};
     for (const a of build?.slots || []) {
       const c = state.copies.find((c) => c.copyId === a.copyId),
@@ -215,9 +216,7 @@ export class AdviceComponent {
   }
   async replace(oldId: string, newId: string) {
     const state = this.s.state(),
-      build = state.builds.find(
-      (b) => normalizeMode(b.mode) === normalizeMode(state.profile.mode),
-    );
+      build = this.selectedBuild();
     const old = state.copies.find((c) => c.copyId === oldId),
       candidate = state.copies.find((c) => c.copyId === newId);
     if (!build || !old || !candidate) {

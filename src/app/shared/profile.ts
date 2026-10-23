@@ -33,7 +33,7 @@ import { Mode, Role, normalizeMode } from "../domain/contracts";
         <option value="support">Cura / Supporto</option>
       </select></label
     ><span class="local-note"
-      ><span class="status-dot"></span> Solo nel tuo browser</span
+      ><span class="status-dot"></span> {{ s.syncLabel() }}</span
     >
   </div>`,
 })

@@ -60,7 +60,15 @@
       "origin": "video",
       "family": "mandate",
       "familyName": "Mandate",
-      "element": "Fire"
+      "element": "Fire",
+      "requirements": [
+        {
+          "kind": "element",
+          "element": "Fire",
+          "gearKind": "weapon",
+          "target": 3
+        }
+      ]
     },
     {
       "id": "ravaging-water",
@@ -112,7 +120,15 @@
       "origin": "video",
       "family": "ravaging",
       "familyName": "Ravaging",
-      "element": "Water"
+      "element": "Water",
+      "requirements": [
+        {
+          "kind": "element",
+          "element": "Water",
+          "gearKind": "weapon",
+          "target": 3
+        }
+      ]
     },
     {
       "id": "triumph-light",
@@ -936,7 +952,10 @@
           "seconds": 64.271
         }
       ],
-      "origin": "video"
+      "origin": "video",
+      "modes": [
+        "pvp"
+      ]
     },
     {
       "id": "nahut",
@@ -962,7 +981,13 @@
           "seconds": 27.035
         }
       ],
-      "origin": "video"
+      "origin": "video",
+      "requirements": [
+        {
+          "kind": "potential",
+          "target": 2
+        }
+      ]
     },
     {
       "id": "peony",
@@ -984,7 +1009,13 @@
           "seconds": 34
         }
       ],
-      "origin": "video"
+      "origin": "video",
+      "requirements": [
+        {
+          "kind": "potential",
+          "target": 2
+        }
+      ]
     },
     {
       "id": "p-valkyrie-nikyt",

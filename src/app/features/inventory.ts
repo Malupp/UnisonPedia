@@ -17,7 +17,7 @@ import { validateBackup, mergeBackup, assignCopy } from "../domain/inventory";
       <div>
         <span class="eyebrow">IL TUO PUNTO DI PARTENZA</span>
         <h1>Il tuo inventario.</h1>
-        <p>Copie reali, potenziali reali. Salvati in questo browser.</p>
+        <p>Copie reali, potenziali reali. {{ s.syncLabel() }}.</p>
       </div>
       <a class="button primary" routerLink="/catalogue"
         >+ Aggiungi dal catalogo</a
@@ -34,7 +34,7 @@ import { validateBackup, mergeBackup, assignCopy } from "../domain/inventory";
       </div>
       <div class="panel backup-actions">
         <h3>Porta con te il tuo set</h3>
-        <p>Esporta un backup per cambiare browser o dispositivo.</p>
+        <p>Conserva una copia del tuo set. Con un account puoi ritrovarlo su altri dispositivi.</p>
         <div class="actions">
           <button (click)="exportBackup()" [disabled]="!s.ready()">
             Esporta backup</button

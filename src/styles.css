@@ -2219,3 +2219,6 @@ details p {
 
 .brand-image { display: block; object-fit: contain; padding: 0; border-radius: 12px; flex-shrink: 0; }
 .mobile-brand img { object-fit: contain; border-radius: 7px; vertical-align: middle; margin-right: 8px; }
+
+/* Account and progression */
+.account-panel{max-width:560px}.account-panel form{display:grid;gap:18px;margin:22px 0}.account-panel input{width:100%}.goal-progress{font-variant-numeric:tabular-nums;font-weight:700}.goal-card progress{width:100%;accent-color:var(--accent,#9875ff)}.goal-card .actions{margin-top:16px}.goal-section{margin-bottom:28px}.goal-source{font-size:.85rem;color:var(--text-muted,#a3a1b0)}.build-choice{max-width:440px;margin-bottom:24px}

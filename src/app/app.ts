@@ -48,6 +48,7 @@ import { ProfileComponent } from "./shared/profile";
         ><a routerLink="/guide" class="top-link"
           >Guida <span aria-hidden="true">↗</span></a
         >
+        <a routerLink="/account" class="top-link">{{s.auth.session()?"Account":"Accedi / Iscriviti"}}</a>
       </header>
       <app-profile />
       <main id="content" tabindex="-1">
@@ -61,6 +62,9 @@ import { ProfileComponent } from "./shared/profile";
             La persistenza non è disponibile. Mantieni una copia con
             <a routerLink="/inventory">Esporta backup</a>.
           </div>
+        }
+        @if(s.sync().owner && (s.sync().status==='pending'||s.sync().status==='conflict')){
+          <div class="message warning" role="status">{{s.syncLabel()}}. <a routerLink="/account">Gestisci sincronizzazione</a></div>
         }
         <router-outlet />
       </main>
@@ -86,5 +90,6 @@ export class AppComponent {
     { path: "/inventory", label: "Inventario", icon: "▣" },
     { path: "/advice", label: "Consigli", icon: "✧" },
     { path: "/spawns", label: "Spawn", icon: "◇" },
+    { path: "/account", label: "Account", icon: "◎" },
   ];
 }
