@@ -6,6 +6,7 @@ import {
 } from "@angular/router";
 import { AppComponent } from "./app/app";
 import { PUBLIC_CONFIG, PublicConfig } from "./app/core/auth";
+import { canonicalCloudUrl } from "./app/domain/cloud-config";
 const routes: Routes = [
   {path:"account",loadComponent:()=>import("./app/features/account").then(m=>m.AccountComponent)},
   {path:"auth/callback",loadComponent:()=>import("./app/features/account").then(m=>m.AccountComponent)},
@@ -72,6 +73,8 @@ async function start(){
       }
     }
   }catch{config.error="Collegamento cloud non configurato correttamente. L’inventario locale resta disponibile.";}
+  const canonical=canonicalCloudUrl(config.appUrl,window.location.href);
+  if(canonical){window.location.replace(canonical);return;}
   await bootstrapApplication(AppComponent,{providers:[provideRouter(routes,withComponentInputBinding()),{provide:PUBLIC_CONFIG,useValue:config}]});
 }
 void start().catch(console.error);
