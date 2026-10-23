@@ -1,6 +1,6 @@
 # UnisonPedia
 
-Una wiki italiana per **Unison League WW**, pensata per aiutare i giocatori a scegliere equipaggiamenti, mostri e talenti e a costruire un personaggio adatto al contenuto che vogliono affrontare.
+Una wiki italiana per **Unison League**, pensata per aiutare i giocatori a scegliere equipaggiamenti, mostri e talenti e a costruire un personaggio adatto al contenuto che vogliono affrontare.
 
 L'obiettivo è rendere comprensibili le scelte di build: quali proc cercare, come funzionano le loro condizioni, quali alternative usare e dove concentrare le proprie risorse. I nomi ufficiali degli oggetti e delle abilità restano in inglese per facilitarne il riconoscimento nel gioco.
 
