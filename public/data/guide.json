@@ -1,0 +1,1254 @@
+[
+  {
+    "id": "iniziare",
+    "title": "Da dove iniziare",
+    "summary": "Una direzione chiara vale più di tanti oggetti casuali.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Scegli classe, ruolo e uno o due elementi su cui costruire il set. Prima cerca una main slot weapon coerente, poi un main slot monster che risolva una necessità; completa gradualmente armi e mostri. Questa priorità deriva dalla guida F2P, aggiornata a dicembre 2025, e va verificata con il contenuto che affronti.",
+          "La guida italiana 2024–2025 resta utile per i concetti. I costi 45 e 46 sono presenti nel catalogo attuale: non trattare il massimo costo della vecchia guida come un limite.",
+          "Usa il catalogo per leggere skill, condizioni e fonti. Registra copie reali nell’inventario: un oggetto posseduto a potenziale zero non equivale alla versione completamente sbloccata."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "excel",
+            "title": "Guida generale Unison League 2024_2025",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "published",
+            "title": "F2P/Low Spender Spawn Guide",
+            "url": "https://docs.google.com/document/d/e/2PACX-1vQe_7UaqWrR1yq6PtnShPmJ159WxYZZEvOL3M8PB-NL89yDum1h7GT-Ag74k4S0iDIxSqD8NDUxRQ3V/pub",
+            "declaredUpdated": "2025-12-13",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "doc1",
+            "title": "Beginner / New Account Guide",
+            "url": "https://docs.google.com/document/d/1EYjhnUiv1xa_P_Ov-UeVzpxrYEywJOYBhgFWytx8I78/edit",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Beginner spawn eligibility from 2020; field section updated 2025-07-10; review each section."
+          }
+        ],
+        "paragraphsEn": [
+          "Choose your class, role and one or two elements for your set. First look for a suitable main slot weapon, then a main slot monster that meets a specific need; gradually complete your weapons and monsters. This priority comes from the F2P guide updated in December 2025 and should be checked against the content you play.",
+          "The 2024–2025 Italian guide remains useful for the concepts. Cost 45 and 46 gear is present in the current catalogue: do not treat the old guide’s maximum cost as a limit.",
+          "Use the catalogue to read skills, conditions and sources. Record actual copies in your inventory: owning an item at potential level zero is different from owning its fully unlocked version."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "classi",
+    "title": "Classi e ruoli",
+    "summary": "Il consiglio cambia con la tua modalità e con il tuo compito.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Soldier, Lancer, Archer, Mage e Cleric sono gli archetipi principali. Rook, Berserker, Treasure Hunter, Ninja e Morpher ampliano le possibilità; il ruolo selezionato resta esplicito anche per le classi ibride.",
+          "Per un tank la guida mostri suggerisce DEF/MDEF. Soldier e Lancer possono sfruttare ATK/DEF con abilità a doppio scaling; Archer può sfruttare ATK/MATK, Mage e Cleric MATK/MDEF. Controlla le abilità effettivamente equipaggiate prima di scegliere gli stat slot.",
+          "Non confondere i danni fisici o magici del mostro con la classe del giocatore. La guida mostri riporta test di scaling, non una formula ufficiale completa dei danni: l’app non promette una previsione DPS."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "doc1",
+            "title": "Beginner / New Account Guide",
+            "url": "https://docs.google.com/document/d/1EYjhnUiv1xa_P_Ov-UeVzpxrYEywJOYBhgFWytx8I78/edit",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Beginner spawn eligibility from 2020; field section updated 2025-07-10; review each section."
+          },
+          {
+            "id": "doc2",
+            "title": "Cool Monster Reference Guide",
+            "url": "https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit",
+            "declaredUpdated": "2026-04-21",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          }
+        ],
+        "paragraphsEn": [
+          "Soldier, Lancer, Archer, Mage and Cleric are the main archetypes. Rook, Berserker, Treasure Hunter, Ninja and Morpher expand the options; the selected role remains explicit for hybrid classes.",
+          "For tanks, the monster guide suggests DEF/MDEF. Soldier and Lancer can use ATK/DEF with abilities that scale from both; Archer can use ATK/MATK, while Mage and Cleric can use MATK/MDEF. Check your equipped abilities before choosing stat slots.",
+          "Do not confuse a monster’s physical or magic damage with the player’s class. The monster guide reports scaling tests rather than a complete official damage formula: the app does not promise a DPS prediction."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elementi",
+    "title": "Elementi e scaling",
+    "summary": "Il numero di pezzi conta quanto il nome del proc.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Leggi quanti pezzi e quale categoria richiede lo scaling. Cinque armi Water non sono cinque oggetti Water qualunque. Un requisito non soddisfatto resta visibile e impedisce una stima completa del contributo personale.",
+          "Il calcolatore elementale fornito è una base per esplorare combinazioni, non una soglia universale di statistiche. Gli esempi già compilati nel foglio non diventano valori consigliati a tutti.",
+          "Per una build F2P, concentrare gli investimenti su pochi elementi rende più facile soddisfare i requisiti. Il costo di gioco dell’oggetto indica lo spazio nel set; le gemme indicano il costo della spawn e sono una misura distinta."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "excel",
+            "title": "Guida generale Unison League 2024_2025",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "published",
+            "title": "F2P/Low Spender Spawn Guide",
+            "url": "https://docs.google.com/document/d/e/2PACX-1vQe_7UaqWrR1yq6PtnShPmJ159WxYZZEvOL3M8PB-NL89yDum1h7GT-Ag74k4S0iDIxSqD8NDUxRQ3V/pub",
+            "declaredUpdated": "2025-12-13",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "sheet",
+            "title": "Elemental attack calculator",
+            "url": "https://docs.google.com/spreadsheets/d/1Vd2VjgLUgnJc4SiChy0HUrSKfG3ll0A5xfWmuz6EiIE/edit",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Original XLSX and formulas saved; raw CSV includes sample values, not universal stat thresholds."
+          }
+        ],
+        "paragraphsEn": [
+          "Read how many pieces and which category the scaling requires. Five Water weapons are different from any five Water items. An unmet requirement remains visible and prevents a complete estimate of the item’s personal contribution.",
+          "The supplied elemental calculator is a starting point for exploring combinations rather than a universal stat threshold. Examples already filled into the spreadsheet are not recommendations for every player.",
+          "For a F2P build, focusing investment on a few elements makes requirements easier to meet. An item’s in-game cost determines set capacity; gems measure spawn spending, which is a separate quantity."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "armi",
+    "title": "Armi, proc e main slot",
+    "summary": "Ability Power e amplificazione del danno sono effetti diversi.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Un proc può aumentare Ability Power, amplificare il danno, migliorare accuracy o recuperare risorse. Valuta l’intera skill e i requisiti di attivazione, non soltanto le statistiche dell’arma.",
+          "Le conversioni AP e Scala Proc riportate sotto sono state confermate dall’autore. Il tasso della singola variante va letto nella voce Proc Talento, insieme a condizioni, livello skill e slot.",
+          "Le Ability Unlock possono cambiare le abilità disponibili. Le condizioni main slot e la compatibilità della classe vanno controllate prima di considerare un oggetto un upgrade. I nomi dei proc citati dalla guida F2P rappresentano il contesto di dicembre 2025, non una tier list attuale."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "excel",
+            "title": "Guida generale Unison League 2024_2025",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "published",
+            "title": "F2P/Low Spender Spawn Guide",
+            "url": "https://docs.google.com/document/d/e/2PACX-1vQe_7UaqWrR1yq6PtnShPmJ159WxYZZEvOL3M8PB-NL89yDum1h7GT-Ag74k4S0iDIxSqD8NDUxRQ3V/pub",
+            "declaredUpdated": "2025-12-13",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "official",
+            "title": "Limipedia",
+            "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/index.html",
+            "declaredUpdated": "2026-08-25",
+            "fetchedAt": "2026-10-09",
+            "kind": "official",
+            "edition": "WW",
+            "notes": "Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."
+          }
+        ],
+        "paragraphsEn": [
+          "A proc can increase Ability Power, amplify damage, improve accuracy or restore resources. Evaluate the whole skill and its activation requirements, alongside the weapon’s stats.",
+          "The AP and Scala Proc conversions below have been confirmed by the author. Read the activation rate of each variant in its Proc Talento entry, together with conditions, skill level and slot.",
+          "Ability Unlock can change the available abilities. Check main slot conditions and class compatibility before treating an item as an upgrade. Proc names mentioned in the F2P guide reflect December 2025 rather than a current tier list."
+        ]
+      },
+      {
+        "heading": "Scale AP e probabilità di attivazione",
+        "paragraphs": [
+          "Le due scale riportate dall’autore sono regole distinte: Scale AP converte la forza del contributo AP; Scala Proc converte la probabilità di attivazione del talento. La taglia nel nome del talento non coincide automaticamente con la sua attivazione. Leggi la voce Proc Talento della variante.",
+          "Esempio: una riga con aumento 5XL+ e Proc Talento base L indica 60 AP e attivazione 15%. Ability success, critical hit e DPS increase sono effetti separati; non si sommano automaticamente al proc dell’equipaggiamento.",
+          "La qualità dipende anche da Fills Unison, Critical Hit, Recovery Cost e dagli altri contributi documentati. Il numero di pezzi richiesti, l’elemento, il tipo di gear e le condizioni determinano se la tua build raggiunge lo scaling indicato. I pesi di armi e difensivi sono approvati; l’estensione ai tier del catalogo e ai mostri è in progettazione. La scala AP prosegue fino a 7XL=75 AP e oltre secondo la progressione autorizzata."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "excel",
+            "title": "Guida generale Unison League 2024_2025",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Scale AP e Scala Proc riconfermate dall’autore nella conversazione del 9 ottobre 2026."
+          }
+        ],
+        "tables": [
+          {
+            "caption": "Scale offensive AP",
+            "headers": [
+              "Scale",
+              "AP"
+            ],
+            "rows": [
+              [
+                "S",
+                "0"
+              ],
+              [
+                "M",
+                "5"
+              ],
+              [
+                "L",
+                "10"
+              ],
+              [
+                "XL",
+                "15"
+              ],
+              [
+                "XXL",
+                "20"
+              ],
+              [
+                "2XL",
+                "25"
+              ],
+              [
+                "2XL+",
+                "30"
+              ],
+              [
+                "3XL",
+                "35"
+              ],
+              [
+                "3XL+",
+                "40"
+              ],
+              [
+                "4XL",
+                "45"
+              ],
+              [
+                "4XL+",
+                "50"
+              ],
+              [
+                "5XL",
+                "55"
+              ],
+              [
+                "5XL+",
+                "60"
+              ],
+              [
+                "6XL",
+                "65"
+              ],
+              [
+                "6XL+",
+                "70"
+              ],
+              [
+                "7XL",
+                "75"
+              ]
+            ]
+          },
+          {
+            "caption": "Scala Proc — attivazione e AP",
+            "headers": [
+              "Scala Proc",
+              "Attivazione (%)",
+              "Aumento AP"
+            ],
+            "rows": [
+              [
+                "XS",
+                "2.5",
+                "0"
+              ],
+              [
+                "S",
+                "5",
+                "0"
+              ],
+              [
+                "M",
+                "10",
+                "5"
+              ],
+              [
+                "L",
+                "15",
+                "10"
+              ],
+              [
+                "XL",
+                "20",
+                "15"
+              ],
+              [
+                "XXL",
+                "25",
+                "20"
+              ],
+              [
+                "2XL",
+                "30",
+                "25"
+              ],
+              [
+                "2XL+",
+                "35",
+                "30"
+              ],
+              [
+                "3XL",
+                "40",
+                "35"
+              ],
+              [
+                "3XL+",
+                "45",
+                "40"
+              ],
+              [
+                "4XL",
+                "50",
+                "45"
+              ],
+              [
+                "4XL+",
+                "55",
+                "50"
+              ],
+              [
+                "5XL",
+                "60",
+                "55"
+              ],
+              [
+                "5XL+",
+                "65",
+                "60"
+              ],
+              [
+                "6XL",
+                "70",
+                "65"
+              ],
+              [
+                "6XL+",
+                "75",
+                "70"
+              ]
+            ]
+          }
+        ],
+        "paragraphsEn": [
+          "The author’s two scales are separate rules: Scale AP converts the strength of the AP contribution; Scala Proc converts the talent’s activation probability. The size in a talent’s name does not automatically give its activation rate. Read the variant’s Proc Talento entry.",
+          "Example: a row with a 5XL+ increase and a base L Proc Talento means 60 AP and 15% activation. Ability success, critical hit and DPS increase are separate effects; they are not automatically added to the equipment proc rate.",
+          "Quality also depends on Fills Unison, Critical Hit, Recovery Cost and other documented contributions. The required pieces, element, gear type and conditions determine whether your build reaches the stated scaling. Weapon and defensive weights are approved; catalogue tiers and monster scoring are being designed. The AP scale extends to 7XL=75 AP and beyond following the authorized progression."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "difensivi",
+    "title": "Difensivi, Opening e Constant",
+    "summary": "Sopravvivere richiede difese pertinenti al contenuto.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Opening, Constant e proc difensivi non sono intercambiabili. Un bonus all’inizio della battaglia e un effetto permanente hanno condizioni differenti; controlla anche main e sub slot.",
+          "In PvP (GvG) contano resistenza agli status, null e protezione dai controlli. In PvE possono contare recupero risorse e difese contro una meccanica precisa. Non esiste un singolo difensivo migliore in ogni situazione.",
+          "Non sommare automaticamente bonus della stessa categoria. Leggi testo ufficiale, condizioni e stacking; quando una regola non è ancora coperta, l’app mostra la lacuna."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "excel",
+            "title": "Guida generale Unison League 2024_2025",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "published",
+            "title": "F2P/Low Spender Spawn Guide",
+            "url": "https://docs.google.com/document/d/e/2PACX-1vQe_7UaqWrR1yq6PtnShPmJ159WxYZZEvOL3M8PB-NL89yDum1h7GT-Ag74k4S0iDIxSqD8NDUxRQ3V/pub",
+            "declaredUpdated": "2025-12-13",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "doc2",
+            "title": "Cool Monster Reference Guide",
+            "url": "https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit",
+            "declaredUpdated": "2026-04-21",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          }
+        ],
+        "paragraphsEn": [
+          "Opening, Constant and defensive procs have different behavior. A bonus at the start of battle and a permanent effect have different conditions; also check main and sub slots.",
+          "In PvP (GvG), status resistance, nullification and protection against control matter. In PvE, resource recovery and defense against a specific mechanic may matter. No single defensive talent is best in every situation.",
+          "Do not automatically add bonuses from the same category. Read official text, conditions and stacking rules; the app flags rules it does not yet cover."
+        ]
+      },
+      {
+        "heading": "Opening e Constant: guida dell’autore",
+        "paragraphs": [
+          "Le spiegazioni seguenti provengono da “Spiegazioni opening Unison League”, con data nel titolo 11/2023. Sono una base per capire categorie, durata e concatenazioni; costi, consigli di acquisto e priorità storiche non descrivono automaticamente il meta attuale.",
+          "Opening si attiva all’inizio e ha una finestra temporale. Constant continua a offrire il proprio effetto mentre è valido. Un proc ordinario ha invece la sua attivazione: i tre comportamenti vanno distinti anche nel punteggio."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 1–8."
+          }
+        ],
+        "paragraphsEn": [
+          "The following explanations come from “Spiegazioni opening Unison League”, dated 11/2023 in its title. They explain categories, durations and combinations; historical costs, purchase advice and priorities do not automatically describe the current meta.",
+          "Opening activates at the start and has a time window. Constant keeps providing its effect while valid. An ordinary proc has its own activation: scoring must distinguish all three behaviors."
+        ]
+      },
+      {
+        "heading": "Concentration e Honeycomb",
+        "paragraphs": [
+          "Concentration aumenta per 30 secondi il tasso di attivazione dell’equipaggiamento difensivo nel main slot; la guida riporta un incremento del 21% a skill level 5. Il contributo riguarda quella finestra e quello slot.",
+          "Honeycomb segue il principio della concentrazione e aggiunge taglio fisico o magico a seconda della variante. Verifica il testo del singolo pezzo: Armor, Clothing, Helm e Hat non hanno automaticamente lo stesso effetto."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 1."
+          }
+        ],
+        "paragraphsEn": [
+          "Concentration increases the activation rate of main slot defensive equipment for 30 seconds; the guide reports a 21% increase at skill level 5. This contribution applies to that window and slot.",
+          "Honeycomb follows the concentration principle and adds physical or magic damage reduction depending on the variant. Check the individual item’s text: Armor, Clothing, Helm and Hat do not automatically have the same effect."
+        ]
+      },
+      {
+        "heading": "Almighty Damage Cut XL e XXL",
+        "paragraphs": [
+          "La guida distingue Almighty Damage Cut XXL, con finestra iniziale di 35 secondi, da Almighty Damage Cut XL, con 30 secondi. Per entrambe riporta riduzione dei danni fisici e magici del 21% a skill level 5.",
+          "Queste descrizioni riguardano le varianti prefissate Almighty. Durate e valori non vanno trasferiti a qualsiasi talento che contenga Damage Cut nel nome."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 1–2."
+          }
+        ],
+        "paragraphsEn": [
+          "The guide distinguishes Almighty Damage Cut XXL, with an initial 35-second window, from Almighty Damage Cut XL, with 30 seconds. For both, it reports 21% physical and magic damage reduction at skill level 5.",
+          "These descriptions apply to variants with the Almighty prefix. Do not transfer their durations and values to every talent whose name includes Damage Cut."
+        ]
+      },
+      {
+        "heading": "Reflection Reduction e Damage Reduction",
+        "paragraphs": [
+          "Reflection Reduction XL è una costante contro i danni riflessi. La guida riporta 50% a skill level 5 e descrive l’uso di due pezzi per raggiungere 100%; per alcune varianti XXL indica 100% a skill level 7. Verifica variante, livello e stacking nella scheda ufficiale.",
+          "Damage Reduction XL, chiamata anche planetaria nella guida, riduce il danno ricevuto in modo costante. Questo beneficio è distinto dalla riduzione del solo danno riflesso."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 2–3."
+          }
+        ],
+        "paragraphsEn": [
+          "Reflection Reduction XL is a constant effect against reflected damage. The guide reports 50% at skill level 5 and describes using two pieces to reach 100%; for some XXL variants it lists 100% at skill level 7. Check the variant, level and stacking in the official entry.",
+          "Damage Reduction XL, also called “planetaria” in the guide, constantly reduces incoming damage. This benefit is separate from reducing reflected damage alone."
+        ]
+      },
+      {
+        "heading": "Resurrection, Dual Attack e Opening Ward",
+        "paragraphs": [
+          "Resurrection XL conferisce una protezione iniziale contro la morte: la guida descrive circa un minuto e una resurrezione con oltre metà HP.",
+          "Dual Attack XL permette di usare due volte di seguito determinate abilità nella finestra iniziale, descritta come circa un minuto. Non significa che ogni abilità sia duplicabile senza condizioni.",
+          "Opening Ward XL conferisce Ward nella finestra iniziale: la protezione permette di rimanere con 1 HP. È diversa da Resurrection e da un effetto che nullifica un colpo."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 4–5."
+          }
+        ],
+        "paragraphsEn": [
+          "Resurrection XL provides initial protection against death: the guide describes roughly one minute and revival with more than half HP.",
+          "Dual Attack XL allows certain abilities to be used twice in succession during the initial window, described as roughly one minute. It does not mean every ability can be duplicated unconditionally.",
+          "Opening Ward XL grants Ward during the initial window: this protection lets the character survive with 1 HP. It differs from Resurrection and from nullifying a hit."
+        ]
+      },
+      {
+        "heading": "Health Regen e Counter Heal",
+        "paragraphs": [
+          "Health Regen XL recupera HP durante la finestra iniziale. La guida riporta rigenerazione del 13% di Max HP per 40 secondi a skill level 5.",
+          "Counter Heal XL trasforma il danno ricevuto in recupero HP durante la propria finestra; la guida indica 40 secondi e circa 20.000 HP a skill level 5. “Circa” resta una stima della fonte, non una costante universale."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 4–5."
+          }
+        ],
+        "paragraphsEn": [
+          "Health Regen XL restores HP during the initial window. The guide reports regeneration of 13% of Max HP for 40 seconds at skill level 5.",
+          "Counter Heal XL converts incoming damage into HP recovery during its window; the guide lists 40 seconds and approximately 20,000 HP at skill level 5. “Approximately” remains a source estimate rather than a universal constant."
+        ]
+      },
+      {
+        "heading": "Reliance e Resistance Constant",
+        "paragraphs": [
+          "Reliance XL protegge inizialmente dalla riduzione della Unison gauge; la guida descrive circa un minuto.",
+          "Resistance Constant può proteggere costantemente da Unison gauge reduction oppure Cost reduction. Sono categorie e varianti diverse: la resistenza a una riduzione non prova la resistenza all’altra.",
+          "La guida riporta per due costanti Unison una riduzione del 40%, o del 50% con due copie maxate. Questi valori conservano il contesto della guida e non vengono applicati automaticamente a varianti nuove."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 5, 7–8."
+          }
+        ],
+        "paragraphsEn": [
+          "Reliance XL initially protects against Unison gauge reduction; the guide describes roughly one minute.",
+          "Resistance Constant can constantly protect against either Unison gauge reduction or Cost reduction. These are different categories and variants: resistance to one reduction does not prove resistance to the other.",
+          "For two Unison constants, the guide reports a 40% reduction, or 50% with two maxed copies. These values retain the guide’s context and are not automatically applied to new variants."
+        ]
+      },
+      {
+        "heading": "Constant Attack Skill e concatenazioni",
+        "paragraphs": [
+          "Le costanti offensive possono aumentare danno fisico, magico o critical damage. Verifica quale contributo è attivo e quali categorie condividono il limite di stacking.",
+          "La guida raggruppa fino a due effetti compatibili per categoria: costanti difensive, opening difensive, Other opening, costanti offensive e costanti di resistenza. Non suggerisce che due Armor e due Weapons offensive possano sommare liberamente quattro bonus della stessa categoria.",
+          "Combinazioni come Dual Attack + Resurrection, Dual Attack + Reliance o Opening Ward + Counter Heal rispondono a necessità diverse. I consigli e i limiti di concatenazione della guida vanno confrontati con le descrizioni delle varianti equipaggiate."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-opening",
+            "title": "Spiegazioni opening Unison League — Warlup",
+            "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale. Pagine: 6–8."
+          }
+        ],
+        "paragraphsEn": [
+          "Offensive constants can increase physical damage, magic damage or critical damage. Check which contribution is active and which categories share a stacking limit.",
+          "The guide groups up to two compatible effects per category: defensive constants, defensive openings, Other opening, offensive constants and resistance constants. It does not imply that two offensive Armor and two offensive Weapons can freely stack four bonuses of the same category.",
+          "Combinations such as Dual Attack + Resurrection, Dual Attack + Reliance or Opening Ward + Counter Heal address different needs. Compare the guide’s recommendations and combination limits against the equipped variants’ descriptions."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mostri",
+    "title": "Mostri e potenziali",
+    "summary": "Un buon mostro risolve un problema del tuo set.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Considera effetti per il team, protezione, immunità, risorse e field. In PvE la complementarità con gli altri giocatori conta; in PvP (GvG) conta anche impedire o contrastare l’Unison avversaria.",
+          "Apri ogni livello di Hidden Potential separatamente. Per esempio [Bashful Beach] Blue Sea Riko sblocca Concerto al livello 3 e migliora il buff delle statistiche al livello 4: la copia a livello zero non ha quei benefici.",
+          "Controlla le Restrictions sui materiali. Alcuni mostri richiedono copie specifiche per il potenziale: non assumere che qualsiasi materiale sia utilizzabile. Il valore della versione massima deve sempre mostrare ciò che serve per raggiungerla."
+        ],
+        "itemIds": [
+          "1190923"
+        ],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "doc2",
+            "title": "Cool Monster Reference Guide",
+            "url": "https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit",
+            "declaredUpdated": "2026-04-21",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "official",
+            "title": "Limipedia",
+            "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/index.html",
+            "declaredUpdated": "2026-08-25",
+            "fetchedAt": "2026-10-09",
+            "kind": "official",
+            "edition": "WW",
+            "notes": "Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."
+          }
+        ],
+        "paragraphsEn": [
+          "Consider team effects, protection, immunity, resources and fields. In PvE, synergy with other players matters; in PvP (GvG), preventing or countering the enemy Unison also matters.",
+          "Open each Hidden Potential level separately. For example, [Bashful Beach] Blue Sea Riko unlocks Concerto at level 3 and improves its stat buff at level 4: a level-zero copy does not have those benefits.",
+          "Check material Restrictions. Some monsters require specific copies for potential upgrades: do not assume any material can be used. The value of the maximum version must always show what is needed to reach it."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "effetti",
+    "title": "Aura, Bubble, Field e status speciali",
+    "summary": "Leggi singoli effetti, protezioni e malus; distingue le condizioni e le fonti.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Bubble è un termine della community. La guida mostri distingue queste protezioni dalle aura: una sola bubble alla volta; aura e bubble possono coesistere, ma i buff delle stesse statistiche non si sommano automaticamente.",
+          "Un effetto che protegge dai debuff ordinari potrebbe non proteggere da quelli speciali. Controlla esplicitamente status ailments, special status ailments, Cost reduction e Unison gauge reduction.",
+          "Field alleati e nemici hanno funzioni differenti. Field Protect e Field Obstacle influiscono sulla loro gestione; sovrascrittura, durata e immunità devono essere verificate nella descrizione della skill. Gli stati nominati non ancora normalizzati restano consultabili senza un voto completo."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/ambush.png",
+            "alt": "Personaggio nel gioco circondato dalla protezione visiva Ambush",
+            "caption": "Esempio visivo di Ambush nella Cool Monster Reference Guide. Lo stacking dipende dagli effetti, non soltanto dall’aspetto.",
+            "sourceRef": {
+              "id": "doc2",
+              "title": "Cool Monster Reference Guide",
+              "url": "https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit",
+              "declaredUpdated": "2026-04-21",
+              "fetchedAt": "2026-10-09",
+              "kind": "guide",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "doc1",
+            "title": "Beginner / New Account Guide",
+            "url": "https://docs.google.com/document/d/1EYjhnUiv1xa_P_Ov-UeVzpxrYEywJOYBhgFWytx8I78/edit",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Beginner spawn eligibility from 2020; field section updated 2025-07-10; review each section."
+          },
+          {
+            "id": "doc2",
+            "title": "Cool Monster Reference Guide",
+            "url": "https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit",
+            "declaredUpdated": "2026-04-21",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          }
+        ],
+        "paragraphsEn": [
+          "Bubble is a community term. The monster guide distinguishes these protections from auras: only one bubble at a time; an aura and a bubble can coexist, but buffs to the same stats do not automatically stack.",
+          "Protection against ordinary debuffs may not protect against special ones. Explicitly check status ailments, special status ailments, Cost reduction and Unison gauge reduction.",
+          "Allied and enemy fields have different functions. Field Protect and Field Obstacle affect their management; overwriting, duration and immunity must be checked in the skill description. Named states that have not yet been normalized remain readable without a complete score."
+        ]
+      },
+      {
+        "heading": "Status speciali: guida dell’autore",
+        "paragraphs": [
+          "Le voci seguenti riprendono la guida italiana di Warlup con data nel titolo 11/2023. I nomi ufficiali restano in inglese. Percentuali approssimative e ipotesi sono riconoscibili come stime della guida; non costituiscono una nuova regola numerica del valutatore.",
+          "La guida cita Circle Innocence, Gospel Heal e Survival Aid tra le abilità per rimuovere alcuni malus speciali. La compatibilità va verificata sul testo della singola abilità e dello status."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 1–3."
+          }
+        ],
+        "paragraphsEn": [
+          "The following entries draw on Warlup’s Italian guide, dated 11/2023 in its title. Official names remain in English. Approximate percentages and hypotheses are identified as source estimates; they do not become new numerical rules for the evaluator.",
+          "The guide mentions Circle Innocence, Gospel Heal and Survival Aid among abilities that remove some special debuffs. Check compatibility in the individual ability and status text."
+        ]
+      },
+      {
+        "heading": "Miasma",
+        "paragraphs": [
+          "Ogni stack infligge il 10% degli HP attuali del bersaglio ogni 2,5 secondi e riduce Status Ailment Resistance di 50. La guida precisa che il danno dello status non può essere ridotto tramite Abilities."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 1."
+          }
+        ],
+        "paragraphsEn": [
+          "Each stack deals 10% of the target’s current HP every 2.5 seconds and lowers Status Ailment Resistance by 50. The guide specifies that Abilities cannot reduce the status damage."
+        ]
+      },
+      {
+        "heading": "Jealousy State",
+        "paragraphs": [
+          "Annulla una volta un riempimento della Unison gauge. La guida usa anche il nome italiano “Sfiducia”: non è lo stesso comportamento della protezione Reliance contro la riduzione della barra."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 1."
+          }
+        ],
+        "paragraphsEn": [
+          "Nullifies one Unison gauge fill. The guide also uses the Italian name “Sfiducia”: this differs from Reliance protection against gauge reduction."
+        ]
+      },
+      {
+        "heading": "Pressure",
+        "paragraphs": [
+          "Impedisce lo scambio del personaggio con la Rear Guard durante Guild Battle. L’utilità della protezione dipende dal contenuto e dal ruolo."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 1."
+          }
+        ],
+        "paragraphsEn": [
+          "Prevents switching the character with the Rear Guard during Guild Battle. The value of protection depends on the content and role."
+        ]
+      },
+      {
+        "heading": "Frozen",
+        "paragraphs": [
+          "Può impedire l’esecuzione di un’abilità durante lo status; la guida indica circa il 25% di probabilità. Riporta inoltre una riduzione del 50% degli attacchi fisici e magici.",
+          "La probabilità indicata come circa è una stima della fonte, non un tasso di spawn o un proc dell’equipaggiamento."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 1."
+          }
+        ],
+        "paragraphsEn": [
+          "May prevent an ability from being executed while the status is active; the guide estimates the chance at around 25%. It also reports a 50% reduction in physical and magic attacks.",
+          "The approximate probability is a source estimate rather than a spawn rate or an equipment proc."
+        ]
+      },
+      {
+        "heading": "Slumber",
+        "paragraphs": [
+          "Impedisce l’uso delle abilità. La guida descrive la rimozione dopo consumo complessivo di circa 30–40 Cost, dopo danno effettivo da un’abilità, oppure alla scadenza.",
+          "Il colpo che rimuove Slumber riceve un incremento di 50 AP secondo la guida. Un’abilità che infligge zero danni non rimuove lo status. La durata è descritta come di solito 40 secondi, non come durata di ogni variante."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 1–2."
+          }
+        ],
+        "paragraphsEn": [
+          "Prevents ability use. The guide describes removal after a total consumption of roughly 30–40 Cost, after actual damage from an ability, or on expiry.",
+          "According to the guide, the hit that removes Slumber gains 50 AP. An ability dealing zero damage does not remove the status. Duration is described as usually 40 seconds rather than the duration of every variant."
+        ]
+      },
+      {
+        "heading": "Rejection",
+        "paragraphs": [
+          "Blocca il recupero di Cost e Unison gauge e impedisce le cure da draining effects, come quelle collegate ad alcuni proc o abilità.",
+          "La guida riporta anche una probabilità approssimativa, circa 75% o superiore, di rimozione di buff e buff speciali. Questo valore resta una stima da verificare."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 2."
+          }
+        ],
+        "paragraphsEn": [
+          "Blocks Cost and Unison gauge recovery and prevents healing from draining effects, such as those linked to some procs or abilities.",
+          "The guide also reports an approximate chance of around 75% or more to remove buffs and special buffs. This value remains an estimate to verify."
+        ]
+      },
+      {
+        "heading": "Insanity",
+        "paragraphs": [
+          "Impedisce di scegliere le abilità: ogni 5 secondi il personaggio usa casualmente un’abilità disponibile.",
+          "La guida indica una chance del 25% di sostituzione con un effetto sfavorevole: auto-danno del 40%, cura del nemico pari al 5% dei suoi Max HP, perdita di 10 Unison gauge oppure incremento dell’80% delle statistiche nemiche. La fonte non specifica qui la base del 40% di auto-danno.",
+          "L’eventuale aumento di queste probabilità con più effetti Insanity è esplicitamente indicato come non sicuro nella guida; non lo trattiamo come regola confermata."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 2."
+          }
+        ],
+        "paragraphsEn": [
+          "Prevents choosing abilities: every 5 seconds, the character randomly uses an available ability.",
+          "The guide lists a 25% chance of replacement with an unfavorable effect: 40% self-damage, healing the enemy for 5% of its Max HP, losing 10 Unison gauge or increasing enemy stats by 80%. The source does not specify the basis of the 40% self-damage here.",
+          "The guide explicitly marks any increase in these probabilities from multiple Insanity effects as uncertain; we do not treat it as a confirmed rule."
+        ]
+      },
+      {
+        "heading": "Scorching",
+        "paragraphs": [
+          "All’uso di un’abilità infligge danno pari al 5% degli HP attuali. Abbassa il proc dei gear in main slot del 30%, secondo la guida.",
+          "La fonte non chiarisce in questa voce se la riduzione del proc sia relativa o in punti percentuali: conserviamo la formulazione senza calcolare un nuovo tasso."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 3."
+          }
+        ],
+        "paragraphsEn": [
+          "Using an ability deals damage equal to 5% of current HP. According to the guide, it lowers the main slot gear proc rate by 30%.",
+          "This entry does not clarify whether the proc reduction is relative or in percentage points: we preserve the wording without calculating a new rate."
+        ]
+      },
+      {
+        "heading": "Constriction",
+        "paragraphs": [
+          "Le abilità possono essere usate soltanto su bersagli singoli. Verifica come la tua abilità si comporta con questo vincolo."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 3."
+          }
+        ],
+        "paragraphsEn": [
+          "Abilities can only be used on single targets. Check how your ability behaves under this restriction."
+        ]
+      },
+      {
+        "heading": "Lethargy",
+        "paragraphs": [
+          "Impedisce l’attivazione dei proc offensivi. Il beneficio teorico di un talento offensivo non è disponibile mentre questa condizione lo disattiva."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 3."
+          }
+        ],
+        "paragraphsEn": [
+          "Prevents offensive equipment procs from activating. An offensive talent’s theoretical benefit is unavailable while this condition disables it."
+        ]
+      },
+      {
+        "heading": "Frail",
+        "paragraphs": [
+          "Impedisce l’attivazione dei proc difensivi. È distinto da una semplice riduzione del loro tasso di attivazione."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 3."
+          }
+        ],
+        "paragraphsEn": [
+          "Prevents defensive equipment procs from activating.",
+          "This differs from simply reducing their activation rate."
+        ]
+      },
+      {
+        "heading": "Abstraction",
+        "paragraphs": [
+          "Disattiva gli effetti Constant. La presenza della costante nella build non garantisce che il suo beneficio rimanga attivo sotto questo status."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "warlup-status",
+            "title": "Guida agli status speciali — Warlup",
+            "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
+            "declaredUpdated": "2023-11",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte. Pagine: 3."
+          }
+        ],
+        "paragraphsEn": [
+          "Disables Constant effects. Having a constant in the build does not guarantee that its benefit stays active under this status."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "potenziamenti",
+    "title": "Potenziamenti e infusioni",
+    "summary": "Confronta sempre lo stesso stato di potenziamento.",
+    "historical": true,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Le statistiche iniziali, fully Reforged e fully Infused sono distinte nelle schede ufficiali. Per i mostri, le statistiche massime possono includere i potenziali sbloccati.",
+          "Il foglio italiano descrive costi e combinazioni di infusioni nella versione 2024–2025. Prima di consumare materiali verifica i valori in gioco: l’app non applica quella tabella storica a tutti i nuovi costi.",
+          "La Enchantment Guide dichiara lacune sul sesto ring e contenuti successivi. È utile per comprendere il sistema, ma da sola non certifica una build di classe aggiornata."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "excel",
+            "title": "Guida generale Unison League 2024_2025",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "doc3",
+            "title": "Enchantment Guide",
+            "url": "https://docs.google.com/document/d/1McHsoBFOXdtnn5ARP1LlBW2uhXonl0CT6sshDQR4mW8/edit",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Author states not updated for sixth ring and adjacent; verify before recommending."
+          },
+          {
+            "id": "official",
+            "title": "Limipedia",
+            "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/index.html",
+            "declaredUpdated": "2026-08-25",
+            "fetchedAt": "2026-10-09",
+            "kind": "official",
+            "edition": "WW",
+            "notes": "Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."
+          }
+        ],
+        "paragraphsEn": [
+          "Initial, fully Reforged and fully Infused stats are separate in official entries. For monsters, maximum stats may include unlocked potentials.",
+          "The Italian spreadsheet describes infusion costs and combinations for the 2024–2025 version. Check in-game values before using materials: the app does not apply that historical table to all new costs.",
+          "The Enchantment Guide declares gaps concerning the sixth ring and later content. It is useful for understanding the system but cannot alone certify an updated class build."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gemme",
+    "title": "Gemme e convenienza delle spawn",
+    "summary": "Prima l’obiettivo, poi un tetto di spesa.",
+    "historical": false,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "Non distribuire poche gemme su ogni banner senza un piano. Identifica il bersaglio utile e verifica quanto costa raggiungerlo con scambio o garanzia; una garanzia UR generica non garantisce quel bersaglio.",
+          "Il budget spendibile è gemme disponibili meno riserva. Il consiglio prudente sceglie il più economico traguardo garantito raggiungibile; se non è nel budget, suggerisce di risparmiare. La media casuale non diventa un limite consigliato.",
+          "Le simulazioni richiedono tassi e regole noti. La Random Curve del Treasure Spawn Calculator è un’ipotesi configurabile, non una probabilità ufficiale. Dopo aver ottenuto il bersaglio, fermati: quanto già speso non giustifica altre spawn."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "published",
+            "title": "F2P/Low Spender Spawn Guide",
+            "url": "https://docs.google.com/document/d/e/2PACX-1vQe_7UaqWrR1yq6PtnShPmJ159WxYZZEvOL3M8PB-NL89yDum1h7GT-Ag74k4S0iDIxSqD8NDUxRQ3V/pub",
+            "declaredUpdated": "2025-12-13",
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": null
+          },
+          {
+            "id": "spawn",
+            "title": "UL Treasure Spawn Calculator",
+            "url": "https://greenspiny.github.io/treasurespawn/index.html",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "Random Curve is an adjustable modelling assumption, not verified game probabilities."
+          }
+        ],
+        "paragraphsEn": [
+          "Do not spread a few gems across every banner without a plan. Identify a useful target and check the cost of reaching it through exchange or a guarantee; a generic UR guarantee does not guarantee that target.",
+          "Spendable budget is available gems minus reserve. Conservative advice chooses the cheapest reachable guaranteed milestone; if it is outside the budget, it suggests saving. A random average is not a recommended spending limit.",
+          "Simulations require known rates and rules. The Treasure Spawn Calculator’s Random Curve is a configurable hypothesis rather than an official probability. Stop once you obtain the target: prior spending does not justify additional spawns."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pet",
+    "title": "Pet e progressione",
+    "summary": "Una meccanica complementare da verificare con il tuo profilo.",
+    "historical": true,
+    "sections": [
+      {
+        "heading": "Cosa valutare",
+        "paragraphs": [
+          "I pet hanno una progressione propria e possono supportare la build. Leggi abilità, requisiti e investimenti nella Pet Guide prima di scegliere una direzione.",
+          "La guida fornita non ha una data di aggiornamento chiara. Qui è usata come riferimento dei concetti, senza presumere che le priorità di sviluppo siano ancora il meta corrente.",
+          "Prima di spendere risorse valuta se il miglioramento risolve una necessità più urgente di armi, main slot monster o potenziali. Il catalogo e l’inventario consentono di mantenere visibile il contesto del tuo set."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "doc4",
+            "title": "Pet Guide 101: The Basics",
+            "url": "https://docs.google.com/document/d/1wAonHZBBNebeLxpXrPc7eomy8_1RzWxUBiBD4eX-8SE/edit",
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-09",
+            "kind": "guide",
+            "edition": null,
+            "notes": "No clear update date found; historical mechanics to verify."
+          }
+        ],
+        "paragraphsEn": [
+          "Pets have their own progression and can support the build. Read abilities, requirements and investments in the Pet Guide before choosing a direction.",
+          "The supplied guide has no clear update date. It is used here as a conceptual reference without assuming its development priorities still describe the current meta.",
+          "Before spending resources, consider whether the improvement addresses a more urgent need than weapons, a main slot monster or potentials. The catalogue and inventory keep your set’s context visible."
+        ]
+      }
+    ]
+  }
+]

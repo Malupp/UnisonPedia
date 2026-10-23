@@ -1,0 +1,92 @@
+# Local worktrees and agent scratch state
+.worktrees/
+.superpowers/
+
+# Dependency, build and acquisition caches
+node_modules/
+.angular/
+dist/
+.cache/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Local source material; published catalogue data stays versioned
+research/
+
+# Browser test output and generated previews
+test-results/
+playwright-report/
+blob-report/
+output/
+
+# Local environment files; keep templates shareable
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+
+# Deployment linkage and local database CLI state
+.vercel/
+supabase/.temp/
+supabase/.branches/
+
+# Python analysis caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Logs, temporary files and OS metadata
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+~$*
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+
+# Personal video and image analysis stays local
+/videos_analysis/
+
+# Local helper scripts
+*.ps1
+*.py
+
+# Local migration rollback copy
+.local-backups/
+
+# Development, verification and acquisition tools stay local.
+/docs/
+/tests/
+/scripts/
+/playwright.config.ts
+/vitest.config.ts
+/out-tsc/
+**/*.test.*
+**/*.spec.*
+**/*.md
+!/README.md
+
+# Only Angular configuration and application data JSON are published.
+**/*.json
+!/angular.json
+!/package.json
+!/package-lock.json
+!/tsconfig.json
+!/tsconfig.app.json
+!/vercel.json
+!/public/data/banners.json
+!/public/data/classes.json
+!/public/data/glossary.json
+!/public/data/guide.json
+!/public/data/manifest.json
+!/public/data/sources.json
+!/public/data/video-meta.json
+!/public/data/catalogue/index.json
+!/public/data/catalogue/details/*.json

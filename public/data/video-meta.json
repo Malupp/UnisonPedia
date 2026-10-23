@@ -1,0 +1,2545 @@
+{
+  "analyzedAt": "2026-10-22",
+  "catalogueAsOf": "2026-08-25",
+  "videos": [
+    {
+      "id": "v1",
+      "label": "Video del 21 ottobre",
+      "recordedAt": "2026-10-21",
+      "durationSeconds": 91.015
+    },
+    {
+      "id": "v2",
+      "label": "Video del 22 ottobre · 09:56",
+      "recordedAt": "2026-10-22",
+      "durationSeconds": 128.03
+    },
+    {
+      "id": "v3",
+      "label": "Video del 22 ottobre · 14:07",
+      "recordedAt": "2026-10-22",
+      "durationSeconds": 174.633
+    },
+    {
+      "id": "v4",
+      "label": "Video del 22 ottobre · 14:10",
+      "recordedAt": "2026-10-22",
+      "durationSeconds": 122.037
+    }
+  ],
+  "observations": [
+    {
+      "id": "mandate-fire",
+      "name": "Mandate of Fire XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Danno e anti-annullamento",
+      "summary": "Nel gruppo offensivo di punta osservato: amplifica il danno, migliora l’accuratezza e applica Pulverize contro invulnerabilità e annullamento.",
+      "conditions": "Massimo con 3 armi Fire. La priorità rispetto a Ravaging dipende dalle protezioni nemiche.",
+      "skillNames": [
+        "Mandate of Fire XL"
+      ],
+      "itemIds": [
+        "1729602",
+        "1729604",
+        "1729606",
+        "1729608",
+        "1729610",
+        "1729612"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 117.29
+        },
+        {
+          "video": "v3",
+          "seconds": 159.265
+        }
+      ],
+      "origin": "video",
+      "family": "mandate",
+      "familyName": "Mandate",
+      "element": "Fire"
+    },
+    {
+      "id": "ravaging-water",
+      "name": "Ravaging Water XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Danno e anti-riduzione",
+      "summary": "Nel gruppo offensivo di punta osservato: amplifica il danno, genera Unison e applica Penetrate contro riduzione e riflesso.",
+      "conditions": "Massimo con 3 armi Water. Non fornisce l’accuratezza di Mandate; il matchup determina la scelta.",
+      "skillNames": [
+        "Ravaging Water XL"
+      ],
+      "itemIds": [
+        "1310202",
+        "1310204",
+        "1310206",
+        "1310208",
+        "1310210",
+        "1310212",
+        "1375102",
+        "1375104",
+        "1375106",
+        "1375108",
+        "1375110",
+        "1375112"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 11.505
+        },
+        {
+          "video": "v1",
+          "seconds": 52.033
+        },
+        {
+          "video": "v2",
+          "seconds": 117.29
+        },
+        {
+          "video": "v3",
+          "seconds": 7.765
+        },
+        {
+          "video": "v4",
+          "seconds": 27.009
+        }
+      ],
+      "origin": "video",
+      "family": "ravaging",
+      "familyName": "Ravaging",
+      "element": "Water"
+    },
+    {
+      "id": "triumph-light",
+      "name": "Light Triumph XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Accuratezza e gestione Cost",
+      "summary": "Amplifica il danno, migliora l’accuratezza, recupera 15 Cost e ignora il 50% di DEF e MDEF.",
+      "conditions": "Massimo con 3 armi Light. La penetrazione di DEF e MDEF non è cumulabile; non equivale a superare le barriere.",
+      "skillNames": [
+        "Light Triumph XL"
+      ],
+      "itemIds": [
+        "1498802",
+        "1498804",
+        "1498806",
+        "1498808",
+        "1498810",
+        "1498812"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 8.279
+        },
+        {
+          "video": "v3",
+          "seconds": 126.784
+        }
+      ],
+      "origin": "video",
+      "family": "triumph",
+      "familyName": "Triumph",
+      "element": "Light"
+    },
+    {
+      "id": "triumph-fire",
+      "name": "Fire Triumph XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Accuratezza e gestione Cost",
+      "summary": "Amplifica il danno, migliora l’accuratezza, recupera 15 Cost e ignora il 50% di DEF e MDEF.",
+      "conditions": "Massimo con 3 armi Fire. La penetrazione di DEF e MDEF non è cumulabile; non equivale a superare le barriere.",
+      "skillNames": [
+        "Fire Triumph XL"
+      ],
+      "itemIds": [
+        "1809302",
+        "1809304",
+        "1809306",
+        "1809308",
+        "1809310",
+        "1809312"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 15.02
+        }
+      ],
+      "origin": "video",
+      "family": "triumph",
+      "familyName": "Triumph",
+      "element": "Fire"
+    },
+    {
+      "id": "triumph-dark",
+      "name": "Dark Triumph XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Accuratezza e gestione Cost",
+      "summary": "Amplifica il danno, migliora l’accuratezza, recupera 15 Cost e ignora il 50% di DEF e MDEF.",
+      "conditions": "Massimo con 3 armi Dark. La penetrazione di DEF e MDEF non è cumulabile; non equivale a superare le barriere.",
+      "skillNames": [
+        "Dark Triumph XL"
+      ],
+      "itemIds": [
+        "1910902",
+        "1910904",
+        "1910906",
+        "1910908",
+        "1910910",
+        "1910912"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 52.033
+        },
+        {
+          "video": "v2",
+          "seconds": 117.29
+        }
+      ],
+      "origin": "video",
+      "family": "triumph",
+      "familyName": "Triumph",
+      "element": "Dark"
+    },
+    {
+      "id": "essence-wind",
+      "name": "Essence of Wind XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Rotazione e risorse",
+      "summary": "Recupera 20 Cost, riempie la gauge di 5 e aumenta l’accuratezza: una scelta forte per mantenere la rotazione.",
+      "conditions": "Massimo con 3 armi Wind. La descrizione non elenca amplificazione del danno né piercing.",
+      "skillNames": [
+        "Essence of Wind XL"
+      ],
+      "itemIds": [
+        "1936902",
+        "1936904",
+        "1936906",
+        "1936908",
+        "1936910",
+        "1936912"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 11.505
+        },
+        {
+          "video": "v2",
+          "seconds": 6.783
+        },
+        {
+          "video": "v4",
+          "seconds": 5.257
+        },
+        {
+          "video": "v4",
+          "seconds": 80.782
+        }
+      ],
+      "origin": "video",
+      "family": "essence",
+      "familyName": "Essence",
+      "element": "Wind"
+    },
+    {
+      "id": "resolution-fire",
+      "name": "Fire Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Critico e continuità",
+      "summary": "Assicura un critico, recupera 10 Cost, riempie la gauge di 5 e cura in base al danno inflitto.",
+      "conditions": "Massimo con 3 armi Fire. Il valore aggiunto del critico dipende dai buff già presenti.",
+      "skillNames": [
+        "Fire Resolution XL"
+      ],
+      "itemIds": [
+        "1500504",
+        "1500506",
+        "1500508",
+        "1500510",
+        "1500512",
+        "1500514"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 15.02
+        },
+        {
+          "video": "v4",
+          "seconds": 27.009
+        }
+      ],
+      "origin": "video",
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Fire"
+    },
+    {
+      "id": "resolution-wind",
+      "name": "Wind Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Critico e continuità",
+      "summary": "Assicura un critico, recupera 10 Cost, riempie la gauge di 5 e cura in base al danno inflitto.",
+      "conditions": "Massimo con 3 armi Wind. Il valore aggiunto del critico dipende dai buff già presenti.",
+      "skillNames": [
+        "Wind Resolution XL"
+      ],
+      "itemIds": [
+        "1890426",
+        "1890428",
+        "2890401",
+        "2890403",
+        "2890405",
+        "2890407"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 52.033
+        },
+        {
+          "video": "v4",
+          "seconds": 5.257
+        }
+      ],
+      "origin": "video",
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Wind"
+    },
+    {
+      "id": "obliterating-water",
+      "name": "Obliterating Water XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Danno e affidabilità",
+      "summary": "Unisce amplificazione del danno, critico assicurato, accuratezza e generazione Unison. Resta un complemento valido alle famiglie più recenti.",
+      "conditions": "Massimo con 3 armi Water. La sinergia reale e i buff del gruppo determinano il confronto con gli altri proc.",
+      "skillNames": [
+        "Obliterating Water XL"
+      ],
+      "itemIds": [
+        "1338202",
+        "1338204",
+        "1338206",
+        "1338208",
+        "1338210",
+        "1338212"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 52.033
+        },
+        {
+          "video": "v4",
+          "seconds": 92.006
+        }
+      ],
+      "origin": "video",
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Water"
+    },
+    {
+      "id": "obliterating-wind",
+      "name": "Obliterating Wind XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Danno e affidabilità",
+      "summary": "Unisce amplificazione del danno, critico assicurato, accuratezza e generazione Unison. Resta un complemento valido alle famiglie più recenti.",
+      "conditions": "Massimo con 3 armi Wind. La sinergia reale e i buff del gruppo determinano il confronto con gli altri proc.",
+      "skillNames": [
+        "Obliterating Wind XL"
+      ],
+      "itemIds": [
+        "1979302",
+        "1979304",
+        "1979306",
+        "1979308",
+        "1979310",
+        "1979312"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 6.783
+        },
+        {
+          "video": "v4",
+          "seconds": 80.782
+        }
+      ],
+      "origin": "video",
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Wind"
+    },
+    {
+      "id": "obliterating-dark",
+      "name": "Obliterating Dark XL",
+      "category": "weapon",
+      "status": "matched",
+      "priority": "Danno e affidabilità",
+      "summary": "Unisce amplificazione del danno, critico assicurato, accuratezza e generazione Unison. Resta un complemento valido alle famiglie più recenti.",
+      "conditions": "Massimo con 3 armi Dark. La sinergia reale e i buff del gruppo determinano il confronto con gli altri proc.",
+      "skillNames": [
+        "Obliterating Dark XL"
+      ],
+      "itemIds": [
+        "1015659",
+        "1035725",
+        "1055725",
+        "1075266",
+        "1105658",
+        "1115241"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 117.29
+        }
+      ],
+      "origin": "video",
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Dark"
+    },
+    {
+      "id": "mastery-fire",
+      "name": "Mastery Over Fire XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Difesa e resistenza agli status",
+      "summary": "Copre danno fisico e magico, riduce entrambe le Ability Power in arrivo e aumenta la resistenza agli status.",
+      "conditions": "Massimo con 3 difensivi Fire. Nel gruppo difensivo più completo osservato, senza un primato universale.",
+      "skillNames": [
+        "Mastery Over Fire XL"
+      ],
+      "itemIds": [
+        "1500516",
+        "1500518",
+        "1500520",
+        "1500522"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 15.02
+        }
+      ],
+      "origin": "video",
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Fire"
+    },
+    {
+      "id": "intercepting-hat",
+      "name": "Intercepting Hat XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Difesa e protezione per un colpo",
+      "summary": "Riduce danno fisico e magico e le AP in arrivo; applica uno scudo che annulla un colpo fisico o magico.",
+      "conditions": "Massimo con 5 Hat, non 5 difensivi qualsiasi. Lo scudo non è immunità permanente.",
+      "skillNames": [
+        "Intercepting Hat XL"
+      ],
+      "itemIds": [
+        "1209824",
+        "1896324",
+        "2538514"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 5.788
+        }
+      ],
+      "origin": "video",
+      "family": "intercepting",
+      "familyName": "Intercepting"
+    },
+    {
+      "id": "obsidian-star",
+      "name": "Obsidian Star XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Status e protezione per un colpo",
+      "summary": "Combina riduzione fisica e magica, resistenza agli status e uno scudo che annulla un colpo.",
+      "conditions": "Massimo con 3 difensivi Star. Il valore cambia con i controlli nemici e con le contromisure agli scudi.",
+      "skillNames": [
+        "Obsidian Star XL"
+      ],
+      "itemIds": [
+        "1155514",
+        "1155516",
+        "1155518",
+        "1155520"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 5.788
+        },
+        {
+          "video": "v2",
+          "seconds": 15.023
+        },
+        {
+          "video": "v3",
+          "seconds": 7.765
+        }
+      ],
+      "origin": "video",
+      "family": "obsidian",
+      "familyName": "Obsidian",
+      "element": "Star"
+    },
+    {
+      "id": "bloom-time",
+      "name": "Time Bloom XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Difesa e ciclo Unison",
+      "summary": "Offre riduzioni fisiche e magiche e riempie la gauge di 5 quando si attiva.",
+      "conditions": "Massimo con 3 difensivi Time. Le varianti condividono la funzione, ma richiedono elementi diversi.",
+      "skillNames": [
+        "Time Bloom XL"
+      ],
+      "itemIds": [
+        "1872914",
+        "1872916",
+        "1872918",
+        "1872920"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 15.02
+        },
+        {
+          "video": "v3",
+          "seconds": 9.286
+        }
+      ],
+      "origin": "video",
+      "family": "bloom",
+      "familyName": "Bloom",
+      "element": "Time"
+    },
+    {
+      "id": "bloom-wind",
+      "name": "Wind Bloom XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Difesa e ciclo Unison",
+      "summary": "Offre riduzioni fisiche e magiche e riempie la gauge di 5 quando si attiva.",
+      "conditions": "Massimo con 3 difensivi Wind. Le varianti condividono la funzione, ma richiedono elementi diversi.",
+      "skillNames": [
+        "Wind Bloom XL"
+      ],
+      "itemIds": [
+        "1327114",
+        "1327116",
+        "1327118",
+        "1327120"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 15.023
+        }
+      ],
+      "origin": "video",
+      "family": "bloom",
+      "familyName": "Bloom",
+      "element": "Wind"
+    },
+    {
+      "id": "bloom-star",
+      "name": "Star Bloom XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Difesa e ciclo Unison",
+      "summary": "Offre riduzioni fisiche e magiche e riempie la gauge di 5 quando si attiva.",
+      "conditions": "Massimo con 3 difensivi Star. Le varianti condividono la funzione, ma richiedono elementi diversi.",
+      "skillNames": [
+        "Star Bloom XL"
+      ],
+      "itemIds": [
+        "1388214",
+        "1388216",
+        "1388218",
+        "1388220"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 15.023
+        },
+        {
+          "video": "v3",
+          "seconds": 9.286
+        }
+      ],
+      "origin": "video",
+      "family": "bloom",
+      "familyName": "Bloom",
+      "element": "Star"
+    },
+    {
+      "id": "guardian-water-tiger",
+      "name": "Guardian Water Tiger XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Contromisura al danno fisico",
+      "summary": "Riduce danno fisico e AP fisica in arrivo e genera Unison.",
+      "conditions": "Si attiva sul danno fisico; massimo con 3 difensivi Water. Non copre il danno magico.",
+      "skillNames": [
+        "Guardian Water Tiger XL"
+      ],
+      "itemIds": [
+        "1310214",
+        "1310216"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 11.505
+        },
+        {
+          "video": "v3",
+          "seconds": 106.267
+        }
+      ],
+      "origin": "video",
+      "family": "guardian-tiger",
+      "familyName": "Guardian Tiger",
+      "element": "Water"
+    },
+    {
+      "id": "world-light-serpent",
+      "name": "World Light Serpent XL",
+      "category": "defence",
+      "status": "matched",
+      "priority": "Contromisura al danno magico",
+      "summary": "Riduce danno magico e AP magica in arrivo e genera Unison.",
+      "conditions": "Si attiva sul danno magico; massimo con 3 difensivi Light. Non copre il danno fisico.",
+      "skillNames": [
+        "World Light Serpent XL"
+      ],
+      "itemIds": [
+        "1767618",
+        "1767620"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 5.788
+        }
+      ],
+      "origin": "video",
+      "family": "world-serpent",
+      "familyName": "World Serpent",
+      "element": "Light"
+    },
+    {
+      "id": "fated-affection",
+      "name": "Fated Affection XL",
+      "category": "healing",
+      "status": "matched",
+      "priority": "Cura e gestione Cost",
+      "summary": "Potenzia una cura, riduce del 20% il cooldown dell’abilità usata e recupera 5 Cost. È un proc di supporto, non di danno.",
+      "conditions": "Solo Cleric e abilità di cura. Massimo effetto con 6 Book/Relic; massima attivazione con 5.",
+      "skillNames": [
+        "Fated Affection XL"
+      ],
+      "itemIds": [
+        "1105327"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 6.783
+        }
+      ],
+      "origin": "video",
+      "family": "fated-affection",
+      "familyName": "Fated Affection"
+    },
+    {
+      "id": "lions-honor",
+      "name": "[Constant] Lion's Honor 3XL",
+      "category": "constant",
+      "status": "matched",
+      "priority": "Protezione dal danno riflesso",
+      "summary": "Raggiunge il 100% di riduzione dei danni riflessi a skill level 5 e aumenta il recupero HP.",
+      "conditions": "Defense Constant: fino a 2 effetti della stessa categoria. Nebulous Eclipse può disattivarlo.",
+      "skillNames": [
+        "[Constant] Lion's Honor 3XL"
+      ],
+      "itemIds": [
+        "1120218",
+        "1120220",
+        "1120222",
+        "1120224",
+        "1494820",
+        "1494822",
+        "1494824",
+        "1494826",
+        "1889114",
+        "1889116",
+        "1889118",
+        "1889120"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 8.279
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "ancient-guard",
+      "name": "[Constant] Ancient Guard XXL",
+      "category": "constant",
+      "status": "matched",
+      "priority": "Difesa e resistenza costante",
+      "summary": "Riduce costantemente danno fisico e magico e aumenta la resistenza agli status.",
+      "conditions": "Defense Constant: fino a 2 effetti della stessa categoria. Nebulous Eclipse può disattivarlo.",
+      "skillNames": [
+        "[Constant] Ancient Guard XXL"
+      ],
+      "itemIds": [
+        "1969914",
+        "1969916",
+        "1969918",
+        "1969920"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 8.279
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "boundary-colors",
+      "name": "[Constant] Boundary of Colors XL",
+      "category": "constant",
+      "status": "matched",
+      "priority": "Resistenza al drain",
+      "summary": "Attenua le riduzioni della gauge Unison e del Cost. Non annulla completamente queste meccaniche.",
+      "conditions": "Resistance Constant: fino a 2 effetti della stessa categoria. Nebulous Eclipse può disattivarlo.",
+      "skillNames": [
+        "[Constant] Boundary of Colors XL"
+      ],
+      "itemIds": [
+        "1375114",
+        "1375116",
+        "1375118",
+        "1375120"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 5.788
+        },
+        {
+          "video": "v3",
+          "seconds": 7.765
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "physical-ap-critical",
+      "name": "[Const] Physical AP & Critical Chance Up XL",
+      "category": "constant",
+      "status": "matched",
+      "priority": "Supporto al danno fisico",
+      "summary": "Aumenta l’Ability Power fisica e la probabilità di critico. La componente AP non potenzia il danno magico.",
+      "conditions": "Attack Constant: fino a 2 effetti della stessa categoria. Nebulous Eclipse può disattivarlo.",
+      "skillNames": [
+        "[Const] Physical AP & Critical Chance Up XL"
+      ],
+      "itemIds": [
+        "1373907",
+        "1373908",
+        "2215654",
+        "2215682",
+        "3315225",
+        "3315673"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 8.279
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "opening-elevation",
+      "name": "[Opening] Elevation XL",
+      "category": "opening",
+      "status": "matched",
+      "priority": "Attivazione dell’arma main",
+      "summary": "Applica Elevation nella finestra iniziale per migliorare le opportunità di proc dell’arma main.",
+      "conditions": "Dura 30 secondi dall’inizio. Attack Opening: fino a 2 effetti della stessa categoria; il valore dipende dal livello skill.",
+      "skillNames": [
+        "[Opening] Elevation XL"
+      ],
+      "itemIds": [
+        "1015891",
+        "1035890",
+        "1065822",
+        "1075894",
+        "1105890"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 6.783
+        },
+        {
+          "video": "v4",
+          "seconds": 5.257
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "opening-duty-defend",
+      "name": "[Opening] Duty to Defend XL",
+      "category": "opening",
+      "status": "matched",
+      "priority": "Concentrazione e recupero iniziale",
+      "summary": "Combina Concentration, recupero periodico HP e riflesso fisico e magico nella finestra iniziale.",
+      "conditions": "Primi 30 secondi. Defense Opening: fino a 2 effetti della stessa categoria; valori dipendenti dal livello skill.",
+      "skillNames": [
+        "[Opening] Duty to Defend XL"
+      ],
+      "itemIds": [
+        "1132318",
+        "1132320",
+        "1132322",
+        "1132324",
+        "1659818",
+        "1659820",
+        "1659822",
+        "1659824",
+        "2997114",
+        "2997116",
+        "2997118",
+        "2997120"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 6.783
+        },
+        {
+          "video": "v3",
+          "seconds": 9.286
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "opening-undying-aggression",
+      "name": "[Opening] Undying Aggression XL",
+      "category": "opening",
+      "status": "matched",
+      "priority": "Doppio attacco e resurrezione iniziali",
+      "summary": "Applica Dual Attack e Resurrection all’inizio dello scontro per sostenere l’apertura.",
+      "conditions": "Other Opening: fino a 2 effetti della stessa categoria. Durata base 52 secondi, estesa dal livello skill; non tutte le abilità sfruttano Dual Attack.",
+      "skillNames": [
+        "[Opening] Undying Aggression XL"
+      ],
+      "itemIds": [
+        "1209828",
+        "1399920",
+        "1399922",
+        "1399924",
+        "1399926",
+        "1716720",
+        "1716722",
+        "1716724",
+        "1716726",
+        "2209801",
+        "2209803",
+        "2209805"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 11.505
+        },
+        {
+          "video": "v3",
+          "seconds": 9.286
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "pandora",
+      "name": "[Sundering Calamity] Pandora",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Disturbo GvG di punta",
+      "summary": "Time Slice, Chipped Blade, Erosion e Nebulous Eclipse contrastano buff, piercing e Constant avversari; Twilight e Dawn sostengono il gruppo.",
+      "conditions": "Il pacchetto distintivo è nella skill base. Lv2 aggiunge un blocco monouso alla rimozione dei debuff. Il cristallo non entra in Break.",
+      "skillNames": [
+        "Calamity of the Rift"
+      ],
+      "itemIds": [
+        "1796610"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 46
+        },
+        {
+          "video": "v2",
+          "seconds": 72
+        },
+        {
+          "video": "v2",
+          "seconds": 98
+        },
+        {
+          "video": "v3",
+          "seconds": 86.035
+        },
+        {
+          "video": "v4",
+          "seconds": 64.271
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "nahut",
+      "name": "[Nomad of the Slashing Moon] Nahut",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Supporto e contromisure",
+      "summary": "Overcast protegge da debuff e status anche speciali; Absolute, controllo della gauge e Savior completano il supporto.",
+      "conditions": "Kijin al team richiede Lv2. Savior compete con gli altri field alleati; l’ordine di lancio cambia il risultato.",
+      "skillNames": [
+        "Dark Side Cleave"
+      ],
+      "itemIds": [
+        "1619102"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 68
+        },
+        {
+          "video": "v3",
+          "seconds": 27.035
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "peony",
+      "name": "[Fairy Queen of Flowers] Peony",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Controllo dei field",
+      "summary": "Field Protect e Field Obstacle si uniscono alla pressione sulla gauge, ad Absolute, Dawn e Resolute.",
+      "conditions": "Kijin al team richiede Lv2. Impostare a 30 il Cost nemico può aiutare avversari scarichi; gli strumenti field sono monouso.",
+      "skillNames": [
+        "Beauty of the Land"
+      ],
+      "itemIds": [
+        "1997110"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 34
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "p-valkyrie-nikyt",
+      "name": "[Eclipse's Hope] P. Valkyrie Nikyt",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Main slot e buff offensivi",
+      "summary": "La main slot offre resistenza agli status. Il cast potenzia statistiche, limiti e AP del gruppo e applica Blessing.",
+      "conditions": "Il beneficio della main slot richiede quello slot. Lv2 aggiunge guadagni gauge; Flank riguarda soltanto il caster.",
+      "skillNames": [
+        "Punishment by the Black Flame"
+      ],
+      "itemIds": [
+        "1796604"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 96
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "melydia",
+      "name": "[Hope of the Magic Blade] Melydia",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Ciclo Unison e crest",
+      "summary": "Absolute, Elevation, gauge agli altri alleati, riduzione della gauge nemica e Prohibit Unison preparano il seguito; Emerald completa il kit.",
+      "conditions": "Rage al team richiede Lv2. Emerald sostituisce gli altri crest globalmente. La main anti-drain è una scelta situazionale.",
+      "skillNames": [
+        "I Smite in the Supreme Queen's Name!"
+      ],
+      "itemIds": [
+        "1796608"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 50
+        },
+        {
+          "video": "v2",
+          "seconds": 44
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "shanchira",
+      "name": "Shanchira, Heavenly General",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Buff e generazione Unison",
+      "summary": "Aumenta statistiche e limiti, applica Twilight e genera gauge usando abilità; Crimson completa il supporto.",
+      "conditions": "La ricarica di 50 agli altri alleati richiede Lv1. Crimson sostituisce gli altri crest; Protection protegge solo il caster.",
+      "skillNames": [
+        "New Year Shattering Blossoms"
+      ],
+      "itemIds": [
+        "1896302"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 32
+        },
+        {
+          "video": "v2",
+          "seconds": 40
+        },
+        {
+          "video": "v3",
+          "seconds": 56.018
+        },
+        {
+          "video": "v4",
+          "seconds": 52.016
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "mika",
+      "name": "[Heartripper] Mika",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Rotazione e sustain",
+      "summary": "Absolute, Elevation, Rage, Serenity, Savior e Field Protect coprono molte necessità del gruppo.",
+      "conditions": "Savior compete con gli altri field alleati. Lv2 aggiunge un buff statistiche che può essere già coperto da altri mostri; Skirmish è personale.",
+      "skillNames": [
+        "Lovely Amputation"
+      ],
+      "itemIds": [
+        "1716704"
+      ],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 102
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "rin-len",
+      "name": "[Color Session] Capriccio Rin & Len",
+      "category": "monster",
+      "status": "matched",
+      "priority": "Specialista di priorità",
+      "summary": "La priorità +1 prepara resistenze, controllo della gauge e strumenti field prima dei cast ordinari. Non infligge danno.",
+      "conditions": "Il valore dipende dal piano di gilda. Phalanx è personale; Field Protect e Field Obstacle non sono protezioni permanenti.",
+      "skillNames": [
+        "Color Session"
+      ],
+      "itemIds": [
+        "1040407"
+      ],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 29
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "empyrean-wind",
+      "name": "Empyrean of Wind XL",
+      "category": "weapon",
+      "status": "pending",
+      "priority": "Descrizione da verificare",
+      "summary": "Nome leggibile nel video, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "conditions": "Serve la scheda esatta della variante per completare il confronto.",
+      "skillNames": [
+        "Empyrean of Wind XL"
+      ],
+      "itemIds": [],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 52.033
+        },
+        {
+          "video": "v3",
+          "seconds": 155.781
+        },
+        {
+          "video": "v3",
+          "seconds": 172.767
+        }
+      ],
+      "origin": "video",
+      "family": "empyrean",
+      "familyName": "Empyrean",
+      "element": "Wind"
+    },
+    {
+      "id": "unassailable-wind",
+      "name": "Unassailable Wind XL",
+      "category": "defence",
+      "status": "pending",
+      "priority": "Descrizione da verificare",
+      "summary": "Nome leggibile nel video, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "conditions": "Serve la scheda esatta della variante per completare il confronto.",
+      "skillNames": [
+        "Unassailable Wind XL"
+      ],
+      "itemIds": [],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 6.783
+        },
+        {
+          "video": "v3",
+          "seconds": 45.537
+        },
+        {
+          "video": "v4",
+          "seconds": 31.272
+        }
+      ],
+      "origin": "video",
+      "family": "unassailable",
+      "familyName": "Unassailable",
+      "element": "Wind"
+    },
+    {
+      "id": "guardian-dark",
+      "name": "Guardian Dark XL",
+      "category": "defence",
+      "status": "pending",
+      "priority": "Descrizione da verificare",
+      "summary": "Nome leggibile nel video, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "conditions": "Serve la scheda esatta della variante per completare il confronto.",
+      "skillNames": [
+        "Guardian Dark XL"
+      ],
+      "itemIds": [],
+      "evidence": [
+        {
+          "video": "v2",
+          "seconds": 5.788
+        }
+      ],
+      "origin": "video",
+      "family": "guardian",
+      "familyName": "Guardian",
+      "element": "Dark"
+    },
+    {
+      "id": "opening-ward-l",
+      "name": "[Opening] Ward L",
+      "category": "opening",
+      "status": "pending",
+      "priority": "Opening da verificare",
+      "summary": "Nome leggibile nel primo video. La variante L non ha una corrispondenza esatta nel catalogo salvato.",
+      "conditions": "Serve la descrizione della variante L. Non vengono trasferiti gli effetti o gli equip della variante XL.",
+      "skillNames": [
+        "[Opening] Ward L"
+      ],
+      "itemIds": [],
+      "evidence": [
+        {
+          "video": "v1",
+          "seconds": 11.505
+        }
+      ],
+      "origin": "video"
+    },
+    {
+      "id": "similar-empyrean-star",
+      "name": "Empyrean of Star XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Danno, accuratezza e anti-annullamento",
+      "summary": "Simile a Mandate per amplificazione, accuratezza e Pulverize contro invulnerabilità e annullamento; aggiunge Vital Strike.",
+      "conditions": "Massimo con 3 armi Star. Non elenca generazione Unison né Penetrate contro riduzione e riflesso. Questa scheda non certifica gli effetti di Empyrean of Wind.",
+      "skillNames": [
+        "Empyrean of Star XL"
+      ],
+      "itemIds": [
+        "1843702",
+        "1843704",
+        "1843706",
+        "1843708",
+        "1843710",
+        "1843712"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 172.767
+        }
+      ],
+      "family": "empyrean",
+      "familyName": "Empyrean",
+      "element": "Star"
+    },
+    {
+      "id": "similar-flickering-time",
+      "name": "Flickering Time XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Amplificazione e penetrazione delle difese",
+      "summary": "Come Triumph combina amplificazione del danno e il 50% di DEF e MDEF ignorati; aggiunge Vital Strike e raggiunge AP 7XL+.",
+      "conditions": "Massimo con 3 armi Time. Non elenca recupero Cost, accuratezza, Penetrate o Pulverize: non sostituisce tutte le funzioni di Triumph e Mandate.",
+      "skillNames": [
+        "Flickering Time XL"
+      ],
+      "itemIds": [
+        "1969902",
+        "1969904",
+        "1969906",
+        "1969908",
+        "1969910",
+        "1969912"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 159.265
+        }
+      ],
+      "family": "flickering",
+      "familyName": "Flickering",
+      "element": "Time"
+    },
+    {
+      "id": "similar-star-burial",
+      "name": "Star Burial XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Danno, Cost e applicazione degli status",
+      "summary": "Come Triumph recupera 15 Cost e amplifica il danno. Aggiunge successo degli status e raggiunge AP 7XL+.",
+      "conditions": "Massimo con 3 armi Star. Il successo degli status è diverso dall’accuratezza delle abilità; non elenca piercing né generazione Unison.",
+      "skillNames": [
+        "Star Burial XL"
+      ],
+      "itemIds": [
+        "1155502",
+        "1155504",
+        "1155506",
+        "1155508",
+        "1155510",
+        "1155512"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "triumph-light",
+        "triumph-fire",
+        "triumph-dark",
+        "essence-wind"
+      ],
+      "family": "burial",
+      "familyName": "Burial",
+      "element": "Star"
+    },
+    {
+      "id": "similar-light-onslaught",
+      "name": "Light Onslaught XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Anti-annullamento e controllo",
+      "summary": "Condivide Pulverize con Mandate e la penetrazione del 50% di DEF e MDEF con Triumph; aumenta anche il successo degli status.",
+      "conditions": "Massimo con 3 armi Light. Non elenca amplificazione del danno, accuratezza o risorse: è un’alternativa per una funzione precisa.",
+      "skillNames": [
+        "Light Onslaught XL"
+      ],
+      "itemIds": [
+        "1767602",
+        "1767604",
+        "1767606",
+        "1767608",
+        "1767610",
+        "1767612"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "mandate-fire",
+        "triumph-light"
+      ],
+      "family": "onslaught",
+      "familyName": "Onslaught",
+      "element": "Light"
+    },
+    {
+      "id": "similar-graceful-wind",
+      "name": "Graceful Wind XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Annullamento e recupero Cost",
+      "summary": "Condivide con Obsidian e Intercepting la protezione tramite annullamento, ma annulla il danno fisico e magico al proc e recupera 10 Cost.",
+      "conditions": "Massima attivazione con 3 difensivi Wind. Non applica lo stesso scudo successivo per un colpo; le contromisure all’annullamento ne cambiano il valore.",
+      "skillNames": [
+        "Graceful Wind XL"
+      ],
+      "itemIds": [
+        "1936914",
+        "1936916",
+        "1936918",
+        "1936920"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "obsidian-star",
+        "intercepting-hat"
+      ],
+      "family": "graceful",
+      "familyName": "Graceful",
+      "element": "Wind"
+    },
+    {
+      "id": "similar-obsidian-dark",
+      "name": "Obsidian Dark XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Status e protezione per un colpo",
+      "summary": "Stesso pacchetto verificato di Obsidian Star: riduzioni fisiche e magiche, resistenza agli status e scudo per un colpo.",
+      "conditions": "Massima attivazione con 3 difensivi Dark. Cambia l’elemento richiesto; non è un miglioramento automatico rispetto alla variante Star.",
+      "skillNames": [
+        "Obsidian Dark XL"
+      ],
+      "itemIds": [
+        "1599014",
+        "1599016",
+        "1599018",
+        "1599020"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 45.537
+        }
+      ],
+      "family": "obsidian",
+      "familyName": "Obsidian",
+      "element": "Dark"
+    },
+    {
+      "id": "similar-minerva",
+      "name": "[Guardian of Wisdom] Minerva",
+      "category": "monster",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Disturbo e protezione del gruppo",
+      "summary": "Alternativa a Pandora per rimozione delle protezioni, Time Slice e Chipped Blade; come Nahut applica Overcast al gruppo e aggiunge risorse e Crimson Crest.",
+      "conditions": "Twilight al team richiede Lv2. Non applica Nebulous Eclipse né Erosion; il cast include Time Extend nemico come demerito prima del Time Slice. Crimson sostituisce gli altri crest.",
+      "skillNames": [
+        "Descent of the Wise"
+      ],
+      "itemIds": [
+        "1916110"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "pandora",
+        "nahut",
+        "shanchira"
+      ]
+    },
+    {
+      "id": "similar-valkyrie-r",
+      "name": "[Holy Battle Maiden] Valkyrie R",
+      "category": "monster",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Main resistente e preparazione offensiva",
+      "summary": "Come P. Valkyrie offre resistenza agli status in main; come Melydia e Mika combina Absolute, Elevation e supporto offensivo al team.",
+      "conditions": "Main: resistenza agli status +35. Kijin al team richiede Lv2; Absolute dura 60 secondi. Skirmish è personale e non sostituisce la protezione dell’intero gruppo.",
+      "skillNames": [
+        "Sacred Skyborne Strike"
+      ],
+      "itemIds": [
+        "1916104"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "p-valkyrie-nikyt",
+        "melydia",
+        "mika"
+      ]
+    },
+    {
+      "id": "similar-indra",
+      "name": "Indra, Heavenly General",
+      "category": "monster",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Priorità e supporto difensivo",
+      "summary": "Come Rin & Len ha priorità +1 e resistenza agli status per il team. Condivide Dawn, Ambush e Resolute con Peony e sostiene HP, buff e generazione Unison.",
+      "conditions": "Non infligge danno e non fornisce Field Protect o Field Obstacle. Il buff statistiche aggiuntivo richiede Lv2; Ambush è personale e Resolute compete con gli altri field alleati.",
+      "skillNames": [
+        "This is My New Year! Soaring Serpent!"
+      ],
+      "itemIds": [
+        "1847104"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 137.034
+        }
+      ]
+    },
+    {
+      "id": "similar-aphrodite-twilight",
+      "name": "[Twilight Beach] Aphrodite",
+      "category": "monster",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "AP, critico e piercing del gruppo",
+      "summary": "Alternativa al supporto offensivo di P. Valkyrie: AP, Critical Assault e relativi limiti; aggiunge Vital Strike e Kijin al team.",
+      "conditions": "Absolute richiede Lv2. Non offre una passiva di main slot nella scheda; non sostituisce la resistenza main di P. Valkyrie. Armament è personale.",
+      "skillNames": [
+        "Murmurs of the Twilight Waves"
+      ],
+      "itemIds": [
+        "1821508"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "p-valkyrie-nikyt",
+        "melydia",
+        "nahut"
+      ]
+    },
+    {
+      "id": "similar-mephisto",
+      "name": "[Legendary Clown] Mephisto",
+      "category": "monster",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Disturbo, crest e main resistente",
+      "summary": "Condivide con Pandora Time Slice, Chipped Blade ed Erosion; aggiunge rimozione delle protezioni, pressione sul Cost, gauge al gruppo ed Emerald Crest.",
+      "conditions": "Priorità -1: deve poter arrivare al cast dopo gli avversari. Dawn al team richiede Lv2. Main: resistenza agli status +40; non applica il field che disattiva i Constant.",
+      "skillNames": [
+        "It's Showtime!"
+      ],
+      "itemIds": [
+        "1287210"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "pandora",
+        "p-valkyrie-nikyt",
+        "melydia"
+      ]
+    },
+    {
+      "id": "similar-hera",
+      "name": "[Supreme Queen] Hera",
+      "category": "monster",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Anti-annullamento e buff offensivi",
+      "summary": "Come P. Valkyrie aumenta AP, Critical Assault e limiti del team; aggiunge Rage. Il colpo Unison supera annullamento e invulnerabilità e applica Erosion e Lethargy.",
+      "conditions": "Le 7 annullazioni al team richiedono Lv2. La passiva main aumenta AP anziché resistenza agli status; Redoubt è personale e il colpo non dichiara piercing di riduzione e riflesso.",
+      "skillNames": [
+        "Heaven's Ruler"
+      ],
+      "itemIds": [
+        "1916108"
+      ],
+      "evidence": [],
+      "similarTo": [
+        "p-valkyrie-nikyt",
+        "pandora",
+        "melydia"
+      ]
+    },
+    {
+      "id": "catalogue-dark-bloom",
+      "name": "Dark Bloom XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici e riempie la gauge di 5 quando si attiva. Variante elementale della famiglia Bloom.",
+      "conditions": "Massimo descritto con 3 difese Dark (Helm/Hat/Armor/Clothing); AP e proc rate dipendono dal set. Il riempimento gauge può essere bloccato dagli effetti avversari.",
+      "skillNames": [
+        "Dark Bloom XL"
+      ],
+      "itemIds": [
+        "1910920",
+        "1910918",
+        "1910916",
+        "1910914"
+      ],
+      "evidence": [],
+      "family": "bloom",
+      "familyName": "Bloom",
+      "element": "Dark",
+      "similarTo": [
+        "bloom-time"
+      ]
+    },
+    {
+      "id": "catalogue-dark-resolution",
+      "name": "Dark Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico, garantisce il critico quando si attiva e recupera 10 Cost,5 gauge e HP pari al 5% del danno.",
+      "conditions": "Massimo descritto con 3 armi Dark. Recupero e critico dipendono dall’attivazione; non fornisce le penetrazioni di Mandate o Ravaging.",
+      "skillNames": [
+        "Dark Resolution XL"
+      ],
+      "itemIds": [
+        "1890416",
+        "1890410",
+        "1890414",
+        "1890408",
+        "1890412",
+        "1890406"
+      ],
+      "evidence": [],
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Dark",
+      "similarTo": [
+        "resolution-fire"
+      ]
+    },
+    {
+      "id": "catalogue-fire-bloom",
+      "name": "Fire Bloom XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici e riempie la gauge di 5 quando si attiva. Variante elementale della famiglia Bloom.",
+      "conditions": "Massimo descritto con 3 difese Fire (Helm/Hat/Armor/Clothing); AP e proc rate dipendono dal set. Il riempimento gauge può essere bloccato dagli effetti avversari.",
+      "skillNames": [
+        "Fire Bloom XL"
+      ],
+      "itemIds": [
+        "1809314",
+        "1809320",
+        "1809316",
+        "1809318"
+      ],
+      "evidence": [],
+      "family": "bloom",
+      "familyName": "Bloom",
+      "element": "Fire",
+      "similarTo": [
+        "bloom-time"
+      ]
+    },
+    {
+      "id": "catalogue-graceful-fire",
+      "name": "Graceful Fire XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Nullifica danni fisici e magici e recupera 10 Cost quando si attiva.",
+      "conditions": "Proc rate massimo descritto con 3 difese Fire. Le nullificazioni possono essere attraversate: scegliere in base agli attacchi avversari.",
+      "skillNames": [
+        "Graceful Fire XL"
+      ],
+      "itemIds": [
+        "1729618",
+        "1729614",
+        "1729620",
+        "1729616"
+      ],
+      "evidence": [],
+      "family": "graceful",
+      "familyName": "Graceful",
+      "element": "Fire",
+      "similarTo": [
+        "obsidian-star"
+      ]
+    },
+    {
+      "id": "catalogue-guardian-light-tiger",
+      "name": "Guardian Light Tiger XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Difesa specializzata contro attacchi fisici: riduzione danni e AP fisico più5 gauge quando si attiva.",
+      "conditions": "Si attiva quando subisci danni fisici; massimo proc rate descritto con 3 difese Light. Non sostituisce una protezione contro danni magici.",
+      "skillNames": [
+        "Guardian Light Tiger XL"
+      ],
+      "itemIds": [
+        "1767616",
+        "1767614"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 45.537
+        }
+      ],
+      "family": "guardian-tiger",
+      "familyName": "Guardian Tiger",
+      "element": "Light"
+    },
+    {
+      "id": "catalogue-intercepting-armor",
+      "name": "Intercepting Armor XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce danni fisici/magici e AP degli attacchi subiti; applica anche una nullificazione per un colpo.",
+      "conditions": "Massimo descritto con 5 pezzi di tipo Armor: il conteggio riguarda esattamente quel tipo. La nullificazione può essere attraversata.",
+      "skillNames": [
+        "Intercepting Armor XL"
+      ],
+      "itemIds": [
+        "1209822",
+        "2538508",
+        "1896318"
+      ],
+      "evidence": [],
+      "family": "intercepting",
+      "familyName": "Intercepting",
+      "similarTo": [
+        "intercepting-hat"
+      ]
+    },
+    {
+      "id": "catalogue-intercepting-clothing",
+      "name": "Intercepting Clothing XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce danni fisici/magici e AP degli attacchi subiti; applica anche una nullificazione per un colpo.",
+      "conditions": "Massimo descritto con 5 pezzi di tipo Clothing: il conteggio riguarda esattamente quel tipo. La nullificazione può essere attraversata.",
+      "skillNames": [
+        "Intercepting Clothing XL"
+      ],
+      "itemIds": [
+        "1209826",
+        "2538512",
+        "1896322"
+      ],
+      "evidence": [],
+      "family": "intercepting",
+      "familyName": "Intercepting",
+      "similarTo": [
+        "intercepting-hat"
+      ]
+    },
+    {
+      "id": "catalogue-intercepting-helm",
+      "name": "Intercepting Helm XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce danni fisici/magici e AP degli attacchi subiti; applica anche una nullificazione per un colpo.",
+      "conditions": "Massimo descritto con 5 pezzi di tipo Helm: il conteggio riguarda esattamente quel tipo. La nullificazione può essere attraversata.",
+      "skillNames": [
+        "Intercepting Helm XL"
+      ],
+      "itemIds": [
+        "1209820",
+        "2538510",
+        "1896320"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 9.286
+        }
+      ],
+      "family": "intercepting",
+      "familyName": "Intercepting"
+    },
+    {
+      "id": "catalogue-light-bloom",
+      "name": "Light Bloom XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici e riempie la gauge di 5 quando si attiva. Variante elementale della famiglia Bloom.",
+      "conditions": "Massimo descritto con 3 difese Light (Helm/Hat/Armor/Clothing); AP e proc rate dipendono dal set. Il riempimento gauge può essere bloccato dagli effetti avversari.",
+      "skillNames": [
+        "Light Bloom XL"
+      ],
+      "itemIds": [
+        "1498814",
+        "1498816",
+        "1498818",
+        "1498820"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 108.29
+        }
+      ],
+      "family": "bloom",
+      "familyName": "Bloom",
+      "element": "Light"
+    },
+    {
+      "id": "catalogue-light-resolution",
+      "name": "Light Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico, garantisce il critico quando si attiva e recupera 10 Cost,5 gauge e HP pari al 5% del danno.",
+      "conditions": "Massimo descritto con 3 armi Light. Recupero e critico dipendono dall’attivazione; non fornisce le penetrazioni di Mandate o Ravaging.",
+      "skillNames": [
+        "Light Resolution XL"
+      ],
+      "itemIds": [
+        "2292714",
+        "2292708",
+        "2292712",
+        "2292704",
+        "2292706",
+        "2292710"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 10.777
+        },
+        {
+          "video": "v4",
+          "seconds": 27.009
+        }
+      ],
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Light"
+    },
+    {
+      "id": "catalogue-mastery-over-dark",
+      "name": "Mastery Over Dark XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici, aumenta la resistenza agli status e riduce AP fisico/magico degli attacchi subiti.",
+      "conditions": "Massimo descritto con 3 difese Dark. La resistenza del proc non va trattata come un’immunità iniziale permanente.",
+      "skillNames": [
+        "Mastery Over Dark XL"
+      ],
+      "itemIds": [
+        "1890424",
+        "1890420",
+        "1890422",
+        "1890418"
+      ],
+      "evidence": [],
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Dark",
+      "similarTo": [
+        "mastery-fire"
+      ]
+    },
+    {
+      "id": "catalogue-mastery-over-light",
+      "name": "Mastery Over Light XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici, aumenta la resistenza agli status e riduce AP fisico/magico degli attacchi subiti.",
+      "conditions": "Massimo descritto con 3 difese Light. La resistenza del proc non va trattata come un’immunità iniziale permanente.",
+      "skillNames": [
+        "Mastery Over Light XL"
+      ],
+      "itemIds": [
+        "2292722",
+        "2292718",
+        "2292720",
+        "2292716"
+      ],
+      "evidence": [],
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Light",
+      "similarTo": [
+        "mastery-fire"
+      ]
+    },
+    {
+      "id": "catalogue-mastery-over-star",
+      "name": "Mastery Over Star XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici, aumenta la resistenza agli status e riduce AP fisico/magico degli attacchi subiti.",
+      "conditions": "Massimo descritto con 3 difese Star. La resistenza del proc non va trattata come un’immunità iniziale permanente.",
+      "skillNames": [
+        "Mastery Over Star XL"
+      ],
+      "itemIds": [
+        "1581522",
+        "1581518",
+        "1581520",
+        "1581516"
+      ],
+      "evidence": [],
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Star",
+      "similarTo": [
+        "mastery-fire"
+      ]
+    },
+    {
+      "id": "catalogue-mastery-over-time",
+      "name": "Mastery Over Time XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici, aumenta la resistenza agli status e riduce AP fisico/magico degli attacchi subiti.",
+      "conditions": "Massimo descritto con 3 difese Time. La resistenza del proc non va trattata come un’immunità iniziale permanente.",
+      "skillNames": [
+        "Mastery Over Time XL"
+      ],
+      "itemIds": [
+        "2500522",
+        "2500518",
+        "2500520",
+        "2500516"
+      ],
+      "evidence": [],
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Time",
+      "similarTo": [
+        "mastery-fire"
+      ]
+    },
+    {
+      "id": "catalogue-mastery-over-water",
+      "name": "Mastery Over Water XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici, aumenta la resistenza agli status e riduce AP fisico/magico degli attacchi subiti.",
+      "conditions": "Massimo descritto con 3 difese Water. La resistenza del proc non va trattata come un’immunità iniziale permanente.",
+      "skillNames": [
+        "Mastery Over Water XL"
+      ],
+      "itemIds": [
+        "1699022",
+        "1699018",
+        "1699020",
+        "1699016"
+      ],
+      "evidence": [
+        {
+          "video": "v4",
+          "seconds": 5.257
+        }
+      ],
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Water"
+    },
+    {
+      "id": "catalogue-mastery-over-wind",
+      "name": "Mastery Over Wind XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Riduce i danni fisici e magici, aumenta la resistenza agli status e riduce AP fisico/magico degli attacchi subiti.",
+      "conditions": "Massimo descritto con 3 difese Wind. La resistenza del proc non va trattata come un’immunità iniziale permanente.",
+      "skillNames": [
+        "Mastery Over Wind XL"
+      ],
+      "itemIds": [
+        "2890415",
+        "2890411",
+        "2890413",
+        "2890409"
+      ],
+      "evidence": [],
+      "family": "mastery",
+      "familyName": "Mastery",
+      "element": "Wind",
+      "similarTo": [
+        "mastery-fire"
+      ]
+    },
+    {
+      "id": "catalogue-obliterating-fire",
+      "name": "Obliterating Fire XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico e danno, dà 5 gauge, migliora il successo e garantisce il critico quando si attiva.",
+      "conditions": "Massimo descritto con 3 armi Fire. Non attribuire a questa famiglia le penetrazioni proprie di altri proc.",
+      "skillNames": [
+        "Obliterating Fire XL"
+      ],
+      "itemIds": [
+        "1786406",
+        "1786412",
+        "1786404",
+        "1786410",
+        "1786408",
+        "1786402"
+      ],
+      "evidence": [],
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Fire",
+      "similarTo": [
+        "obliterating-water"
+      ]
+    },
+    {
+      "id": "catalogue-obliterating-light",
+      "name": "Obliterating Light XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico e danno, dà 5 gauge, migliora il successo e garantisce il critico quando si attiva.",
+      "conditions": "Massimo descritto con 3 armi Light. Non attribuire a questa famiglia le penetrazioni proprie di altri proc.",
+      "skillNames": [
+        "Obliterating Light XL"
+      ],
+      "itemIds": [
+        "1340702",
+        "1340710",
+        "1340712",
+        "1340706",
+        "1340704",
+        "1340708"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 126.784
+        }
+      ],
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Light"
+    },
+    {
+      "id": "catalogue-obliterating-star",
+      "name": "Obliterating Star XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico e danno, dà 5 gauge, migliora il successo e garantisce il critico quando si attiva.",
+      "conditions": "Massimo descritto con 3 armi Star. Non attribuire a questa famiglia le penetrazioni proprie di altri proc.",
+      "skillNames": [
+        "Obliterating Star XL"
+      ],
+      "itemIds": [
+        "1808002",
+        "1808012",
+        "1808010",
+        "1808006",
+        "1808004",
+        "1808008"
+      ],
+      "evidence": [],
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Star",
+      "similarTo": [
+        "obliterating-water"
+      ]
+    },
+    {
+      "id": "catalogue-obliterating-time",
+      "name": "Obliterating Time XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico e danno, dà 5 gauge, migliora il successo e garantisce il critico quando si attiva.",
+      "conditions": "Massimo descritto con 3 armi Time. Non attribuire a questa famiglia le penetrazioni proprie di altri proc.",
+      "skillNames": [
+        "Obliterating Time XL"
+      ],
+      "itemIds": [
+        "1829006",
+        "1829012",
+        "1829004",
+        "1829010",
+        "1829008",
+        "1829002"
+      ],
+      "evidence": [],
+      "family": "obliterating",
+      "familyName": "Obliterating",
+      "element": "Time",
+      "similarTo": [
+        "obliterating-water"
+      ]
+    },
+    {
+      "id": "catalogue-star-resolution",
+      "name": "Star Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico, garantisce il critico quando si attiva e recupera 10 Cost,5 gauge e HP pari al 5% del danno.",
+      "conditions": "Massimo descritto con 3 armi Star. Recupero e critico dipendono dall’attivazione; non fornisce le penetrazioni di Mandate o Ravaging.",
+      "skillNames": [
+        "Star Resolution XL"
+      ],
+      "itemIds": [
+        "1581504",
+        "1581512",
+        "1581514",
+        "1581508",
+        "1581506",
+        "1581510"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 159.265
+        }
+      ],
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Star"
+    },
+    {
+      "id": "catalogue-star-triumph",
+      "name": "Star Triumph XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Combina AP fisico/magico, danno aggiuntivo,15 Cost e aumento del successo. Ignora il50% di DEF/MDEF del bersaglio: effetto che non si somma.",
+      "conditions": "Massimo descritto con 3 armi Star. Ignorare DEF/MDEF è diverso dall’attraversare riduzioni, riflessioni o nullificazioni.",
+      "skillNames": [
+        "Star Triumph XL"
+      ],
+      "itemIds": [
+        "1388206",
+        "1388212",
+        "1388204",
+        "1388210",
+        "1388202",
+        "1388208"
+      ],
+      "evidence": [],
+      "family": "triumph",
+      "familyName": "Triumph",
+      "element": "Star",
+      "similarTo": [
+        "triumph-light"
+      ]
+    },
+    {
+      "id": "catalogue-time-resolution",
+      "name": "Time Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "similar",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico, garantisce il critico quando si attiva e recupera 10 Cost,5 gauge e HP pari al 5% del danno.",
+      "conditions": "Massimo descritto con 3 armi Time. Recupero e critico dipendono dall’attivazione; non fornisce le penetrazioni di Mandate o Ravaging.",
+      "skillNames": [
+        "Time Resolution XL"
+      ],
+      "itemIds": [
+        "2500504",
+        "2500512",
+        "2500514",
+        "2500508",
+        "2500506",
+        "2500510"
+      ],
+      "evidence": [],
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Time",
+      "similarTo": [
+        "resolution-fire"
+      ]
+    },
+    {
+      "id": "catalogue-time-triumph",
+      "name": "Time Triumph XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Combina AP fisico/magico, danno aggiuntivo,15 Cost e aumento del successo. Ignora il50% di DEF/MDEF del bersaglio: effetto che non si somma.",
+      "conditions": "Massimo descritto con 3 armi Time. Ignorare DEF/MDEF è diverso dall’attraversare riduzioni, riflessioni o nullificazioni.",
+      "skillNames": [
+        "Time Triumph XL"
+      ],
+      "itemIds": [
+        "1872902",
+        "1872912",
+        "1872906",
+        "1872904",
+        "1872910",
+        "1872908"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 162.29
+        },
+        {
+          "video": "v3",
+          "seconds": 172.767
+        }
+      ],
+      "family": "triumph",
+      "familyName": "Triumph",
+      "element": "Time"
+    },
+    {
+      "id": "catalogue-unassailable-star",
+      "name": "Unassailable Star XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Combina riflessione e riduzione dei danni fisici/magici con una riduzione dell’AP degli attacchi subiti.",
+      "conditions": "Proc rate massimo descritto con 3 difese Star. Le penetrazioni nemiche possono limitarne riflessione e riduzione; questa variante verificata non conferma l’effetto della Wind ancora incerta.",
+      "skillNames": [
+        "Unassailable Star XL"
+      ],
+      "itemIds": [
+        "1843716",
+        "1843720",
+        "1843714",
+        "1843718"
+      ],
+      "evidence": [
+        {
+          "video": "v4",
+          "seconds": 5.257
+        }
+      ],
+      "family": "unassailable",
+      "familyName": "Unassailable",
+      "element": "Star"
+    },
+    {
+      "id": "catalogue-water-resolution",
+      "name": "Water Resolution XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Aumenta AP fisico/magico, garantisce il critico quando si attiva e recupera 10 Cost,5 gauge e HP pari al 5% del danno.",
+      "conditions": "Massimo descritto con 3 armi Water. Recupero e critico dipendono dall’attivazione; non fornisce le penetrazioni di Mandate o Ravaging.",
+      "skillNames": [
+        "Water Resolution XL"
+      ],
+      "itemIds": [
+        "1699004",
+        "1699014",
+        "1699012",
+        "1699008",
+        "1699006",
+        "1699010"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 10.777
+        },
+        {
+          "video": "v4",
+          "seconds": 9.275
+        }
+      ],
+      "family": "resolution",
+      "familyName": "Resolution",
+      "element": "Water"
+    },
+    {
+      "id": "catalogue-wind-triumph",
+      "name": "Wind Triumph XL",
+      "category": "weapon",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Variante della famiglia",
+      "summary": "Combina AP fisico/magico, danno aggiuntivo,15 Cost e aumento del successo. Ignora il50% di DEF/MDEF del bersaglio: effetto che non si somma.",
+      "conditions": "Massimo descritto con 3 armi Wind. Ignorare DEF/MDEF è diverso dall’attraversare riduzioni, riflessioni o nullificazioni.",
+      "skillNames": [
+        "Wind Triumph XL"
+      ],
+      "itemIds": [
+        "1327102",
+        "1327112",
+        "1327110",
+        "1327106",
+        "1327104",
+        "1327108"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 159.265
+        },
+        {
+          "video": "v4",
+          "seconds": 5.257
+        }
+      ],
+      "family": "triumph",
+      "familyName": "Triumph",
+      "element": "Wind"
+    },
+    {
+      "id": "world-water-serpent",
+      "name": "World Water Serpent XL",
+      "category": "defence",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Difesa magica specializzata",
+      "summary": "Riduce danni magici e AP magico degli attacchi subiti e dà 5 gauge quando si attiva.",
+      "conditions": "Si attiva solo quando subisci danni magici. Il proc rate massimo richiede 3 difese Water; non offre la stessa copertura contro attacchi fisici.",
+      "skillNames": [
+        "World Water Serpent XL"
+      ],
+      "itemIds": [
+        "1310218",
+        "1310220"
+      ],
+      "evidence": [
+        {
+          "video": "v4",
+          "seconds": 9.275
+        }
+      ],
+      "family": "world-serpent",
+      "familyName": "World Serpent",
+      "element": "Water"
+    },
+    {
+      "id": "book-of-praise",
+      "name": "Book of Praise XL",
+      "category": "healing",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Cura e gauge",
+      "summary": "Potenzia il recupero HP delle abilità di cura e dà 5 gauge quando si attiva.",
+      "conditions": "Si attiva usando un’abilità di cura; la scheda lega la crescita al numero di Book e indica 10 per il massimo. Il recupero HP non prova che qualsiasi cura percentuale possa ricevere ogni bonus.",
+      "skillNames": [
+        "Book of Praise XL"
+      ],
+      "itemIds": [
+        "1095317",
+        "1095627",
+        "1095650"
+      ],
+      "evidence": [
+        {
+          "video": "v4",
+          "seconds": 5.257
+        },
+        {
+          "video": "v4",
+          "seconds": 80.782
+        }
+      ],
+      "family": "book-of-praise",
+      "familyName": "Book of Praise"
+    },
+    {
+      "id": "archangel-clothing",
+      "name": "[Constant] Archangel's Clothing",
+      "category": "constant",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Difesa vincolata alla classe",
+      "summary": "Riduce il danno degli Unison e Great Spirit Unison di tutti gli elementi e aumenta la resistenza agli status.",
+      "conditions": "Funziona soltanto su Rook, Treasure Hunter o Ninja: non contarla su Metamorpher. Categoria Defense Awakening Constant, massimo 2 della stessa categoria.",
+      "skillNames": [
+        "[Constant] Archangel's Clothing"
+      ],
+      "itemIds": [
+        "3325736"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 7.765
+        }
+      ]
+    },
+    {
+      "id": "kroyt",
+      "name": "[Spirit Painter] Kroyt",
+      "category": "monster",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Priorità e controllo gauge",
+      "summary": "Unison con priorità +1, Time Slice e Abstraction; sottrae gauge ai nemici e ne riempie 40 agli altri alleati. Applica Phalanx a sé e Anguish Collapse al campo nemico.",
+      "conditions": "È Light nonostante il nome Fire Spirit’s Caprice. Il valore di riduzione gauge cresce con il livello skill; il titolo del cast non identifica un equip Fire né un danno diretto.",
+      "skillNames": [
+        "Fire Spirit's Caprice"
+      ],
+      "itemIds": [
+        "4445123"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 24.022
+        },
+        {
+          "video": "v4",
+          "seconds": 38.022
+        }
+      ]
+    },
+    {
+      "id": "fermuraze",
+      "name": "[Raging Howl Fatewoven] Fermuraze",
+      "category": "monster",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Dawn e risorse / pressione",
+      "summary": "Dual Unison: un’opzione potenzia statistiche e risorse del team, l’altra preme su Cost/gauge nemici e AP/critici alleati. Entrambe applicano Dawn al team e Skirmish a sé.",
+      "conditions": "Le due opzioni hanno lo stesso nome del cast. Il video conferma il mostro, ma non basta il titolo per stabilire la scelta; non sommare i due set di effetti come un singolo lancio.",
+      "skillNames": [
+        "Dormant Mystical Anima Fermuraze"
+      ],
+      "itemIds": [
+        "1500502"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 30.006
+        }
+      ]
+    },
+    {
+      "id": "hitsugi",
+      "name": "[Underworld Returnee] Hitsugi",
+      "category": "monster",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Priorità e controllo field",
+      "summary": "Priorità +1, riduzione della resistenza agli status, Ineptitude e Guilty Eclipse. Recupera 100 Cost al team; la passiva Main aumenta il Cost massimo di 50.",
+      "conditions": "Cura anche i nemici come demerito. Dawn al team richiede il secondo potenziale. Il bonus Main al Cost massimo non è recupero di 50 Cost né resistenza agli status.",
+      "skillNames": [
+        "Underworld Returnee"
+      ],
+      "itemIds": [
+        "1209804"
+      ],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 121.027
+        }
+      ]
+    },
+    {
+      "id": "yukiko-amagi",
+      "name": "[Investigation Team] Yukiko Amagi",
+      "category": "monster",
+      "status": "matched",
+      "origin": "video",
+      "priority": "Pressione, proc e Wicked Eclipse",
+      "summary": "Danno Fire che attraversa riduzione/riflessione, Field Obstacle e Abstraction; riduce la resistenza agli status e dà Absolute/Mastery al team. Applica Wicked Eclipse al campo nemico.",
+      "conditions": "Rage al team richiede il quarto potenziale. Wicked Eclipse non è Nebulous Eclipse: non gli attribuire la disattivazione delle Constant. Absolute/Mastery non garantiscono un proc aggiuntivo a ogni colpo.",
+      "skillNames": [
+        "Konohana Sakuya"
+      ],
+      "itemIds": [
+        "1538513"
+      ],
+      "evidence": [
+        {
+          "video": "v4",
+          "seconds": 67.251
+        }
+      ]
+    },
+    {
+      "id": "revelation-prowess",
+      "name": "Revelation Prowess XL",
+      "category": "weapon",
+      "status": "pending",
+      "origin": "video",
+      "priority": "Da verificare",
+      "summary": "Nome leggibile nei nuovi video, ma nessuna scheda esatta è presente nel catalogo acquisito.",
+      "conditions": "Non sono attribuiti effetti, grado alternativo o equip per analogia. Serve una scheda ufficiale o in gioco con il testo esatto.",
+      "skillNames": [
+        "Revelation Prowess XL"
+      ],
+      "itemIds": [],
+      "evidence": [
+        {
+          "video": "v3",
+          "seconds": 165.271
+        },
+        {
+          "video": "v4",
+          "seconds": 80.782
+        },
+        {
+          "video": "v4",
+          "seconds": 100.256
+        }
+      ],
+      "family": "revelation-prowess",
+      "familyName": "Revelation Prowess"
+    }
+  ],
+  "takeaways": [
+    {
+      "title": "Proc offensivi per funzione",
+      "highlight": true,
+      "points": [
+        "Mandate supera invulnerabilità e annullamento; Ravaging supera riduzione e riflesso.",
+        "Triumph ed Essence sostengono accuratezza e Cost; Resolution aggiunge critico e risorse.",
+        "Empyrean Star e Flickering Time sono ora riconosciuti anche nei nuovi video; ogni elemento conserva i propri requisiti."
+      ]
+    },
+    {
+      "title": "Difese complementari",
+      "highlight": true,
+      "points": [
+        "Mastery, Obsidian e Intercepting coprono esigenze diverse di difesa e status.",
+        "Bloom sostiene il ciclo Unison; Tiger e Serpent rispondono a fisico e magico.",
+        "Obsidian Dark è confermato nei nuovi video; le altre varianti di catalogo restano indicate come alternative."
+      ]
+    },
+    {
+      "title": "Mostri per ruoli diversi",
+      "highlight": true,
+      "points": [
+        "Pandora disturba; Nahut e Peony completano contromisure e field.",
+        "P. Valkyrie sostiene main e danno; Rin & Len prepara con priorità.",
+        "Kroyt e Hitsugi aggiungono priorità e controllo; Fermuraze e Yukiko ampliano risorse e pressione con condizioni precise."
+      ]
+    },
+    {
+      "title": "PvP e alternative di catalogo",
+      "points": [
+        "I video mostrano PvP e Crystal Assault; non provano una classifica PvE.",
+        "Le aggiunte simili derivano dalle descrizioni esatte del catalogo, non da nuove osservazioni video.",
+        "I collegamenti includono tutte le varianti con lo stesso talento; la copia effettivamente indossata resta da verificare."
+      ]
+    },
+    {
+      "title": "Sovrapposizioni e contromisure",
+      "points": [
+        "Savior e Resolute competono come field; Crimson ed Emerald si sostituiscono globalmente.",
+        "Absolute ed Elevation ripetuti non si sommano automaticamente.",
+        "Nebulous Eclipse disattiva i Constant; il cristallo non riceve i vantaggi condizionati al Break."
+      ]
+    },
+    {
+      "title": "Cinque talenti da verificare",
+      "points": [
+        "Empyrean of Wind e Unassailable Wind non hanno una scheda esatta nello snapshot.",
+        "Guardian Dark, Opening Ward L e Revelation Prowess restano da verificare.",
+        "Nessun effetto viene trasferito da un altro elemento o grado."
+      ]
+    },
+    {
+      "title": "Abilità Metamorpher osservate",
+      "points": [
+        "I nuovi video mostrano Heroic Assist, Courageous Shout e Forbidden Temptation, oltre a rami offensivi diversi.",
+        "Forbidden richiede almeno 5 tipi di arma e spende gauge Unison; il ramo Bow/Gun va valutato separatamente.",
+        "Il log mostra più partecipanti e cambi di classe: non ricostruisce una barra personale completa."
+      ]
+    }
+  ]
+}
