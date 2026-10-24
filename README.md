@@ -60,7 +60,7 @@ Il repository contiene i sorgenti, gli asset e i JSON utilizzati dalla webapp, l
 
 ## Account, salvataggio e obiettivi
 
-Puoi usare il sito come ospite con salvataggio IndexedDB oppure iscriverti con email e password. Ogni account ha un personaggio, inventario con copie distinte e più build PvE/PvP. Dalla pagina Account puoi unire esplicitamente l'inventario ospite al tuo account. Cache ospite e cache di ciascun account sono separate.
+All’apertura trovi una breve presentazione di UnisonPedia e puoi accedere, creare un account oppure scegliere **Entra come ospite**. La wiki si apre dopo questa scelta; chi ha già una sessione valida entra direttamente. La scelta ospite viene ricordata nella scheda del browser, con salvataggio dell’inventario in IndexedDB. L’uscita da un account riporta alla schermata iniziale. Ogni account ha un personaggio, inventario con copie distinte e più build PvE/PvP. Dalla pagina Account puoi unire esplicitamente l'inventario ospite al tuo account. Cache ospite e cache di ciascun account sono separate.
 
 Le modifiche vengono conservate localmente e inviate a Supabase. Lo stato distingue salvataggio online, modifiche in attesa e conflitti tra dispositivi. Un conflitto conserva la versione locale e permette di esportare entrambe le versioni prima di scegliere. I backup JSON v1 vengono migrati automaticamente alla versione 2, che include gli obiettivi.
 
