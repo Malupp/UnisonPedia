@@ -47,3 +47,24 @@ export function mergeFrontlineEffects(phase: FrontlinePhase,items: ReadonlyMap<s
  }
  return [...merged.values()];
 }
+
+export function groupFrontlineEffects<T extends {text:string}>(rows:readonly T[]) {
+ const groups=[
+  {id:"allies",label:"All allies",effects:[] as T[]},
+  {id:"enemies",label:"All enemies",effects:[] as T[]},
+  {id:"self",label:"Yourself",effects:[] as T[]},
+  {id:"other",label:"Altri effetti",effects:[] as T[]},
+ ];
+ for(const row of rows){
+  const target=row.text.match(/^\s*-?\s*Target:\s*([^\n.]+)/i)?.[1];
+  let id="other";
+  if(target){
+   if(/\ball(?:y|ies)\b/i.test(target))id="allies";
+   else if(/\benem(?:y|ies)\b/i.test(target))id="enemies";
+   else if(/\byourself\b/i.test(target))id="self";
+  }else if(/\ballied Field\b/i.test(row.text))id="allies";
+  else if(/\benemy Field\b/i.test(row.text))id="enemies";
+  groups.find(g=>g.id===id)!.effects.push(row);
+ }
+ return groups.filter(g=>g.effects.length);
+}

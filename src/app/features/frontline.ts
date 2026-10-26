@@ -2,7 +2,7 @@ import { Component, ElementRef, computed, effect, inject, signal, untracked, vie
 import { RouterLink } from "@angular/router";
 import { Store } from "../core/store";
 import { Item } from "../domain/contracts";
-import { FRONTLINE_KEY, FrontlinePosition, FrontlineSlot, castEffects, emptyFrontline, frontlinePhases, mergeFrontlineEffects, restoreFrontline } from "../domain/frontline";
+import { FRONTLINE_KEY, FrontlinePosition, FrontlineSlot, castEffects, emptyFrontline, frontlinePhases, mergeFrontlineEffects, groupFrontlineEffects, restoreFrontline } from "../domain/frontline";
 
 @Component({
  standalone:true,
@@ -58,8 +58,13 @@ import { FRONTLINE_KEY, FrontlinePosition, FrontlineSlot, castEffects, emptyFron
     @if(phase.casts.length){
      <section class="frontline-phase-merge" [attr.aria-label]="'Merge fase '+phase.number">
       <h3>Effetti della fase {{phase.number}}</h3>
-      @for(row of phase.effects;track row.text){
+      @for(group of phase.groups;track group.id){
+       <section class="frontline-target-group" [attr.aria-labelledby]="'phase-'+phase.number+'-target-'+group.id">
+        <h4 [id]="'phase-'+phase.number+'-target-'+group.id">{{group.label}}</h4>
+        @for(row of group.effects;track row.text){
        <details class="frontline-merged-effect"><summary><span>{{firstLine(row.text)}}</span>@if(row.count>1){<span class="frontline-effect-count" [attr.aria-label]="row.count+' ricorrenze'">×{{row.count}}</span>}</summary><p class="frontline-effect-text" lang="en">{{row.text}}</p><ul>@for(origin of row.origins;track origin.position+'-'+origin.slot){<li>Posizione {{origin.position}} · slot {{origin.slot}} · {{entry(origin.monsterId)?.name}}</li>}</ul></details>
+        }
+       </section>
       }@empty{<p>Nessun effetto disponibile per questa fase.</p>}
      </section>
     }@else{<p class="frontline-phase-empty">Nessun lancio assegnato a questa fase.</p>}
@@ -92,7 +97,7 @@ export class FrontlineComponent {
  phases=computed(()=>frontlinePhases(this.team()));
  castCount=computed(()=>this.phases().reduce((n,p)=>n+p.casts.length,0));
  selectedCount=computed(()=>this.team().flatMap(p=>p.slots).filter(s=>s.monsterId).length);
- phaseViews=computed(()=>this.phases().map(phase=>({...phase,effects:mergeFrontlineEffects(phase,this.details()),missing:phase.casts.filter(c=>{const item=this.details().get(c.monsterId);return !item||!castEffects(item).length;}).length})));
+ phaseViews=computed(()=>this.phases().map(phase=>{const effects=mergeFrontlineEffects(phase,this.details());return {...phase,effects,groups:groupFrontlineEffects(effects),missing:phase.casts.filter(c=>{const item=this.details().get(c.monsterId);return !item||!castEffects(item).length;}).length};}));
  firstLine(text:string){return text.split('\n')[0];}
  constructor(){effect(()=>{const ids=new Set(this.team().flatMap(p=>p.slots.map(s=>s.monsterId)).filter((id):id is string=>!!id));const entries=this.entryMap();untracked(()=>{for(const id of ids)if(entries.has(id)&&!this.requested.has(id))void this.loadDetail(id);});});}
  classIcon(id:string){return this.s.classes().find(c=>c.id===id)?.iconPath as string|undefined;}

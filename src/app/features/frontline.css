@@ -44,6 +44,8 @@
 .frontline-cast a { display:block;font-size:12px;overflow-wrap:anywhere; }
 .frontline-cast-warning { font-size:10px;color:var(--gold); }
 .frontline-phase-merge h3 { margin:8px 0 12px;font-size:14px; }
+.frontline-target-group { margin-top:16px;padding-top:14px;border-top:1px solid var(--border); }
+.frontline-target-group>h4 { margin:0 0 8px;color:var(--teal);font-size:12px;font-weight:600;letter-spacing:.5px; }
 .frontline-merged-effect { padding:11px 0;border-top:1px solid var(--border); }
 .frontline-merged-effect>summary { display:flex;align-items:flex-start;gap:12px;justify-content:space-between;cursor:pointer;font-size:12px;line-height:1.6;list-style:none; }
 .frontline-merged-effect>summary::-webkit-details-marker { display:none; }
