@@ -1,1 +1,60 @@
-[{"id":"Soldier","name":"Soldier"},{"id":"Lancer","name":"Lancer"},{"id":"Archer","name":"Archer"},{"id":"Mage","name":"Mage"},{"id":"Cleric","name":"Cleric"},{"id":"Rook","name":"Rook"},{"id":"Berserker","name":"Berserker"},{"id":"Treasure Hunter","name":"Treasure Hunter"},{"id":"Ninja","name":"Ninja"},{"id":"Morpher","name":"Morpher"}]
+[
+  {
+    "id": "Soldier",
+    "name": "Soldier",
+    "iconPath": "assets/classes/soldier.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Soldier_Icon.png"
+  },
+  {
+    "id": "Lancer",
+    "name": "Lancer",
+    "iconPath": "assets/classes/lancer.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Lancer_Icon.png"
+  },
+  {
+    "id": "Archer",
+    "name": "Archer",
+    "iconPath": "assets/classes/archer.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Archer_Icon.png"
+  },
+  {
+    "id": "Mage",
+    "name": "Mage",
+    "iconPath": "assets/classes/mage.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Mage_Icon.png"
+  },
+  {
+    "id": "Cleric",
+    "name": "Cleric",
+    "iconPath": "assets/classes/cleric.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Cleric_Icon.png"
+  },
+  {
+    "id": "Rook",
+    "name": "Rook",
+    "iconPath": "assets/classes/rook.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Rook_Icon.png"
+  },
+  {
+    "id": "Berserker",
+    "name": "Berserker",
+    "iconPath": "assets/classes/berserker.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Berserker_Icon.png"
+  },
+  {
+    "id": "Treasure Hunter",
+    "name": "Treasure Hunter",
+    "iconPath": "assets/classes/treasure-hunter.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Treasure_Hunter_Icon.png"
+  },
+  {
+    "id": "Ninja",
+    "name": "Ninja"
+  },
+  {
+    "id": "Morpher",
+    "name": "Morpher",
+    "iconPath": "assets/classes/morpher.webp",
+    "iconSource": "https://unisonleague.fandom.com/wiki/File:Class-Morpher_Icon.png"
+  }
+]

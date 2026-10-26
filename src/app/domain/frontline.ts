@@ -29,19 +29,20 @@ export function castEffects(item: Item): string[] {
  for(const section of item.sections.filter(s=>s.kind==="Effect").slice(0,1)){
   let block="";
   for(const line of section.text.split(/\n/)){
-   if(/^\s*-\s*Target:/i.test(line)&&block){blocks.push(block.trim());block="";}
+   if(/^\s*-\s*\S/.test(line)&&block){blocks.push(block.trim());block="";}
    block+=(block?"\n":"")+line;
   }
   if(block.trim())blocks.push(block.trim());
  }
  return [...new Set(blocks)];
 }
-export function mergeFrontlineEffects(phases: FrontlinePhase[],items: ReadonlyMap<string,Item>) {
- const merged=new Map<string,{text:string;origins:(FrontlineCast&{phase:number})[]}>();
- for(const phase of phases)for(const cast of phase.casts){
+export function mergeFrontlineEffects(phase: FrontlinePhase,items: ReadonlyMap<string,Item>) {
+ const merged=new Map<string,{text:string;count:number;origins:(FrontlineCast&{phase:number})[]}>();
+ for(const cast of phase.casts){
   const item=items.get(cast.monsterId);if(!item)continue;
   for(const text of castEffects(item)){
-   const row=merged.get(text)??{text,origins:[]};row.origins.push({...cast,phase:phase.number});merged.set(text,row);
+   const key=text.replace(/^\s*-\s*/," ").trim().replace(/\s+/g," ").toLowerCase();
+   const row=merged.get(key)??{text,count:0,origins:[]};row.count++;row.origins.push({...cast,phase:phase.number});merged.set(key,row);
   }
  }
  return [...merged.values()];
