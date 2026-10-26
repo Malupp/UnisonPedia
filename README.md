@@ -85,3 +85,29 @@ Non inserire mai service_role, chiavi sb_secret o password nelle variabili desti
 Per lo sviluppo locale copia .env.example in .env.local e compila i tre valori pubblici usando localhost per APP_URL; aggiungi anche quel callback ai redirect consentiti. Gli script npm caricano .env.local con la funzione nativa di Node. Senza configurazione cloud puoi continuare a usare l'inventario locale.
 
 La registrazione richiede la conferma email prevista da Supabase Auth. L'indirizzo viene usato per accesso e recupero password; nessuna password è salvata nelle tabelle applicative.
+
+## Registrazione e reinvio della conferma
+
+Il form controlla email, password di almeno 8 caratteri e corrispondenza della conferma password. Se un account è già confermato, ripetere l’iscrizione può restituire una risposta generica senza inviare un’altra email: usa Accedi o Recupera password. La schermata non verifica pubblicamente l’esistenza di un indirizzo.
+
+Apri **Non hai ricevuto la conferma email?**, inserisci l’indirizzo nel campo email e scegli **Reinvia conferma email**. Il reinvio funziona anche senza compilare la password. Dopo una richiesta accettata viene mostrata un’attesa di 60 secondi; i limiti e gli errori del servizio email sono distinti dagli errori di accesso. Controlla anche lo spam e apri il link nello stesso browser della richiesta, come previsto dal flusso PKCE.
+
+Per l’invio pubblico delle email configura un servizio SMTP personalizzato in Supabase Authentication. Il servizio email predefinito è destinato ai test, limita i destinatari ai membri dell’organizzazione e applica un limite orario ridotto. Le credenziali SMTP vanno salvate nel dashboard Supabase, senza inserirle nel frontend o nelle variabili pubbliche. Mantieni attiva la conferma email. Vedi la [documentazione SMTP](https://supabase.com/docs/guides/auth/auth-smtp) e i [limiti Auth](https://supabase.com/docs/guides/auth/rate-limits).
+
+## Attivare Continua con Google
+
+L’integrazione è pronta: il pulsante compare in Accedi e Crea account quando Google risulta abilitato nelle impostazioni pubbliche del progetto Supabase. Non occorre cambiare il codice o aggiungere segreti a Vercel.
+
+1. In [Google Auth Platform](https://console.cloud.google.com/auth/overview) crea o seleziona il progetto per UnisonPedia. Configura nome, email di assistenza e pubblico; per utenti esterni durante i test aggiungi gli indirizzi autorizzati in Test users. Usa soltanto gli ambiti standard openid, email e profile.
+2. In **Clients → Create client**, scegli **Web application** e imposta:
+
+| Campo in Google Cloud | Valore per questo progetto |
+| --- | --- |
+| Authorized JavaScript origins | https://unisonpedia-warlup.vercel.app |
+| Authorized redirect URIs | https://eszcqlmuobgdfdtburde.supabase.co/auth/v1/callback |
+
+3. Copia Client ID e Client Secret in **Supabase → Authentication → Sign In / Providers → Google**, abilita il provider e salva. Le credenziali devono restare in Supabase.
+4. In **Supabase → Authentication → URL Configuration**, imposta Site URL a https://unisonpedia-warlup.vercel.app e autorizza il redirect https://unisonpedia-warlup.vercel.app/auth/callback. Il callback Supabase configurato in Google Cloud e quello della webapp hanno ruoli differenti e servono entrambi.
+5. Ricarica la webapp e scegli **Continua con Google**. L’SDK usa PKCE e il ritorno viene gestito da /auth/callback. Se l’app Google è ancora in Testing, prova con un indirizzo aggiunto fra i test users; per aprire l’accesso al pubblico completa la configurazione Audience richiesta da Google.
+
+Riferimento: [Sign in with Google — Supabase](https://supabase.com/docs/guides/auth/social-sign-in/auth-google). Gli URL sopra corrispondono alla configurazione pubblica di produzione verificata; aggiornali se cambi dominio o progetto Supabase.
