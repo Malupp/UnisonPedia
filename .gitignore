@@ -90,3 +90,6 @@ Thumbs.db
 !/public/data/video-meta.json
 !/public/data/catalogue/index.json
 !/public/data/catalogue/details/*.json
+
+# Build-generated public connection settings
+/public/app-config.json

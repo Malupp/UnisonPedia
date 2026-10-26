@@ -60,7 +60,15 @@
       "origin": "video",
       "family": "mandate",
       "familyName": "Mandate",
-      "element": "Fire"
+      "element": "Fire",
+      "requirements": [
+        {
+          "kind": "element",
+          "element": "Fire",
+          "gearKind": "weapon",
+          "target": 3
+        }
+      ]
     },
     {
       "id": "ravaging-water",
@@ -112,7 +120,15 @@
       "origin": "video",
       "family": "ravaging",
       "familyName": "Ravaging",
-      "element": "Water"
+      "element": "Water",
+      "requirements": [
+        {
+          "kind": "element",
+          "element": "Water",
+          "gearKind": "weapon",
+          "target": 3
+        }
+      ]
     },
     {
       "id": "triumph-light",
@@ -936,7 +952,10 @@
           "seconds": 64.271
         }
       ],
-      "origin": "video"
+      "origin": "video",
+      "modes": [
+        "pvp"
+      ]
     },
     {
       "id": "nahut",
@@ -962,7 +981,13 @@
           "seconds": 27.035
         }
       ],
-      "origin": "video"
+      "origin": "video",
+      "requirements": [
+        {
+          "kind": "potential",
+          "target": 2
+        }
+      ]
     },
     {
       "id": "peony",
@@ -984,7 +1009,13 @@
           "seconds": 34
         }
       ],
-      "origin": "video"
+      "origin": "video",
+      "requirements": [
+        {
+          "kind": "potential",
+          "target": 2
+        }
+      ]
     },
     {
       "id": "p-valkyrie-nikyt",
@@ -1118,7 +1149,7 @@
       "category": "weapon",
       "status": "pending",
       "priority": "Descrizione da verificare",
-      "summary": "Nome leggibile nel video, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "summary": "Mostro selezionato dall’autore, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
       "conditions": "Serve la scheda esatta della variante per completare il confronto.",
       "skillNames": [
         "Empyrean of Wind XL"
@@ -1149,7 +1180,7 @@
       "category": "defence",
       "status": "pending",
       "priority": "Descrizione da verificare",
-      "summary": "Nome leggibile nel video, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "summary": "Mostro selezionato dall’autore, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
       "conditions": "Serve la scheda esatta della variante per completare il confronto.",
       "skillNames": [
         "Unassailable Wind XL"
@@ -1180,7 +1211,7 @@
       "category": "defence",
       "status": "pending",
       "priority": "Descrizione da verificare",
-      "summary": "Nome leggibile nel video, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "summary": "Mostro selezionato dall’autore, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
       "conditions": "Serve la scheda esatta della variante per completare il confronto.",
       "skillNames": [
         "Guardian Dark XL"
@@ -1203,7 +1234,7 @@
       "category": "opening",
       "status": "pending",
       "priority": "Opening da verificare",
-      "summary": "Nome leggibile nel primo video. La variante L non ha una corrispondenza esatta nel catalogo salvato.",
+      "summary": "Mostro selezionato dall’autore. La variante L non ha una corrispondenza esatta nel catalogo salvato.",
       "conditions": "Serve la descrizione della variante L. Non vengono trasferiti gli effetti o gli equip della variante XL.",
       "skillNames": [
         "[Opening] Ward L"
@@ -2392,7 +2423,7 @@
       "origin": "video",
       "priority": "Dawn e risorse / pressione",
       "summary": "Dual Unison: un’opzione potenzia statistiche e risorse del team, l’altra preme su Cost/gauge nemici e AP/critici alleati. Entrambe applicano Dawn al team e Skirmish a sé.",
-      "conditions": "Le due opzioni hanno lo stesso nome del cast. Il video conferma il mostro, ma non basta il titolo per stabilire la scelta; non sommare i due set di effetti come un singolo lancio.",
+      "conditions": "Le due opzioni hanno lo stesso nome del cast. Il nome del mostro da solo non basta per stabilire la scelta; non sommare i due set di effetti come un singolo lancio.",
       "skillNames": [
         "Dormant Mystical Anima Fermuraze"
       ],
@@ -2457,7 +2488,7 @@
       "status": "pending",
       "origin": "video",
       "priority": "Da verificare",
-      "summary": "Nome leggibile nei nuovi video, ma nessuna scheda esatta è presente nel catalogo acquisito.",
+      "summary": "Mostro selezionato dall’autore, ma nessuna scheda esatta è presente nel catalogo acquisito.",
       "conditions": "Non sono attribuiti effetti, grado alternativo o equip per analogia. Serve una scheda ufficiale o in gioco con il testo esatto.",
       "skillNames": [
         "Revelation Prowess XL"
@@ -2488,7 +2519,7 @@
       "points": [
         "Mandate supera invulnerabilità e annullamento; Ravaging supera riduzione e riflesso.",
         "Triumph ed Essence sostengono accuratezza e Cost; Resolution aggiunge critico e risorse.",
-        "Empyrean Star e Flickering Time sono ora riconosciuti anche nei nuovi video; ogni elemento conserva i propri requisiti."
+        "Empyrean Star e Flickering Time fanno parte della selezione dell’autore; ogni elemento conserva i propri requisiti."
       ]
     },
     {
@@ -2497,7 +2528,7 @@
       "points": [
         "Mastery, Obsidian e Intercepting coprono esigenze diverse di difesa e status.",
         "Bloom sostiene il ciclo Unison; Tiger e Serpent rispondono a fisico e magico.",
-        "Obsidian Dark è confermato nei nuovi video; le altre varianti di catalogo restano indicate come alternative."
+        "Obsidian Dark fa parte della selezione dell’autore; le altre varianti di catalogo restano indicate come alternative."
       ]
     },
     {
@@ -2512,8 +2543,8 @@
     {
       "title": "PvP e alternative di catalogo",
       "points": [
-        "I video mostrano PvP e Crystal Assault; non provano una classifica PvE.",
-        "Le aggiunte simili derivano dalle descrizioni esatte del catalogo, non da nuove osservazioni video.",
+        "La selezione riguarda PvP e Crystal Assault; le priorità PvE dipendono dal contenuto.",
+        "Le alternative simili sono confrontate usando le descrizioni esatte del catalogo.",
         "I collegamenti includono tutte le varianti con lo stesso talento; la copia effettivamente indossata resta da verificare."
       ]
     },
@@ -2536,7 +2567,7 @@
     {
       "title": "Abilità Metamorpher osservate",
       "points": [
-        "I nuovi video mostrano Heroic Assist, Courageous Shout e Forbidden Temptation, oltre a rami offensivi diversi.",
+        "La selezione comprende Heroic Assist, Courageous Shout e Forbidden Temptation, oltre a rami offensivi diversi.",
         "Forbidden richiede almeno 5 tipi di arma e spende gauge Unison; il ramo Bow/Gun va valutato separatamente.",
         "Il log mostra più partecipanti e cambi di classe: non ricostruisce una barra personale completa."
       ]

@@ -1,4 +1,4 @@
-import { Injectable, signal, computed } from "@angular/core";
+import { Injectable, signal, computed, inject, effect } from "@angular/core";
 import {
   Entry,
   Item,
@@ -11,6 +11,10 @@ import {
   newCopy,
   validateBackup,
 } from "../domain/inventory";
+import { AuthService } from "./auth";
+import { cloudTransport } from "./cloud-sync";
+import { PlayerSync, SyncSnapshot } from "../domain/sync";
+import { mergeBackup } from "../domain/inventory";
 import { normalizeSections } from "../domain/evaluation";
 @Injectable({ providedIn: "root" })
 export class Store {
@@ -28,28 +32,29 @@ export class Store {
   storageDenied = signal(false);
   compared = signal<string[]>([]);
   private details = new Map<string, Promise<Item>>();
-  private queue = Promise.resolve();
-  private storage: ReturnType<typeof createInventoryStore> | null = null;
+  auth = inject(AuthService);
+  sync = signal<SyncSnapshot>({owner:null,state:emptyState(),revision:0,dirty:false,status:"loading",error:"",cacheError:false,remote:null});
+  private engine = new PlayerSync(cloudTransport(this.auth), owner => createInventoryStore(indexedDB,"unisonpedia-v1",owner??"guest"), snapshot => {
+    this.sync.set(snapshot);this.state.set(snapshot.state);this.ready.set(snapshot.status!=="loading");this.storageDenied.set(snapshot.cacheError);
+  });
+  private activeOwner: string|null|undefined = undefined;
+  syncLabel = computed(()=>({loading:"Caricamento inventario…",local:"Salvato nel browser",saving:"Salvataggio online…",synced:"Salvato online",pending:this.sync().dirty?"Modifiche in attesa di invio":"Cloud da verificare",conflict:"Conflitto da risolvere"})[this.sync().status]);
   profile = computed(() => this.state().profile);
   constructor() {
+    effect(()=>{
+      const session=this.auth.session();
+      if(this.auth.loading())return;
+      const owner=session?.user.id??null;
+      if(owner!==this.activeOwner){this.activeOwner=owner;void this.engine.activate(owner);}
+    });
+    window.addEventListener("online",()=>{void this.retrySync();});
+    document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&this.activeOwner)void this.retrySync();});
     void this.initialize();
   }
   async initialize() {
     this.loading.set(true);
     this.error.set("");
     try {
-      if (!this.ready()) {
-        try {
-          this.storage = createInventoryStore(indexedDB);
-          this.state.set(await this.storage.load());
-        } catch {
-          this.storageDenied.set(true);
-          this.notice.set(
-            "Salvataggio locale non disponibile: la sessione resta in memoria. Esporta un backup.",
-          );
-        }
-        this.ready.set(true);
-      }
       const [entries, manifest, sources, chapters, glossary, classes] =
         await Promise.all(
           [
@@ -99,28 +104,17 @@ export class Store {
     return this.details.get(id)!;
   }
   update(change: (state: UserState) => UserState) {
-    this.queue = this.queue
-      .then(async () => {
-        const next = change(structuredClone(this.state()));
-        const valid = validateBackup(next);
-        if (!valid.ok)
-          throw new Error(valid.errors.map((e) => e.message).join("; "));
-        if (this.storage && !this.storageDenied()) {
-          try {
-            await this.storage.save(valid.data!);
-          } catch {
-            this.storageDenied.set(true);
-            this.notice.set(
-              "Salvataggio fallito: modifica conservata in sessione. Esporta il backup.",
-            );
-          }
-        }
-        this.state.set(valid.data!);
-        if (!this.storageDenied()) this.notice.set("Salvato nel browser");
-      })
-      .catch((e) => this.notice.set(String(e.message || e)));
-    return this.queue;
+    return this.engine.update(change).then(()=>{this.notice.set(this.syncLabel());return true;}).catch(e=>{this.notice.set(e instanceof Error?e.message:"Modifica non riuscita");return false;});
   }
+  retrySync(){return this.engine.retry().catch(()=>this.notice.set("Sincronizzazione non riuscita. Riprova."));}
+  resolveConflict(choice:"local"|"remote"){return this.engine.resolve(choice).catch(e=>this.notice.set(e.message));}
+  async importGuest(){
+    const owner=this.sync().owner;
+    if(!owner)return false;
+    try{const guest=await createInventoryStore(indexedDB).load();if(this.sync().owner!==owner)throw new Error("Account cambiato");return await this.update(s=>mergeBackup(s,guest,!s.copies.length&&!s.builds.length&&!s.goals.length&&!s.profile.classId?"replace":"merge"));}
+    catch{this.notice.set("Inventario ospite non disponibile");return false;}
+  }
+  async guestSummary(){const guest=await createInventoryStore(indexedDB).load();return {copies:guest.copies.length,builds:guest.builds.length,goals:guest.goals.length};}
   setProfile(p: Partial<Profile>) {
     return this.update((s) => ({ ...s, profile: { ...s.profile, ...p } }));
   }
@@ -128,9 +122,9 @@ export class Store {
     return this.update((s) => ({
       ...s,
       copies: [...s.copies, newCopy(id)],
-    })).then(() => {
-      if (!this.storageDenied())
-        this.notice.set("Copia aggiunta e salvata nel browser");
+    })).then((success) => {
+      if (success && !this.storageDenied())
+        this.notice.set("Copia aggiunta · " + this.syncLabel());
     });
   }
   toggleCompare(id: string) {

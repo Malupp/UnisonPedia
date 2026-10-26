@@ -1,1 +1,178 @@
-[{"term":"Ability Power","definition":"Potenza dell’abilità: distinta dall’amplificazione percentuale del danno.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Proc","definition":"Attivazione di una skill dell’equipaggiamento; il tasso dipende dalla descrizione e dalle condizioni.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Hidden Potential","definition":"Effetti sbloccati per livelli, con materiali e restrizioni specifici.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Main slot","definition":"Slot principale: può abilitare effetti non disponibili nei sub slot.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Bubble","definition":"Termine della community per una protezione: una alla volta, con immunità e condizioni proprie.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Aura","definition":"Stato speciale: può coesistere con altri stati, ma i buff sovrapposti non si sommano automaticamente.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Concerto","definition":"Stato con benefici e immunità condizionati anche ai membri del team in Concerto.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Field","definition":"Effetto di campo alleato o nemico con durata, sovrascrittura e protezioni specifiche.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Cost","definition":"Risorsa di combattimento. Distinta da Gear Cost e dal costo in gemme di una spawn.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Gear Cost","definition":"Costo dell’oggetto nel set: non è il suo prezzo di acquisizione.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]},{"term":"Pity","definition":"Garanzia dopo una progressione definita: condizioni e reset devono essere noti.","sourceRefs":[{"id":"doc2","title":"Cool Monster Reference Guide","url":"https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit","declaredUpdated":"2026-04-21","fetchedAt":"2026-10-09","kind":"guide","edition":null,"notes":null},{"id":"official","title":"Limipedia","url":"https://jam-capture-unisonleague-ww.ateamid.com/en/index.html","declaredUpdated":"2026-08-25","fetchedAt":"2026-10-09","kind":"official","edition":"WW","notes":"Observed date in javascripts/all.js; official details explicitly warn updates are not real time. Catalog index includes weapons and monsters only."}]}]
+[
+  {
+    "term": "Ability Power",
+    "definition": "Potenza dell’abilità: distinta dall’amplificazione percentuale del danno.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Proc",
+    "definition": "Attivazione di una skill dell’equipaggiamento; il tasso dipende dalla descrizione e dalle condizioni.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Hidden Potential",
+    "definition": "Effetti sbloccati per livelli, con materiali e restrizioni specifici.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Main slot",
+    "definition": "Slot principale: può abilitare effetti non disponibili nei sub slot.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Bubble",
+    "definition": "Termine della community per una protezione: una alla volta, con immunità e condizioni proprie.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Aura",
+    "definition": "Stato speciale: può coesistere con altri stati, ma i buff sovrapposti non si sommano automaticamente.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Concerto",
+    "definition": "Stato con benefici e immunità condizionati anche ai membri del team in Concerto.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Field",
+    "definition": "Effetto di campo alleato o nemico con durata, sovrascrittura e protezioni specifiche.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Cost",
+    "definition": "Risorsa di combattimento. Distinta da Gear Cost e dal costo in gemme di una spawn.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Gear Cost",
+    "definition": "Costo dell’oggetto nel set: non è il suo prezzo di acquisizione.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  },
+  {
+    "term": "Pity",
+    "definition": "Garanzia dopo una progressione definita: condizioni e reset devono essere noti.",
+    "sourceRefs": [
+      {
+        "id": "unisonpedia",
+        "title": "UnisonPedia · Studi dell’autore",
+        "url": null,
+        "declaredUpdated": null,
+        "fetchedAt": "2026-10-26",
+        "kind": "editorial",
+        "edition": null,
+        "notes": null
+      }
+    ]
+  }
+]

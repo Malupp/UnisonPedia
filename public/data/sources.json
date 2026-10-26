@@ -1,75 +1,5 @@
 [
   {
-    "id": "excel",
-    "title": "Guida generale Unison League 2024_2025",
-    "url": null,
-    "declaredUpdated": null,
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": null
-  },
-  {
-    "id": "published",
-    "title": "F2P/Low Spender Spawn Guide",
-    "url": "https://docs.google.com/document/d/e/2PACX-1vQe_7UaqWrR1yq6PtnShPmJ159WxYZZEvOL3M8PB-NL89yDum1h7GT-Ag74k4S0iDIxSqD8NDUxRQ3V/pub",
-    "declaredUpdated": "2025-12-13",
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": null
-  },
-  {
-    "id": "doc1",
-    "title": "Beginner / New Account Guide",
-    "url": "https://docs.google.com/document/d/1EYjhnUiv1xa_P_Ov-UeVzpxrYEywJOYBhgFWytx8I78/edit",
-    "declaredUpdated": null,
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": "Sezione beginner spawn riferita al 2020; sezione field aggiornata al 10/07/2025. Verificare ogni capitolo."
-  },
-  {
-    "id": "doc2",
-    "title": "Cool Monster Reference Guide",
-    "url": "https://docs.google.com/document/d/1vrdc_XiWOQiYfijL9SVeQ9ijgw3Qt6l60zFS_PSkzUA/edit",
-    "declaredUpdated": "2026-04-21",
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": null
-  },
-  {
-    "id": "doc3",
-    "title": "Enchantment Guide",
-    "url": "https://docs.google.com/document/d/1McHsoBFOXdtnn5ARP1LlBW2uhXonl0CT6sshDQR4mW8/edit",
-    "declaredUpdated": null,
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": "La guida dichiara lacune sul sesto ring e contenuti successivi."
-  },
-  {
-    "id": "doc4",
-    "title": "Pet Guide 101: The Basics",
-    "url": "https://docs.google.com/document/d/1wAonHZBBNebeLxpXrPc7eomy8_1RzWxUBiBD4eX-8SE/edit",
-    "declaredUpdated": null,
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": "Data di aggiornamento non chiara; le priorità storiche vanno verificate."
-  },
-  {
-    "id": "sheet",
-    "title": "Elemental attack calculator",
-    "url": "https://docs.google.com/spreadsheets/d/1Vd2VjgLUgnJc4SiChy0HUrSKfG3ll0A5xfWmuz6EiIE/edit",
-    "declaredUpdated": null,
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": "Il foglio include valori di esempio, non soglie universali."
-  },
-  {
     "id": "official",
     "title": "Limipedia",
     "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/index.html",
@@ -80,33 +10,13 @@
     "notes": "Limipedia dichiara di non essere aggiornata in tempo reale."
   },
   {
-    "id": "spawn",
-    "title": "UL Treasure Spawn Calculator",
-    "url": "https://greenspiny.github.io/treasurespawn/index.html",
+    "id": "unisonpedia",
+    "title": "UnisonPedia · Studi dell’autore",
+    "url": null,
     "declaredUpdated": null,
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
+    "fetchedAt": "2026-10-26",
+    "kind": "editorial",
     "edition": null,
-    "notes": "Random Curve è un’ipotesi configurabile, non un tasso ufficiale."
-  },
-  {
-    "id": "warlup-opening",
-    "title": "Spiegazioni opening Unison League — Warlup",
-    "url": "https://drive.google.com/file/d/1dW2Aay6DBKU8R0AWyLwF4lqOKRY25D2w/view?usp=sharing",
-    "declaredUpdated": "2023-11",
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": "Data nel titolo: 11/2023. Guida dell’autore, PDF di 8 pagine. Descrizioni storiche e priorità da distinguere dal meta attuale."
-  },
-  {
-    "id": "warlup-status",
-    "title": "Guida agli status speciali — Warlup",
-    "url": "https://drive.google.com/file/d/1G59W0Xk0uwBQ9lWcef54lrMpBPAA0jsH/view?usp=sharing",
-    "declaredUpdated": "2023-11",
-    "fetchedAt": "2026-10-09",
-    "kind": "guide",
-    "edition": null,
-    "notes": "Data nel titolo: 11/2023. PDF di 3 pagine. I valori indicati come circa e le ipotesi non confermate restano stime della fonte."
+    "notes": null
   }
 ]

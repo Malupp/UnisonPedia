@@ -16,6 +16,9 @@ export interface VideoObservation {
   conditions: string;
   skillNames: string[];
   itemIds: string[];
+  modes?: import("../domain/contracts").Mode[];
+  roles?: import("../domain/contracts").Role[];
+  requirements?: ({kind: "element"; element: string; gearKind: "weapon" | "defence"; target: number} | {kind: "potential"; target: number})[];
   evidence: { video: string; seconds: number }[];
 }
 export interface VideoCollection {
@@ -52,7 +55,7 @@ export class VideoMetaStore {
       if (!response.ok) throw new Error("collection unavailable");
       this.data.set(await response.json());
     } catch {
-      this.error.set("La selezione dei video non è disponibile. Riprova tra poco.");
+      this.error.set("La selezione META non è disponibile. Riprova tra poco.");
     } finally {
       this.loading.set(false);
     }

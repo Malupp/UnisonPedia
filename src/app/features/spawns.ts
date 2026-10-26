@@ -328,7 +328,7 @@ import { assessTargetNeed } from "../domain/evaluation";
     <section class="panel">
       <h2>Riferimenti storici</h2>
       <p>
-        Un ordine di grandezza delle guide non è una media verificata per ogni
+        Un ordine di grandezza indicativo non è una media verificata per ogni
         nuovo banner.
       </p>
       @for (note of registry()?.historicalNotes || []; track note.name) {
@@ -481,9 +481,6 @@ export class SpawnsComponent {
         if (this.form.valid) void this.rerun();
       });
     this.destroy.onDestroy(() => this.controller.cancel());
-  }
-  historicalUrl() {
-    return this.s.sources().find((s) => s.id === "published")?.url;
   }
   format(n: number | null) {
     return n === null

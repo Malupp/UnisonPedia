@@ -8,7 +8,7 @@ import { Store } from "../core/store";
   template: `<div class="page-heading">
       <span class="eyebrow">CAPIRE, PRIMA DI INVESTIRE</span>
       <h1>La guida italiana.</h1>
-      <p>Le basi, gli effetti e le scelte che fanno crescere il tuo set.</p>
+      <p>Una guida unica, frutto degli studi dell’autore: le basi, gli effetti e le scelte che fanno crescere il tuo set.</p>
       <label class="description-language">
         Lingua delle spiegazioni
         <select [value]="language()" (change)="setLanguage($any($event.target).value)">

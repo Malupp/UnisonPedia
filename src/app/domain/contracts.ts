@@ -88,11 +88,28 @@ export interface Build {
   mode: Mode;
   slots: { copyId: string; slot: "main" | "sub" }[];
 }
+export interface Goal {
+  id: string;
+  kind: "acquire" | "potential" | "element";
+  label: string;
+  mode: Mode;
+  classId: string | null;
+  buildId: string | null;
+  copyId?: string;
+  element?: string;
+  gearKind?: "weapon" | "defence";
+  target: number;
+  itemIds: string[];
+  metaVersion: string;
+  createdAt: string;
+  status: "active" | "archived";
+}
 export interface UserState {
-  schemaVersion: 1;
+  schemaVersion: 2;
   profile: Profile;
   copies: Copy[];
   builds: Build[];
+  goals: Goal[];
 }
 export interface Evaluation {
   status: "complete" | "insufficient-data";
@@ -119,8 +136,14 @@ export const DEFAULT_PROFILE: Profile = {
   reserveGems: 0,
 };
 export const emptyState = (): UserState => ({
-  schemaVersion: 1,
+  schemaVersion: 2,
   profile: { ...DEFAULT_PROFILE, elements: [] },
   copies: [],
   builds: [],
+  goals: [],
 });
+
+export function goalIdentity(g:Goal):string {
+ const target=g.kind==="potential"?[g.copyId,g.target]:g.kind==="element"?[g.gearKind,g.element,g.target]:[[...new Set(g.itemIds)].sort(),g.target];
+ return JSON.stringify([g.kind,g.classId,normalizeMode(g.mode),g.buildId,...target]);
+}

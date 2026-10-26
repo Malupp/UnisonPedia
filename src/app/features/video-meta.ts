@@ -11,7 +11,7 @@ import { filterVideoObservations, groupVideoObservations, videoFamilyIdentity } 
   template: `<header class="page-heading">
     <span class="eyebrow">PROC, MOSTRI E SINERGIE · PvP (GvG)</span>
     <h1>Meta</h1>
-    <p>Le scelte emerse dai video del 21 e 22 ottobre e le alternative con effetti simili. Apri una famiglia o un mostro per vedere varianti, consigli, oggetti e schede.</p>
+    <p>La selezione dell’autore e le alternative con effetti simili. Apri una famiglia o un mostro per vedere varianti, consigli, oggetti e schede.</p>
   </header>
   @if (v.error()) {
     <div class="message error" role="alert">{{ v.error() }} <button (click)="v.load()">Riprova</button></div>
@@ -38,13 +38,6 @@ import { filterVideoObservations, groupVideoObservations, videoFamilyIdentity } 
           <option value="pending">Da verificare</option>
         </select>
       </label>
-      <label>Provenienza della selezione
-        <select [value]="origin()" (change)="origin.set($any($event.target).value)">
-          <option value="all">Video e alternative simili</option>
-          <option value="video">Riconosciuti nei video</option>
-          <option value="similar">Alternative simili</option>
-        </select>
-      </label>
     </div>
     <p class="meta-count" role="status">{{ groupCount() }} famiglie e mostri · {{ visible().length }} varianti e voci · {{ v.counts().equipment }} equip associati · {{ v.counts().monsters }} mostri · {{ v.counts().pending }} talenti da verificare</p>
     @if (!visible().length) {
@@ -65,18 +58,13 @@ import { filterVideoObservations, groupVideoObservations, videoFamilyIdentity } 
                     <div class="meta-entry-labels"><span class="eyebrow">{{ labels[row.category] }}</span>
                       <span class="effect-tag" [class.meta-pending]="row.status === 'pending'">{{ row.status === 'pending' ? 'Da verificare' : row.priority }}</span>
                     </div>
-                    <p class="meta-origin">{{ row.origin === 'similar' ? 'Alternativa simile' : 'Riconosciuto nei video' }}
+                    <p class="meta-origin">{{ row.origin === 'similar' ? 'Alternativa simile' : 'Selezione dell’autore' }}
                       @if (row.origin === 'similar') { · {{ similarNames(row) }} }
                     </p>
                     <p>{{ row.summary }}</p>
                     <p class="meta-condition"><strong>{{ row.status === 'pending' ? 'Dato mancante' : 'Da considerare' }}</strong> · {{ row.conditions }}</p>
-                    @if (row.evidence.length) {
-                      <div class="meta-evidence" aria-label="Riscontri nei video">
-                        @for (evidence of row.evidence; track $index) { <span>{{ videoLabel(evidence.video) }} · {{ timestamp(evidence.seconds) }}</span> }
-                      </div>
-                    }
                     @if (row.items.length) {
-                      @if (row.category !== 'monster') { <p class="meta-variant-note">{{ row.items.length }} equip con questo talento.@if (row.origin === 'video') { Il modello indossato nel video non è identificato. }</p> }
+                      @if (row.category !== 'monster') { <p class="meta-variant-note">{{ row.items.length }} equip con questo talento.</p> }
                       <div class="meta-items">
                         @for (item of row.items; track item.id) {
                           <div class="meta-item">
@@ -175,8 +163,6 @@ export class VideoMetaComponent {
     ];
   });
   similarNames(row: VideoObservation) { return (row.similarTo ?? []).map((id) => this.v.data()?.observations.find((o) => o.id === id)?.name).filter(Boolean).join(", "); }
-  videoLabel(id: string) { return this.v.data()?.videos.find((v) => v.id === id)?.label ?? id; }
-  timestamp(seconds: number) { return Math.floor(seconds / 60).toString().padStart(2, "0") + ":" + Math.floor(seconds % 60).toString().padStart(2, "0"); }
   reset() { this.query.set(""); this.category.set("all"); this.origin.set("all"); }
   fallback(event: Event) { const img = event.target as HTMLImageElement; if (!img.dataset["fallback"]) { img.dataset["fallback"] = "1"; img.src = "assets/fallback.svg"; } }
 }
