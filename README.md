@@ -34,7 +34,19 @@ Il catalogo include **6.921 oggetti UR**: 3.129 armi, 2.435 difensivi e 1.357 mo
 
 Le schede conservano descrizioni, condizioni e riferimenti alle fonti. Effetti non riconosciuti o requisiti non verificati possono impedire una valutazione completa. Le probabilità delle spawn richiedono condizioni documentate; non vengono ricavate dalle percentuali dei proc.
 
-## Avvio locale
+## Installare su Android e usare il catalogo offline
+
+Apri il sito pubblicato in **Chrome Android**. Nella schermata iniziale o in **Altro → Account** trovi il pannello **UnisonPedia sul tuo telefono**: usa **Installa UnisonPedia** quando disponibile, oppure il menu **⋮ → Installa app / Aggiungi a schermata Home** di Chrome. L'installazione richiede il sito HTTPS; il server di sviluppo non registra il service worker.
+
+Per consultare tutto senza rete, scegli **Scarica tutto per usarlo offline**, preferibilmente in Wi-Fi, e tieni aperta la pagina fino a **Catalogo completo pronto offline**. Il pannello mostra il peso effettivo della versione: lo snapshot iniziale richiede circa 66 MB di download e 91 MB di contenuti, più lo spazio di gestione del browser. Sono inclusi tutte le immagini e le schede del catalogo, guida, META e risorse delle pagine, anche se mai visitate. Video e siti delle fonti esterne richiedono Internet.
+
+Puoi mettere in pausa e riprendere il download: i pacchetti già verificati restano conservati anche riaprendo l'app. Se Android sospende la pagina, riaprila e scegli **Riprendi download offline**. **Controlla aggiornamenti** cerca una nuova versione: il download conserva quella installata e **Usa aggiornamento e ricarica** la sostituisce soltanto dopo aver verificato tutti i nuovi file. Salva le modifiche in corso prima di ricaricare; durante un aggiornamento serve spazio anche per conservare la versione precedente.
+
+Il catalogo offline è disponibile anche come ospite. Quando la scelta ospite scade, premi di nuovo **Entra come ospite**. Accesso, conferma email, recupero password e sincronizzazione account richiedono rete. Il browser può cancellare i dati locali se manca spazio o se li elimini dalle impostazioni: conserva comunque un backup dell'inventario.
+
+La build di produzione genera automaticamente manifest dei contenuti e pacchetti in `dist/unisonpedia/browser/offline`, insieme al service worker della release. La versione include anche tutti i bundle lazy e i worker; non vengono inserite nelle cache pubbliche risposte delle API account. Non basta copiare gli asset dal server di sviluppo: pubblica l'intero output di `npm run build`.
+
+## Sviluppo locale
 
 Il progetto usa Angular 21 e TypeScript. Richiede Node.js 22.12 o una versione successiva compatibile con Angular 21.
 

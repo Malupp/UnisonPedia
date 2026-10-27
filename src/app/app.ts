@@ -4,6 +4,7 @@ import { Store } from "./core/store";
 import { WelcomeComponent } from "./features/welcome";
 import { entryScreen } from "./domain/entry";
 import { ProfileComponent } from "./shared/profile";
+import { PwaService } from "./core/pwa";
 @Component({
   selector: "app-root",
   standalone: true,
@@ -20,7 +21,7 @@ import { ProfileComponent } from "./shared/profile";
       <div class="nav-label">ESPLORA</div>
       <nav aria-label="Navigazione principale">
         @for (n of nav; track n.path) {
-          <a [routerLink]="n.path" routerLinkActive="active"
+          <a [routerLink]="n.path" routerLinkActive="active" [class.mobile-secondary]="secondary(n.path)"
             ><span class="nav-icon" aria-hidden="true">{{ n.icon }}</span
             >{{ n.label }}
             @if (n.path === "/inventory" && s.state().copies.length) {
@@ -28,6 +29,7 @@ import { ProfileComponent } from "./shared/profile";
             }
           </a>
         }
+        <button class="mobile-more" type="button" (click)="more.showModal()" aria-haspopup="dialog" aria-controls="mobile-more-menu" [attr.aria-expanded]="more.open" [class.active]="secondary(path().split('?')[0])"><span class="nav-icon" aria-hidden="true">•••</span>Altro</button>
       </nav>
       <div class="sidebar-note">
         <span class="eyebrow">UNA GUIDA, IL TUO SET</span>
@@ -40,6 +42,10 @@ import { ProfileComponent } from "./shared/profile";
         <span class="status-dot"></span> Snapshot WW <span>v1.0</span>
       </div>
     </aside>
+    <dialog #more id="mobile-more-menu" class="mobile-menu" aria-labelledby="mobile-more-title" (click)="$event.target === more && more.close()">
+      <div class="mobile-menu-heading"><h2 id="mobile-more-title">Altro</h2><button type="button" (click)="more.close()" aria-label="Chiudi menu">×</button></div>
+      <nav aria-label="Altre pagine">@for(n of nav;track n.path){@if(secondary(n.path)){<a [routerLink]="n.path" routerLinkActive="active" (click)="more.close()"><span aria-hidden="true">{{n.icon}}</span>{{n.label}}</a>}}</nav>
+    </dialog>
     <div class="app-main">
       <header class="topbar">
         <a routerLink="/catalogue" class="mobile-brand"
@@ -84,6 +90,7 @@ import { ProfileComponent } from "./shared/profile";
     }} `,
 })
 export class AppComponent {
+  pwa = inject(PwaService);
   s = inject(Store);
   router=inject(Router);
   private destroyRef=inject(DestroyRef);
@@ -91,6 +98,7 @@ export class AppComponent {
   screen=computed(()=>entryScreen({loading:this.s.auth.loading(),signedIn:!!this.s.auth.session(),recovery:this.s.auth.recovery(),guest:this.s.auth.guestMode(),path:this.path()}));
   constructor(){const subscription=this.router.events.subscribe(event=>{if(event instanceof NavigationEnd)this.path.set(event.urlAfterRedirects);});this.destroyRef.onDestroy(()=>subscription.unsubscribe());}
   openLogin(){this.s.auth.leaveGuest();void this.router.navigateByUrl("/account");}
+  secondary(path:string){return ["/frontline","/advice","/spawns","/account"].includes(path);}
   nav = [
     { path: "/catalogue", label: "Catalogo", icon: "◈" },
     { path: "/meta", label: "Meta", icon: "✧" },

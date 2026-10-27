@@ -87,7 +87,7 @@ async function start() {
     appUrl: "",
   };
   try {
-    const response = await fetch("/app-config.json", { cache: "no-store" });
+    const response = await fetch("/app-config.json", { cache: "no-store", signal: AbortSignal.timeout(6000) });
     if (response.ok) {
       const raw = await response.json();
       if (raw.supabaseUrl || raw.publishableKey) {

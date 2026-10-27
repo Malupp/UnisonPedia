@@ -7,6 +7,7 @@
     "start": "ng serve --host 127.0.0.1",
     "dev": "ng serve --host 127.0.0.1",
     "build": "ng build",
+    "postbuild": "node build/prepare-offline.mjs",
     "prestart": "node --env-file-if-exists=.env.local build/prepare-config.mjs",
     "predev": "node --env-file-if-exists=.env.local build/prepare-config.mjs",
     "prebuild": "node --env-file-if-exists=.env.local build/prepare-config.mjs"

@@ -1,0 +1,17 @@
+{
+  "id": "/",
+  "name": "UnisonPedia",
+  "short_name": "UnisonPedia",
+  "description": "La tua guida a Unison League, con catalogo completo offline.",
+  "lang": "it",
+  "start_url": "/catalogue",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#14202a",
+  "theme_color": "#0d151d",
+  "icons": [
+    { "src": "/assets/brand/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/brand/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/brand/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

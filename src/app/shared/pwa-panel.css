@@ -1,0 +1,13 @@
+:host { display: block; min-width: 0; }
+.pwa-panel { padding: 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); margin: 24px 0; overflow-wrap: anywhere; }
+.pwa-panel h2 { margin: 8px 0 12px; font-size: 22px; }
+.pwa-panel p { font-size: 13px; }
+.pwa-panel button { min-height: 44px; max-width: 100%; white-space: normal; }
+.pwa-download { border-top: 1px solid var(--border); margin-top: 18px; padding-top: 16px; }
+.pwa-success { color: var(--green); font-weight: 600; }
+.pwa-panel .pwa-size, .pwa-panel .pwa-note, .pwa-instructions { font-size: 12px; }
+.pwa-note { margin: 12px 0 0; }
+.pwa-check { margin-top: 14px; }
+.pwa-progress { margin-bottom: 14px; }
+progress { width: 100%; height: 12px; accent-color: var(--green); }
+@media(max-width:480px) { .pwa-panel { padding: 20px 16px; } .pwa-panel button { width: 100%; } }

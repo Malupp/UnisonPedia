@@ -3,7 +3,8 @@ import { Router } from "@angular/router";
 import { AuthService } from "../core/auth";
 import { AuthFormComponent } from "../shared/auth-form";
 import { guestDestination } from "../domain/entry";
-@Component({selector:"app-welcome",standalone:true,imports:[AuthFormComponent],template:
+import { PwaPanelComponent } from "../shared/pwa-panel";
+@Component({selector:"app-welcome",standalone:true,imports:[AuthFormComponent,PwaPanelComponent],template:
 `<div class="entry-page">
  <header class="entry-header"><a href="/" class="entry-brand" aria-label="UnisonPedia, pagina iniziale"><img src="assets/brand/unisonpedia-icon.jpg" alt="" width="44" height="44" /><span>Unison<span class="brand-accent">Pedia</span><small>IL TUO PROSSIMO UPGRADE</small></span></a><span class="entry-community"><span class="status-dot"></span> Una wiki, fatta per i giocatori.</span></header>
  <main class="entry-layout" id="welcome-main">
@@ -16,6 +17,7 @@ import { guestDestination } from "../domain/entry";
     <div class="entry-divider"><span>oppure, inizia a esplorare</span></div><button class="entry-guest" [disabled]="auth.busy()" type="button" (click)="enterGuest()">Entra come ospite <span aria-hidden="true">↗</span></button><p class="entry-guest-note">La wiki è aperta a tutti. Come ospite, inventario e progressi restano in questo browser; con un account li ritrovi anche sugli altri dispositivi.</p>
    }
   </section>
+ <app-pwa-panel class="entry-pwa" />
  </main>
  <footer class="entry-footer"><span>UnisonPedia · Un progetto della community</span><span>Nomi e immagini del gioco appartengono ai rispettivi titolari.</span></footer>
 </div>`})

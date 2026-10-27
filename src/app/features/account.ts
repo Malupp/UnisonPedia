@@ -3,8 +3,10 @@ import { FormsModule } from "@angular/forms";
 import { RouterLink } from "@angular/router";
 import { AuthService } from "../core/auth";
 import { Store } from "../core/store";
-@Component({standalone:true,imports:[FormsModule,RouterLink],template:
+import { PwaPanelComponent } from "../shared/pwa-panel";
+@Component({standalone:true,imports:[FormsModule,RouterLink,PwaPanelComponent],template:
 `<div class="page-heading"><span class="eyebrow">IL TUO PERSONAGGIO, OVUNQUE</span><h1>Il tuo account.</h1><p>Inventario, build e obiettivi disponibili sui tuoi dispositivi.</p></div>
+<app-pwa-panel />
 @if(auth.loading()){<p role="status">Verifica dell’accesso…</p>}
 @if(auth.error()){<div class="message error" role="alert">{{auth.error()}}</div>}
 @if(auth.message()){<div class="message" role="status">{{auth.message()}}</div>}
