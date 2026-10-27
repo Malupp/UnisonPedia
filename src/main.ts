@@ -3,14 +3,27 @@ import {
   provideRouter,
   Routes,
   withComponentInputBinding,
+  withInMemoryScrolling,
 } from "@angular/router";
 import { AppComponent } from "./app/app";
 import { PUBLIC_CONFIG, PublicConfig } from "./app/core/auth";
 import { canonicalCloudUrl } from "./app/domain/cloud-config";
 const routes: Routes = [
-  {path:"frontline",loadComponent:()=>import("./app/features/frontline").then(m=>m.FrontlineComponent)},
-  {path:"account",loadComponent:()=>import("./app/features/account").then(m=>m.AccountComponent)},
-  {path:"auth/callback",loadComponent:()=>import("./app/features/account").then(m=>m.AccountComponent)},
+  {
+    path: "frontline",
+    loadComponent: () =>
+      import("./app/features/frontline").then((m) => m.FrontlineComponent),
+  },
+  {
+    path: "account",
+    loadComponent: () =>
+      import("./app/features/account").then((m) => m.AccountComponent),
+  },
+  {
+    path: "auth/callback",
+    loadComponent: () =>
+      import("./app/features/account").then((m) => m.AccountComponent),
+  },
   { path: "", redirectTo: "catalogue", pathMatch: "full" },
   {
     path: "catalogue",
@@ -44,6 +57,13 @@ const routes: Routes = [
       import("./app/features/guide").then((m) => m.GuideComponent),
   },
   {
+    path: "inventory/import",
+    loadComponent: () =>
+      import("./app/features/equipment-import").then(
+        (m) => m.EquipmentImportComponent,
+      ),
+  },
+  {
     path: "inventory",
     loadComponent: () =>
       import("./app/features/inventory").then((m) => m.InventoryComponent),
@@ -60,22 +80,57 @@ const routes: Routes = [
   },
   { path: "**", redirectTo: "catalogue" },
 ];
-async function start(){
-  let config:PublicConfig={supabaseUrl:"",publishableKey:"",appUrl:""};
-  try{
-    const response=await fetch("/app-config.json",{cache:"no-store"});
-    if(response.ok){
-      const raw=await response.json();
-      if(raw.supabaseUrl||raw.publishableKey){
-        const db=new URL(raw.supabaseUrl),app=new URL(raw.appUrl);
-        const safe=(u:URL)=>u.protocol==="https:"||(u.protocol==="http:"&&["localhost","127.0.0.1"].includes(u.hostname));
-        if(!safe(db)||!safe(app)||!/^sb_publishable_[A-Za-z0-9_-]+$/.test(raw.publishableKey))throw Error("config");
-        config={supabaseUrl:db.origin,publishableKey:raw.publishableKey,appUrl:app.origin};
+async function start() {
+  let config: PublicConfig = {
+    supabaseUrl: "",
+    publishableKey: "",
+    appUrl: "",
+  };
+  try {
+    const response = await fetch("/app-config.json", { cache: "no-store" });
+    if (response.ok) {
+      const raw = await response.json();
+      if (raw.supabaseUrl || raw.publishableKey) {
+        const db = new URL(raw.supabaseUrl),
+          app = new URL(raw.appUrl);
+        const safe = (u: URL) =>
+          u.protocol === "https:" ||
+          (u.protocol === "http:" &&
+            ["localhost", "127.0.0.1"].includes(u.hostname));
+        if (
+          !safe(db) ||
+          !safe(app) ||
+          !/^sb_publishable_[A-Za-z0-9_-]+$/.test(raw.publishableKey)
+        )
+          throw Error("config");
+        config = {
+          supabaseUrl: db.origin,
+          publishableKey: raw.publishableKey,
+          appUrl: app.origin,
+        };
       }
     }
-  }catch{config.error="Collegamento cloud non configurato correttamente. L’inventario locale resta disponibile.";}
-  const canonical=canonicalCloudUrl(config.appUrl,window.location.href);
-  if(canonical){window.location.replace(canonical);return;}
-  await bootstrapApplication(AppComponent,{providers:[provideRouter(routes,withComponentInputBinding()),{provide:PUBLIC_CONFIG,useValue:config}]});
+  } catch {
+    config.error =
+      "Collegamento cloud non configurato correttamente. L’inventario locale resta disponibile.";
+  }
+  const canonical = canonicalCloudUrl(config.appUrl, window.location.href);
+  if (canonical) {
+    window.location.replace(canonical);
+    return;
+  }
+  await bootstrapApplication(AppComponent, {
+    providers: [
+      provideRouter(
+        routes,
+        withComponentInputBinding(),
+        withInMemoryScrolling({
+          anchorScrolling: "enabled",
+          scrollPositionRestoration: "enabled",
+        }),
+      ),
+      { provide: PUBLIC_CONFIG, useValue: config },
+    ],
+  });
 }
 void start().catch(console.error);

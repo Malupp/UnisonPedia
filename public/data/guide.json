@@ -32,6 +32,60 @@
           "Cost 45 and 46 gear is present in the catalogue: compare effects and requirements rather than cost alone.",
           "Use the catalogue to read skills, conditions and sources. Record actual copies in your inventory: owning an item at potential level zero is different from owning its fully unlocked version."
         ]
+      },
+      {
+        "id": "primi-obiettivi-progressione",
+        "heading": "Dalla storia ai primi set dedicati",
+        "paragraphs": [
+          "All’inizio alterna Story e Subquest per raccogliere ricompense e ampliare l’equipaggiamento. Conserva i pezzi elementali anche quando non aumentano il Gear Score: più copie utilizzabili consentono di preparare set per quest diverse. Le armi di altre classi possono servire quando un contenuto richiede di cambiare classe; prima di usarle come materiale, controlla se coprono un vuoto nella tua raccolta.",
+          "Affianca alla storia lo sblocco dei ring di classe e la Tower of Judgment, avanzando fin dove riesci con il set disponibile. Quando un evento è accessibile, guarda prima ricompense, scambi e materiali necessari a un progetto concreto. Un blocco nella progressione è un’indicazione da analizzare: manca danno, finisce il Cost, oppure una meccanica impedisce di agire? La risposta determina il prossimo investimento."
+        ],
+        "paragraphsEn": [
+          "Early on, alternate Story and Subquests to collect rewards and broaden your equipment options. Keep elemental pieces even when they do not raise your Gear Score: several usable pieces let you prepare sets for different quests. Other classes’ weapons may help when content requires a class change; before using them as materials, check whether they fill a gap in your collection.",
+          "Alongside the story, unlock class rings and progress through Tower of Judgment as far as your available set allows. When an event is accessible, inspect rewards, exchanges and materials needed for a specific project first. A progression wall gives you something to investigate: are you short on damage, running out of Cost, or unable to act because of a mechanic? The answer determines your next investment."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "leggere-sconfitta-risorse",
+        "heading": "Usare una sconfitta per scegliere il prossimo miglioramento",
+        "paragraphs": [
+          "Prima di riprovare, identifica il momento in cui la squadra perde il controllo. Se smetti di attaccare perché il Cost si esaurisce, più statistiche offensive potrebbero non risolvere il problema; se uno status blocca abilità o proc, serve una risposta a quello status. Se il danno ricevuto resta troppo alto, confronta elemento, protezioni e tempi dei buff con gli attacchi che ti eliminano.",
+          "Gemme, Ether e Awakening Orbs meritano un obiettivo prima di essere consumati. Evita di trasformare una serie di sconfitte in una serie di resurrezioni a pagamento: una nuova prova con set o strategia corretti produce informazioni più utili. Proteggi e conserva i pezzi che fanno parte di un progetto, separandoli mentalmente dai materiali sacrificabili."
+        ],
+        "paragraphsEn": [
+          "Before trying again, identify when the party loses control. If you stop attacking because Cost runs out, more offensive stats may not fix the problem; if an ailment disables abilities or procs, you need an answer to that ailment. If incoming damage remains too high, compare your element, protections and buff timing with the attacks that defeat you.",
+          "Give Gems, Ether and Awakening Orbs a purpose before spending them. Avoid turning repeated defeats into repeated paid revivals: a new attempt with an adjusted set or strategy provides more useful information. Protect and keep equipment that belongs to a project, distinguishing it from expendable materials."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
       }
     ]
   },
@@ -68,6 +122,60 @@
           "For tanks, consider DEF/MDEF. Soldier and Lancer can use ATK/DEF with abilities that scale from both; Archer can use ATK/MATK, while Mage and Cleric can use MATK/MDEF. Check your equipped abilities before choosing stat slots.",
           "Do not confuse a monster’s physical or magic damage with the player’s class. Scaling tests do not constitute a complete official damage formula: the app does not promise a DPS prediction."
         ]
+      },
+      {
+        "id": "ruolo-prima-statistiche",
+        "heading": "Definire il lavoro della classe",
+        "paragraphs": [
+          "Una classe va scelta anche per ciò che farai durante lo scontro: infliggere danno, mantenere il gruppo in vita, assorbire pressione, applicare Break o gestire risorse e Unison. Le abilità equipaggiate devono sostenere quel compito. Un set con molte abilità offensive ma senza un modo sostenibile di pagarne il Cost può funzionare in una finestra breve e fermarsi in una quest lunga.",
+          "PvE e PvP possono richiedere barre abilità diverse alla stessa classe. In PvE conta poter ripetere il ciclo e rispondere alle meccaniche del boss; in Guild Battle possono contare l’apertura, il controllo della Unison e la preparazione della fase Crystal Assault. Distingui anche una strategia che cerca eliminazioni immediate da una che deve resistere e preparare la squadra."
+        ],
+        "paragraphsEn": [
+          "Choose a class partly for the work you will do during a fight: deal damage, keep the party alive, absorb pressure, apply Break, or manage resources and Unison. Your equipped abilities should support that job. A loadout with many attacks but no sustainable way to pay their Cost may work for a short window and stall in a long quest.",
+          "PvE and PvP can require different ability loadouts for the same class. In PvE, you need a repeatable cycle and answers to boss mechanics; in Guild Battle, the opening, Unison control and preparation for Crystal Assault may matter more. Also distinguish a strategy seeking immediate eliminations from one that must survive while setting up the party."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "ring-utility-multiclasse",
+        "heading": "Ring, utility e cambio di classe",
+        "paragraphs": [
+          "I ring sono i gruppi di abilità dei diversi gradi di classe. I primi tre ring delle cinque classi principali offrono abilità utilizzabili anche oltre la classe d’origine, secondo le restrizioni della singola abilità; i ring successivi diventano più specifici. Le classi extra non offrono lo stesso accesso generale alle proprie abilità. Controlla i requisiti di utilizzo prima di progettare una barra basata su un’abilità non ancora disponibile.",
+          "Una utility può valere uno slot anche se non infligge danno: recupero Cost, rimozione di status e gestione dei buff possono tenere attivo l’intero ciclo. Per cambiare classe con continuità servono però armi, statistiche e abilità coerenti per ciascun ruolo. Una combinazione di statistiche flessibile può aiutare una raccolta avanzata, ma comporta compromessi per le abilità a doppio scaling: evita di investire in molte classi contemporaneamente prima di avere una base funzionante."
+        ],
+        "paragraphsEn": [
+          "Rings group the abilities of different class tiers. The first three rings of the five main classes offer abilities usable beyond their original class, subject to each ability’s restrictions; later rings become more specific. Extra classes do not provide the same general access to their abilities. Check usage requirements before planning a loadout around an ability you cannot yet use.",
+          "A utility can earn a slot without dealing damage: Cost recovery, ailment removal and buff management can keep the whole cycle running. Switching classes regularly still requires suitable weapons, stats and abilities for each role. A flexible stat combination may help an advanced collection, but involves compromises for dual-scaling abilities; avoid investing in many classes at once before establishing a working foundation."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
       }
     ]
   },
@@ -103,6 +211,60 @@
           "Read how many pieces and which category the scaling requires. Five Water weapons are different from any five Water items. An unmet requirement remains visible and prevents a complete estimate of the item’s personal contribution.",
           "The supplied elemental calculator is a starting point for exploring combinations rather than a universal stat threshold. Examples already filled into the spreadsheet are not recommendations for every player.",
           "For a F2P build, focusing investment on a few elements makes requirements easier to meet. An item’s in-game cost determines set capacity; gems measure spawn spending, which is a separate quantity."
+        ]
+      },
+      {
+        "id": "costruire-scheletro-elementale",
+        "heading": "Costruire lo scheletro di un set PvE",
+        "paragraphs": [
+          "Parti dall’elemento dei nemici della quest e prepara l’elemento vantaggioso. Armi e mostri contribuiscono all’attacco elementale; equipaggiamento testa e corpo contribuisce alla difesa elementale. Contro nemici Wind, per esempio, un set Fire è una base sensata; contro Fire, la base è Water. Il numero totale di statistiche non sostituisce il vantaggio elementale.",
+          "Quando mancano pezzi, completa prima il set con equipaggiamento utile già disponibile: una skill che mantiene vivo il personaggio o sostiene il ciclo può giustificare un pezzo di un altro elemento. Valuta la sostituzione nel suo insieme: quanti punti elementali perdi, quale effetto guadagni e quali requisiti di scaling smetti di soddisfare? Conservare più alternative evita di dover ricostruire da zero a ogni quest."
+        ],
+        "paragraphsEn": [
+          "Start with the enemies’ element and prepare an advantageous element. Weapons and monsters contribute elemental attack; head and body gear contribute elemental defense. Against Wind enemies, for example, a Fire set is a sensible foundation; against Fire, the foundation is Water. A higher total stat score does not replace elemental advantage.",
+          "When pieces are missing, fill the set with useful equipment you already own: a skill that keeps you alive or sustains your cycle can justify an off-element piece. Assess the whole replacement: how much elemental value do you lose, which effect do you gain, and which scaling requirements stop being satisfied? Keeping alternatives prevents rebuilding from scratch for every quest."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "elemento-valore-requisiti",
+        "heading": "Separare elemento, valore elementale e requisiti di skill",
+        "paragraphs": [
+          "L’icona elementale di un pezzo, il tuo valore di attacco o difesa elementale e il conteggio richiesto da una skill sono informazioni diverse. Una skill può contare armi di un elemento, un determinato tipo di arma oppure una categoria più ampia di equipaggiamento. Leggi il sostantivo usato nella descrizione: aggiungere un mostro dello stesso elemento non soddisfa un requisito che conta soltanto armi.",
+          "Il contributo elementale può crescere anche attraverso potenziali dei mostri, bonus dei pet e subskill dell’equipaggiamento. Prima di spendere SS Hammers o Bars su un pezzo provvisorio, verifica quanto a lungo prevedi di usarlo. Per un investimento limitato, migliora un set coerente per volta; la disponibilità di contenuti favorevoli e dei pezzi posseduti conta più dell’idea di un elemento universalmente migliore."
+        ],
+        "paragraphsEn": [
+          "A piece’s element icon, your elemental attack or defense value, and a skill’s required count are different pieces of information. A skill may count weapons of one element, a particular weapon type, or a broader equipment category. Read the noun in the description: adding a monster of the same element does not satisfy a requirement that counts only weapons.",
+          "Elemental contribution can also grow through monster potentials, pet bonuses and equipment subskills. Before spending SS Hammers or Bars on a temporary piece, check how long you expect to use it. With limited resources, improve one coherent set at a time; suitable content and the pieces you own matter more than choosing a supposedly universal best element."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
         ]
       }
     ]
@@ -332,6 +494,60 @@
           "The author’s two scales are separate rules: Scale AP converts the strength of the AP contribution; Scala Proc converts the talent’s activation probability. The size in a talent’s name does not automatically give its activation rate. Read the variant’s Proc Talento entry.",
           "Example: a row with a 5XL+ increase and a base L Proc Talento means 60 AP and 15% activation. Ability success, critical hit and DPS increase are separate effects; they are not automatically added to the equipment proc rate.",
           "Quality also depends on Fills Unison, Critical Hit, Recovery Cost and other documented contributions. The required pieces, element, gear type and conditions determine whether your build reaches the stated scaling. Weapon and defensive weights are approved; catalogue tiers and monster scoring are being designed. The AP scale extends to 7XL=75 AP and beyond following the authorized progression."
+        ]
+      },
+      {
+        "id": "leggere-proc-completo",
+        "heading": "Leggere un proc come un insieme di funzioni",
+        "paragraphs": [
+          "Confronta separatamente aumento di Ability Power, aumento del danno, accuracy, critical hit e recupero di Cost o Unison. Sono contributi diversi: un AP più alto non garantisce più danno effettivo se una parte dei colpi manca il bersaglio o se il personaggio resta senza risorse. Il recupero associato a un proc va inoltre valutato insieme alle sue condizioni di attivazione.",
+          "Controlla prima il risultato senza scaling e poi quello ottenibile con il tuo set reale. Una skill che raggiunge un grande bonus solo con un conteggio non soddisfatto non offre subito quel bonus. Per un confronto utile considera anche livello skill, slot e contenuto: il talento che migliora una singola azione può avere un valore diverso da quello che consente di continuare ad attaccare per tutta la quest."
+        ],
+        "paragraphsEn": [
+          "Compare Ability Power increases, damage increases, accuracy, critical hits and Cost or Unison recovery separately. These are different contributions: higher AP does not guarantee more effective damage if some hits miss or the character runs out of resources. Recovery attached to a proc must also be assessed together with its activation conditions.",
+          "Check the result without scaling first, then the result your actual set can achieve. A skill that reaches a large bonus only at a count you do not meet does not provide that bonus immediately. For a useful comparison, also consider skill level, slot and content: improving one action can have a different value from enabling attacks throughout an entire quest."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "main-ability-unlock",
+        "heading": "Main slot e Ability Unlock nella barra abilità",
+        "paragraphs": [
+          "Quando un’arma offre una Ability Unlock, spesso chiamata ARA, leggi sia la skill dell’equipaggiamento sia l’abilità che rende disponibile. L’arma non è soltanto un contenitore di statistiche: può cambiare le azioni utilizzabili e quindi il funzionamento della build. Verifica classe compatibile e condizione di slot prima di assegnarle un ruolo centrale.",
+          "Prova poi a inserire quell’abilità in un ciclo concreto: costo, cooldown, bersagli, eventuali combo e recuperi devono essere compatibili con gli altri slot. Un’arma adatta al main può risolvere un problema diverso da una buona arma di supporto nel sub. Se sposti un pezzo, ricontrolla ciò che resta attivo e ciò che cambia nella barra, invece di assumere che la stessa configurazione funzioni ovunque."
+        ],
+        "paragraphsEn": [
+          "When a weapon offers an Ability Unlock, often called an ARA, read both the equipment skill and the ability it makes available. The weapon is more than a bundle of stats: it can change the actions you can use and therefore how the build works. Verify class compatibility and slot requirements before making it central to your setup.",
+          "Then place that ability in a concrete cycle: Cost, cooldown, targets, possible combos and recovery must work with the other slots. A suitable main-slot weapon can solve a different problem from a good supporting sub-slot weapon. After moving a piece, recheck what remains active and what changes in your ability loadout instead of assuming the same setup works everywhere."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
         ]
       }
     ]
@@ -583,6 +799,33 @@
           "Group up to two compatible effects per category: defensive constants, defensive openings, Other opening, offensive constants and resistance constants. This does not imply that two offensive Armor and two offensive Weapons can freely stack four bonuses of the same category.",
           "Combinations such as Dual Attack + Resurrection, Dual Attack + Reliance or Opening Ward + Counter Heal address different needs. Compare these recommendations and combination limits against the equipped variants’ descriptions."
         ]
+      },
+      {
+        "id": "controllo-prima-quest",
+        "heading": "Controllare le protezioni prima di entrare",
+        "paragraphs": [
+          "Esamina testa e corpo come un sistema: quali proc vuoi nel main, quali effetti iniziali servono e quali costanti occupano la stessa categoria? Superare un limite di categoria non garantisce di conservare proprio gli effetti desiderati. Prima della quest riduci le sovrapposizioni e verifica quali protezioni sono effettivamente disponibili nella finestra in cui il nemico attacca.",
+          "Una riduzione del danno riflesso non sostituisce la difesa contro un attacco normale, e una protezione iniziale non copre necessariamente una battaglia lunga. Se muori dopo la scadenza dell’apertura, investire soltanto in Opening può lasciare intatto il problema. Cerca il tipo di danno o controllo che causa la sconfitta e scegli di conseguenza proc, costanti e supporto della squadra."
+        ],
+        "paragraphsEn": [
+          "Assess head and body gear as one system: which procs do you want in main slots, which opening effects are needed, and which constants share a category? Exceeding a category limit does not guarantee that the desired effects will be retained. Before entering, reduce overlap and check which protections are actually available when the enemy attacks.",
+          "Reflected-damage reduction does not replace protection against an ordinary attack, and an opening effect may not cover a long battle. If you die after the opening expires, investing only in Openings can leave the problem unresolved. Identify the damage or control causing the defeat, then choose procs, constants and party support accordingly."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
       }
     ]
   },
@@ -620,6 +863,1071 @@
           "Consider team effects, protection, immunity, resources and fields. In PvE, synergy with other players matters; in PvP (GvG), preventing or countering the enemy Unison also matters.",
           "Open each Hidden Potential level separately. For example, [Bashful Beach] Blue Sea Riko unlocks Concerto at level 3 and improves its stat buff at level 4: a level-zero copy does not have those benefits.",
           "Check material Restrictions. Some monsters require specific copies for potential upgrades: do not assume any material can be used. The value of the maximum version must always show what is needed to reach it."
+        ]
+      },
+      {
+        "id": "mostro-tre-ruoli",
+        "heading": "Main, sub e lancio: tre valutazioni dello stesso mostro",
+        "paragraphs": [
+          "Il passivo di main slot, i contributi da equipaggiamento e gli effetti del lancio Unison vanno letti separatamente. Un mostro può essere utile nel sub per statistiche, elemento o potenziali anche quando non è la prima scelta da lanciare. Al contrario, un lancio prezioso per la squadra può giustificare una combinazione di statistiche personale meno ottimale.",
+          "Per il main, chiediti quale problema risolve il passivo: resistenza agli status, supporto al danno delle abilità o un’altra funzione specifica. Per il lancio, guarda destinatari, ordine degli effetti, protezioni e risorse fornite. Non attribuire al sub un beneficio esplicitamente limitato al main, e non valutare un passivo come se fosse attivo soltanto dopo aver lanciato il mostro."
+        ],
+        "paragraphsEn": [
+          "Read the main-slot passive, equipped contributions and Unison cast effects separately. A monster can be useful in a sub slot for stats, element or potentials even when it is not your first cast choice. Conversely, a cast that is valuable to the party can justify a less optimal personal stat combination.",
+          "For the main slot, ask which problem the passive solves: ailment resistance, ability damage support or another specific function. For the cast, inspect recipients, effect order, protections and resources provided. Do not assign an explicitly main-only benefit to a sub slot, or assess a passive as though it becomes active only after casting the monster."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "tables": [
+          {
+            "caption": "Tre domande sullo stesso mostro",
+            "headers": [
+              "Aspetto",
+              "Controllo"
+            ],
+            "rows": [
+              [
+                "Main slot",
+                "Quale passivo richiede il main?"
+              ],
+              [
+                "Sub slot",
+                "Quali contributi restano da equipaggiato?"
+              ],
+              [
+                "Lancio",
+                "Chi riceve gli effetti e in quale ordine?"
+              ]
+            ],
+            "captionEn": "Three questions about one monster",
+            "headersEn": [
+              "Aspect",
+              "Check"
+            ],
+            "rowsEn": [
+              [
+                "Main slot",
+                "Which passive requires the main slot?"
+              ],
+              [
+                "Sub slot",
+                "Which contributions remain while equipped?"
+              ],
+              [
+                "Cast",
+                "Who receives the effects, and in which order?"
+              ]
+            ]
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "mostro-potenziale-contesto",
+        "heading": "Valore disponibile, potenziale finale e squadra",
+        "paragraphs": [
+          "Valuta due versioni: quella che puoi equipaggiare oggi e quella raggiungibile dopo gli sblocchi. Elenca quali benefici sono già presenti e quali richiedono Hidden Potential, poi controlla i materiali ammessi e il numero di passaggi necessari. Un potenziale che aggiunge resistenza o attacco elementale è un contributo da equipaggiamento; uno che modifica il lancio cambia invece ciò che ricevi durante la Unison.",
+          "In PvE cerca effetti che coprano necessità rimaste scoperte nel gruppo, evitando lanci che sovrascrivono un supporto ancora utile senza un motivo. In PvP considera anche tempi, controllo della barra e ordine delle Unison: un mostro che agisce dopo gli altri deve poter arrivare al proprio turno. La lunghezza dell’elenco effetti, il costo e il danno nominale non bastano da soli a decidere se un mostro serve alla tua strategia."
+        ],
+        "paragraphsEn": [
+          "Assess two versions: what you can equip today and what becomes available after unlocking potentials. List which benefits already exist and which require Hidden Potential, then check allowed materials and the required sequence of unlocks. A potential adding resistance or elemental attack contributes while equipped; one changing the cast instead changes what you receive during Unison.",
+          "In PvE, look for effects that cover unmet party needs, avoiding casts that overwrite still-useful support without a reason. In PvP, also consider timing, gauge control and Unison order: a monster that acts after others needs to reach its turn. Effect count, cost and nominal damage alone do not establish whether a monster fits your strategy."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "aure-bubble",
+    "title": "Aura e Bubble: atlante visivo",
+    "summary": "Riconosci gli effetti in battaglia e scegli protezioni, risorse e bonus che risolvono il problema del tuo set.",
+    "historical": false,
+    "sections": [
+      {
+        "id": "regole-aure-bubble",
+        "heading": "Come combinare Aura e Bubble",
+        "paragraphs": [
+          "Le aure possono coesistere tra loro e con una Bubble. Puoi però avere una sola Bubble alla volta: sceglierne un’altra significa cambiare la protezione disponibile. Riapplicare la stessa Bubble rinnova sia la sua riserva di assorbimento sia la durata.",
+          "La presenza contemporanea di due effetti non garantisce la somma delle statistiche duplicate. Rage e Armament offrono entrambi ATK e MATK, ma questi aumenti non si sommano fra loro; Rage e Ambush coprono invece statistiche diverse, combinando attacco e difesa. I bonus separati dai normali Status Buff vanno comunque distinti da altri bonus della stessa famiglia.",
+          "Una Bubble assorbe danni a HP e CP fino alla propria scadenza o alla soglia di rottura: per quelle descritte qui, la soglia corrisponde al 300% degli HP massimi, escludendo gli aumenti da buff e Field. La durata dipende dal lancio del mostro: il nome dell’effetto, da solo, non promette lo stesso numero di secondi in ogni caso."
+        ],
+        "paragraphsEn": [
+          "Auras can coexist with one another and with a Bubble. Only one Bubble can be active at a time, so choosing another changes your available protection. Applying the same Bubble again refreshes both its absorption reserve and its duration.",
+          "Having two effects active does not guarantee that duplicate stat bonuses add together. Rage and Armament both increase ATK and MATK, but those increases do not stack with each other; Rage and Ambush cover different stats, combining offense and defense. Bonuses separate from ordinary Status Buffs still need to be distinguished from other bonuses in the same family.",
+          "A Bubble absorbs damage to HP and CP until it expires or reaches its break threshold. For the Bubbles described here, that threshold is 300% of maximum HP excluding buff and Field increases. Duration depends on the monster cast: an effect name alone does not promise the same number of seconds every time."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "leggere-protezioni",
+        "heading": "Rimozione, immunità e destinatari",
+        "paragraphs": [
+          "Rimuovere un malus al momento dell’attivazione e impedirne l’applicazione sono due vantaggi diversi. Iron Wall pulisce i debuff già presenti, ma non offre per questo un’immunità continua. Allo stesso modo, una protezione dai debuff ordinari non va estesa automaticamente ai debuff speciali o agli status alterati speciali.",
+          "Le schede descrivono ciò che riceve il bersaglio dell’effetto. Controlla sempre il lancio del mostro per capire se il bersaglio sei tu o l’intera squadra: un’aura personale non diventa condivisa solo perché il suo nome coincide con quello di una versione di squadra.",
+          "Molte Bubble bloccano anche gli attacchi percentuali, che consumano la riserva di assorbimento; gli attacchi percentuali autoinflitti dai mostri possono quindi non abbassare gli HP per attivare Awakening. Ether Exchange e abilità analoghe possono invece consumare HP anche con la Bubble attiva. La protezione va letta insieme alle eccezioni della singola abilità."
+        ],
+        "paragraphsEn": [
+          "Removing a harmful effect on activation and preventing it from being applied are different benefits. Iron Wall clears existing debuffs without thereby granting ongoing immunity. Likewise, protection from ordinary debuffs should not automatically be extended to special debuffs or special status ailments.",
+          "Each entry describes what the effect recipient gains. Check the monster cast to see whether it targets you or the whole party: a personal aura does not become shared simply because it has the same name as a party version.",
+          "Many Bubbles also block percentage attacks, which consume their absorption reserve. A monster’s self-inflicted percentage attack may therefore fail to lower HP enough to activate Awakening. Ether Exchange and similar abilities can still consume HP while a Bubble is active. Read protection alongside the individual ability’s exceptions."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "ambush",
+        "heading": "Ambush",
+        "paragraphs": [
+          "Ambush crea una finestra di azione rapida: assorbe i danni a HP e CP, aumenta DEF e MDEF del 100% con bonus speciali e porta a zero il cooldown delle abilità compatibili. Protegge inoltre dalle riduzioni di Cost e della barra Unison.",
+          "Il cooldown azzerato non elimina il costo delle abilità e non vale per tutte le abilità. Per sfruttarlo servono Cost sufficienti e una Bubble ancora integra: la sequenza termina quando Ambush scade o raggiunge la soglia di rottura."
+        ],
+        "paragraphsEn": [
+          "Ambush creates a rapid-action window: it absorbs HP and CP damage, grants special 100% DEF and MDEF increases, and reduces compatible ability cooldowns to zero. It also prevents Cost and Unison Gauge reduction.",
+          "Zero cooldown does not remove ability costs and does not apply to every ability. Exploiting it requires enough Cost and an intact Bubble; the sequence ends when Ambush expires or reaches its break threshold."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/ambush.png",
+            "alt": "Aspetto di Ambush in battaglia",
+            "caption": "Ambush",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "armament",
+        "heading": "Armament",
+        "paragraphs": [
+          "Armament abbina assorbimento dei danni a HP e CP a un aumento del 100% di ATK e MATK. Il Piercer consente di attraversare riduzione, riflessione e annullamento del danno coperti da questo effetto, mentre le immunità a Cost e Unison reduction proteggono le risorse.",
+          "I bonus offensivi sono separati dai normali Status Buff e resistono alla loro rimozione. Questo non li rende cumulabili con ogni altra aura offensiva: l’aumento di Rage, per esempio, non si aggiunge a quello di Armament. La Bubble rimane soggetta a scadenza e rottura."
+        ],
+        "paragraphsEn": [
+          "Armament combines HP and CP damage absorption with 100% ATK and MATK increases. Its Piercer bypasses the damage reduction, reflection and nullification covered by that effect, while Cost and Unison reduction immunity protects resources.",
+          "Its offensive increases are separate from ordinary Status Buffs and survive their removal. That does not make them additive with every offensive aura: Rage’s increases, for example, do not add to Armament’s. The Bubble still expires or breaks."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/armament.png",
+            "alt": "Aspetto di Armament in battaglia",
+            "caption": "Armament",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "awakening-standby",
+        "heading": "Awakening: attesa",
+        "paragraphs": [
+          "Awakening viene prima preparato in modalità Standby. La trasformazione si attiva quando gli HP del bersaglio scendono al 60% o meno; se sono già entro quella soglia al momento dell’applicazione, l’attivazione è immediata.",
+          "Lo Standby non va confuso con la fase attiva e può essere eliminato da un effetto che rimuove Awakening Standby, come Scar. Una Bubble che impedisce la perdita di HP può anche ostacolare il modo con cui volevi raggiungere la soglia."
+        ],
+        "paragraphsEn": [
+          "Awakening is first prepared in Standby mode. It activates when the recipient’s HP falls to 60% or below; if HP is already within that threshold when applied, activation is immediate.",
+          "Standby is distinct from the active phase and can be removed by an effect that removes Awakening Standby, such as Scar. A Bubble that prevents HP loss may also interfere with the method you intended to use to reach the threshold."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/awakening-standby.png",
+            "alt": "Awakening in modalità Standby",
+            "caption": "Awakening in modalità Standby",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "awakening-attivo",
+        "heading": "Awakening: fase attiva",
+        "paragraphs": [
+          "Una volta attivato, Awakening dura 60 secondi. All’avvio rimuove status alterati e debuff ordinari, aumenta tutte le statistiche del 50% e offre +30% alla probabilità critica, +30 Ability Power fisico e magico e una riduzione del 50% ai danni fisici e magici ricevuti.",
+          "La pulizia iniziale non equivale a un’immunità per tutta la trasformazione. I bonus alle statistiche, al critico e all’Ability Power possono essere rimossi da Remove Status Buffs; le riduzioni dei danni possono essere rimosse da Remove Damage Reduction."
+        ],
+        "paragraphsEn": [
+          "Once activated, Awakening lasts 60 seconds. At activation it removes ordinary status ailments and debuffs, raises all stats by 50%, and provides 30% increased critical chance, +30 physical and magic Ability Power, and 50% physical and magic damage reduction.",
+          "The initial cleanse does not grant immunity throughout the transformation. Its stat, critical chance and Ability Power bonuses can be removed by Remove Status Buffs; its damage reductions can be removed by Remove Damage Reduction."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/awakening-attivo.png",
+            "alt": "Awakening dopo l’attivazione",
+            "caption": "Awakening dopo l’attivazione",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "blessing",
+        "heading": "Blessing",
+        "paragraphs": [
+          "Blessing sostiene la continuità del combattimento: recupera 50 Cost, aumenta gli HP massimi del 100%, dimezza i cooldown e cura il 20% degli HP massimi ogni 5 secondi. Impedisce inoltre gli status alterati ordinari e la riduzione della barra Unison.",
+          "Il bonus HP è separato dai normali Status Buff, ma gli altri benefici non sono tutti intoccabili: l’aumento dei cooldown può contrastarne la riduzione e Remove Continuous Healing può eliminare la cura periodica. Non confondere il recupero iniziale di Cost con un’immunità a Cost reduction."
+        ],
+        "paragraphsEn": [
+          "Blessing supports sustained combat: it restores 50 Cost, increases maximum HP by 100%, halves cooldowns and heals 20% of maximum HP every 5 seconds. It also prevents ordinary status ailments and Unison Gauge reduction.",
+          "Its HP increase is separate from ordinary Status Buffs, but not every benefit is untouchable: increased cooldowns can override its cooldown reduction, and Remove Continuous Healing can remove its periodic healing. Initial Cost recovery is not Cost reduction immunity."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/blessing.png",
+            "alt": "Aspetto di Blessing in battaglia",
+            "caption": "Blessing",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "concerto",
+        "heading": "Concerto",
+        "paragraphs": [
+          "Concerto offre +100% HP, +100% a tutte le statistiche e +4 all’attacco dei sette elementi, su bonus separati. Le immunità crescono però contando gli altri alleati che hanno Concerto attivo, senza includere il personaggio che stai valutando.",
+          "Con almeno un altro alleato ottieni immunità agli status alterati ordinari; con due si aggiunge quella ai debuff ordinari, con tre quella a Cost reduction e con quattro quella a Unison reduction. Quindi un singolo portatore isolato non ha già l’intero pacchetto. I mostri Orchestra Lydian da 43 Cost costituiscono un caso specifico: il loro lancio applica subito i benefici del livello massimo."
+        ],
+        "paragraphsEn": [
+          "Concerto provides +100% HP, +100% to all stats and +4 attack for all seven elements through separate bonuses. Its immunities scale with the number of other allies who also have Concerto active, excluding the character being evaluated.",
+          "At least one other ally grants ordinary status ailment immunity; two add ordinary debuff immunity, three add Cost reduction immunity, and four add Unison reduction immunity. An isolated recipient therefore does not have the full package. The 43-Cost Orchestra Lydian monsters are a specific exception: their cast immediately applies the highest-tier benefits."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/concerto.png",
+            "alt": "Aspetto di Concerto in battaglia",
+            "caption": "Concerto",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "dawn",
+        "heading": "Dawn",
+        "paragraphs": [
+          "Dawn aumenta gli HP massimi del 100%, raddoppia le statistiche e impedisce la riduzione di Cost e barra Unison. Ogni abilità usata recupera 10 Cost, rendendo più sostenibile una sequenza lunga di azioni.",
+          "Quando il portatore sconfigge un nemico, recupera il 30% degli HP massimi, riceve Dual Attack e rimuove debuff ordinari e speciali. La pulizia e Dual Attack richiedono quindi un’uccisione da parte del portatore: contro un bersaglio che non muore, non sono benefici già disponibili all’applicazione."
+        ],
+        "paragraphsEn": [
+          "Dawn increases maximum HP by 100%, doubles stats and prevents Cost and Unison Gauge reduction. Each ability used restores 10 Cost, helping sustain a long action sequence.",
+          "When the recipient defeats an enemy, they recover 30% of maximum HP, gain Dual Attack and remove ordinary and special debuffs. The cleanse and Dual Attack therefore require a kill by the recipient; against a target that remains alive, they are not benefits already available on application."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/dawn.png",
+            "alt": "Aspetto di Dawn in battaglia",
+            "caption": "Dawn",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "grace",
+        "heading": "Grace",
+        "paragraphs": [
+          "Grace aumenta gli HP massimi del 100% e protegge da Cost reduction, status alterati ordinari e debuff ordinari. È una combinazione utile quando serve mantenere accesso alle abilità senza perdere sicurezza contro i malus più comuni.",
+          "Il recupero di 100 Cost arriva dopo la fine dell’effetto, non all’applicazione. Pianifica le abilità con la riserva che possiedi durante Grace e considera il recupero finale come un secondo momento della rotazione; non estendere le immunità ai malus speciali."
+        ],
+        "paragraphsEn": [
+          "Grace increases maximum HP by 100% and protects against Cost reduction, ordinary status ailments and ordinary debuffs. It helps preserve ability access while guarding against common harmful effects.",
+          "Its 100-Cost recovery occurs after the effect ends, not when it is applied. Plan abilities around the resources available during Grace and treat its ending recovery as a later stage of the rotation; do not extend its immunities to special harmful effects."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/grace.png",
+            "alt": "Aspetto di Grace in battaglia",
+            "caption": "Grace",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "hero",
+        "heading": "Hero",
+        "paragraphs": [
+          "Hero aumenta gli HP massimi del 100%, raddoppia le statistiche e impedisce debuff ordinari, status alterati ordinari e riduzione della barra Unison. I suoi bonus di HP e statistiche sono separati dai normali Status Buff.",
+          "Il prezzo è rilevante: Hero annulla i normali Status Buff e riduce del 70% le cure ricevute. Il bonus agli HP massimi viene applicato prima di questa penalità alle cure, ma le guarigioni successive restano penalizzate. Inoltre la protezione dai debuff non blocca quelli speciali: valuta Hero insieme al supporto e ai malus previsti nello scontro."
+        ],
+        "paragraphsEn": [
+          "Hero increases maximum HP by 100%, doubles stats and prevents ordinary debuffs, ordinary status ailments and Unison Gauge reduction. Its HP and stat increases are separate from ordinary Status Buffs.",
+          "The tradeoff is substantial: Hero nullifies ordinary Status Buffs and reduces received healing by 70%. Its maximum HP increase applies before that healing penalty, but later healing remains penalized. Its debuff protection also does not stop special debuffs, so assess Hero alongside your support and the encounter’s expected harmful effects."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/hero.png",
+            "alt": "Aspetto di Hero in battaglia",
+            "caption": "Hero",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "iron-wall",
+        "heading": "Iron Wall",
+        "paragraphs": [
+          "Iron Wall rimuove subito i debuff ordinari e riduce del 50% i danni fisici e magici ricevuti. Aggiunge Counter Heal da 20.000 HP per ogni danno subito, Concentration del 30% e Resurrection: diversi strumenti difensivi raccolti nello stesso avvio.",
+          "La rimozione iniziale dei debuff non impedisce che vengano riapplicati. Le componenti hanno anche vulnerabilità distinte: Counter Heal può essere rimosso con i normali buff, le riduzioni con Remove Damage Reduction e Resurrection con Remove Resurrection. Contro rimozioni frequenti, non considerare il pacchetto indivisibile."
+        ],
+        "paragraphsEn": [
+          "Iron Wall immediately removes ordinary debuffs and reduces incoming physical and magic damage by 50%. It adds a 20,000-HP Counter Heal on each damage event, 30% Concentration and Resurrection, assembling several defensive tools in one application.",
+          "The initial debuff removal does not prevent reapplication. Its components also have separate vulnerabilities: Counter Heal can be removed with ordinary buffs, damage reductions with Remove Damage Reduction, and Resurrection with Remove Resurrection. Against frequent removal, do not treat the package as indivisible."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/iron-wall.png",
+            "alt": "Aspetto di Iron Wall in battaglia",
+            "caption": "Iron Wall",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "protection",
+        "heading": "Protection",
+        "paragraphs": [
+          "Protection assorbe i danni a HP e CP e aumenta DEF e MDEF del 100% attraverso bonus separati dai normali Status Buff. Durante la sua presenza impedisce status alterati ordinari, debuff ordinari ed effetti di rimozione dei buff.",
+          "La protezione dei buff è un vantaggio specifico da distinguere dal semplice scudo. Non autorizza però a presumere immunità a ogni status speciale o una durata illimitata: anche Protection termina per scadenza o al raggiungimento della soglia di rottura."
+        ],
+        "paragraphsEn": [
+          "Protection absorbs HP and CP damage and raises DEF and MDEF by 100% through increases separate from ordinary Status Buffs. While active, it prevents ordinary status ailments, ordinary debuffs and buff-removal effects.",
+          "Protecting buffs is a specific advantage beyond damage absorption. It does not imply immunity to every special ailment or unlimited duration: Protection still ends on expiration or at its break threshold."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/protection.png",
+            "alt": "Aspetto di Protection in battaglia",
+            "caption": "Protection",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "rage",
+        "heading": "Rage",
+        "paragraphs": [
+          "Rage aumenta del 100% HP massimi, ATK e MATK e impedisce status alterati ordinari e Cost reduction. Questi aumenti sono separati dai normali Status Buff e resistono alla loro rimozione.",
+          "Quando il portatore sconfigge un nemico, recupera il 30% degli HP massimi e 30 Cost, oltre a rimuovere debuff ordinari e speciali. Questo recupero premia le uccisioni, ma non costituisce immunità continua ai debuff: senza una sconfitta nemica, la pulizia non scatta."
+        ],
+        "paragraphsEn": [
+          "Rage increases maximum HP, ATK and MATK by 100% and prevents ordinary status ailments and Cost reduction. These increases are separate from ordinary Status Buffs and survive their removal.",
+          "When the recipient defeats an enemy, they recover 30% of maximum HP and 30 Cost and remove ordinary and special debuffs. Those rewards favor kills, but do not constitute ongoing debuff immunity: without an enemy defeat, the cleanse does not trigger."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/rage.png",
+            "alt": "Aspetto di Rage in battaglia",
+            "caption": "Rage",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "serenity",
+        "heading": "Serenity",
+        "paragraphs": [
+          "Serenity aumenta del 100% HP massimi, DEF e MDEF, con bonus separati dai normali Status Buff. Protegge dai debuff ordinari e da Cost reduction, offrendo una base difensiva mentre conservi le risorse per agire.",
+          "Il riempimento della barra Unison di 100 avviene dopo la fine dell’effetto. Non anticiparlo come un guadagno immediato, e non confondere questo recupero finale con un’immunità a Unison reduction durante Serenity. La scheda non aggiunge immunità agli status alterati."
+        ],
+        "paragraphsEn": [
+          "Serenity increases maximum HP, DEF and MDEF by 100% through bonuses separate from ordinary Status Buffs. It protects against ordinary debuffs and Cost reduction, providing a defensive base while preserving resources for abilities.",
+          "Its 100-point Unison Gauge fill occurs after the effect ends. Do not plan around it as an immediate gain or confuse that ending recovery with Unison reduction immunity during Serenity. This effect does not add status ailment immunity."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/serenity.png",
+            "alt": "Aspetto di Serenity in battaglia",
+            "caption": "Serenity",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "twilight",
+        "heading": "Twilight",
+        "paragraphs": [
+          "Twilight aumenta gli HP massimi del 100%, impedisce Cost e Unison reduction e restituisce in HP il 10% del danno inflitto. Aggiunge +40 al valore di incremento Break e Piercer, unendo sostegno personale e pressione offensiva.",
+          "Quando il portatore sconfigge un nemico, recupera il 30% degli HP massimi, riempie la barra Unison di 20 e rimuove debuff ordinari e speciali. La pulizia richiede l’uccisione: il Life Drain durante gli attacchi e i premi dopo una sconfitta nemica sono meccaniche diverse da pianificare separatamente."
+        ],
+        "paragraphsEn": [
+          "Twilight increases maximum HP by 100%, prevents Cost and Unison reduction and heals for 10% of damage dealt. It adds +40 to the Break increase value and Piercer, combining personal sustain with offensive pressure.",
+          "When the recipient defeats an enemy, they recover 30% of maximum HP, fill their Unison Gauge by 20 and remove ordinary and special debuffs. The cleanse requires the kill: attack-based Life Drain and rewards after an enemy defeat are separate mechanics to plan around."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/twilight.png",
+            "alt": "Aspetto di Twilight in battaglia",
+            "caption": "Twilight",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "phalanx",
+        "heading": "Phalanx",
+        "paragraphs": [
+          "Phalanx assorbe i danni a HP e CP e impedisce debuff e status alterati, sia ordinari sia speciali. È quindi una Bubble da valutare quando il problema principale è conservare libertà d’azione contro più categorie di malus.",
+          "Quando si rompe o termina, recupera 100 Cost e riempie la barra Unison di 30. Queste risorse arrivano alla fine della protezione: il momento in cui perdi lo scudo può anche diventare l’avvio della prossima sequenza offensiva."
+        ],
+        "paragraphsEn": [
+          "Phalanx absorbs HP and CP damage and prevents both ordinary and special debuffs and status ailments. Consider it when the main problem is retaining freedom to act against multiple categories of harmful effects.",
+          "When it breaks or ends, it restores 100 Cost and fills the Unison Gauge by 30. These resources arrive as protection ends: the moment you lose the shield can also start your next offensive sequence."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/phalanx.png",
+            "alt": "Aspetto di Phalanx in battaglia",
+            "caption": "Phalanx",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "redoubt",
+        "heading": "Redoubt",
+        "paragraphs": [
+          "Redoubt assorbe i danni a HP e CP, aggiunge una riduzione speciale del 50% ai danni fisici e magici e annulla il danno fisso. Impedisce inoltre status alterati ordinari e speciali.",
+          "L’annullamento del danno fisso è una proprietà specifica da cercare contro le meccaniche che lo usano, compresi gli attacchi percentuali fissi indicati dal gioco. Non equivale a immunità ai debuff: la scelta di Redoubt va completata con le protezioni che il resto del set deve ancora fornire."
+        ],
+        "paragraphsEn": [
+          "Redoubt absorbs HP and CP damage, adds a special 50% reduction to physical and magic damage, and nullifies fixed damage. It also prevents ordinary and special status ailments.",
+          "Fixed-damage nullification is a specific property to seek against mechanics that use it, including fixed-percentage attacks identified by the game. It does not equal debuff immunity: complement Redoubt with the protections your remaining set still needs."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/redoubt.png",
+            "alt": "Aspetto di Redoubt in battaglia",
+            "caption": "Redoubt",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "siege",
+        "heading": "Siege",
+        "paragraphs": [
+          "Siege combina assorbimento dei danni a HP e CP con aumenti speciali del 100% di ATK e MATK. Impedisce debuff e status alterati ordinari e speciali, aggiungendo una base offensiva a una copertura ampia dai malus.",
+          "Il suo Vital Strike speciale ha il 10% di probabilità di aumentare del 50% il danno inflitto; non è quindi un moltiplicatore permanente per ogni attacco. Può coesistere con Vital Strike come buff separato, mentre la Bubble rimane vincolata alla propria durata e soglia di rottura."
+        ],
+        "paragraphsEn": [
+          "Siege combines HP and CP damage absorption with special 100% ATK and MATK increases. It prevents ordinary and special debuffs and status ailments, pairing an offensive base with broad protection from harmful effects.",
+          "Its special Vital Strike has a 10% chance to increase damage dealt by 50%, so it is not a permanent multiplier on every attack. It can coexist with Vital Strike as a separate buff, while the Bubble remains limited by its duration and break threshold."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/siege.png",
+            "alt": "Aspetto di Siege in battaglia",
+            "caption": "Siege",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "skirmish",
+        "heading": "Skirmish",
+        "paragraphs": [
+          "Skirmish assorbe i danni a HP e CP e fornisce un Piercer speciale. Ogni abilità usata riempie la barra Unison di 3 e recupera 5 Cost; inoltre ripristina CP in funzione del danno inflitto.",
+          "È un supporto alla frequenza delle azioni, ma recuperare Cost e Unison non significa impedire che il nemico li riduca. La resa dipende dalla possibilità di continuare ad attaccare: non attribuirle immunità ai malus che il pacchetto non elenca."
+        ],
+        "paragraphsEn": [
+          "Skirmish absorbs HP and CP damage and provides special Piercer. Each ability used fills the Unison Gauge by 3 and restores 5 Cost; it also restores CP based on damage dealt.",
+          "It supports repeated actions, but recovering Cost and Unison does not prevent enemies from reducing them. Its value depends on being able to keep attacking; do not assume immunity to harmful effects outside its listed package."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/skirmish.png",
+            "alt": "Aspetto di Skirmish in battaglia",
+            "caption": "Skirmish",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "overcast",
+        "heading": "Overcast",
+        "paragraphs": [
+          "Overcast aumenta gli HP massimi del 100% con un bonus speciale, aggiunge 60 alla difesa di tutti gli elementi e recupera 50 Cost. Impedisce debuff e status alterati sia ordinari sia speciali.",
+          "Alla fine attiva una sola volta Time Extend, prolungando di 60 secondi gli effetti vantaggiosi applicati al personaggio, inclusi buff, buff speciali e buff non rimovibili. Il prolungamento finale non è la durata di Overcast stessa: pianifica quali effetti vuoi ancora presenti quando termina."
+        ],
+        "paragraphsEn": [
+          "Overcast grants a special 100% maximum HP increase, adds 60 to every elemental defense and restores 50 Cost. It prevents both ordinary and special debuffs and status ailments.",
+          "At its end, it activates Time Extend once, extending beneficial effects applied to the character by 60 seconds, including buffs, special buffs and non-removable buffs. This ending extension is not Overcast’s own duration; plan which effects you want still present when it ends."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/overcast.png",
+            "alt": "Aspetto di Overcast in battaglia",
+            "caption": "Overcast",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "kijin",
+        "heading": "Kijin",
+        "paragraphs": [
+          "Kijin aumenta gli HP massimi del 100%, impedisce debuff ordinari e Unison reduction e offre Piercer. Aggiunge +50 all’Ability Power dei colpi critici e aumenta del 30% la precisione delle abilità d’attacco.",
+          "Il bonus all’Ability Power critico non può superare 50 senza Limit Break e può essere rimosso con Remove Critical Hit Damage Increase. Non scambiarlo per probabilità critica: per sfruttarlo devi anche riuscire a mettere a segno critici, e l’effetto non aggiunge immunità agli status alterati."
+        ],
+        "paragraphsEn": [
+          "Kijin increases maximum HP by 100%, prevents ordinary debuffs and Unison reduction, and provides Piercer. It adds +50 Ability Power to critical hits and increases attack ability accuracy by 30%.",
+          "Critical-hit Ability Power cannot exceed 50 without Limit Break and can be removed by Remove Critical Hit Damage Increase. Do not confuse it with critical chance: benefiting from it also requires landing critical hits, and the effect does not add status ailment immunity."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/kijin.png",
+            "alt": "Aspetto di Kijin in battaglia",
+            "caption": "Kijin",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "rampart",
+        "heading": "Rampart",
+        "paragraphs": [
+          "Rampart assorbe i danni a HP e CP e aggiunge due bonus speciali: +200 Ability Power ai danni Unison di tutti gli elementi e +50 al valore di successo degli attacchi che applicano status alterati, compresi effetti Unison e abilità. Impedisce inoltre debuff ordinari e speciali e Unison reduction.",
+          "I due bonus hanno tempi diversi: quello ai danni Unison entra in gioco prima del danno del lancio, mentre il miglioramento al successo degli status vale dopo l’applicazione della Bubble, quindi per le azioni successive. Il valore di successo aggiuntivo non garantisce da solo che ogni status venga applicato."
+        ],
+        "paragraphsEn": [
+          "Rampart absorbs HP and CP damage and adds two special bonuses: +200 Ability Power to Unison damage of every element and +50 to the success value of status ailment attacks, including Unison and ability effects. It also prevents ordinary and special debuffs and Unison reduction.",
+          "The bonuses have different timing: the Unison damage bonus applies before the cast’s damage, while the increased ailment success applies after the Bubble is applied and therefore benefits later actions. Extra success value does not by itself guarantee every ailment will land."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [
+          {
+            "path": "assets/guide/effects/rampart.png",
+            "alt": "Aspetto di Rampart in battaglia",
+            "caption": "Rampart",
+            "sourceRef": {
+              "id": "unisonpedia",
+              "title": "UnisonPedia · Studi dell’autore",
+              "url": null,
+              "declaredUpdated": null,
+              "fetchedAt": "2026-10-26",
+              "kind": "editorial",
+              "edition": null,
+              "notes": null
+            }
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
         ]
       }
     ]
@@ -1000,6 +2308,33 @@
         "paragraphsEn": [
           "Disables Constant effects. Having a constant in the build does not guarantee that its benefit stays active under this status."
         ]
+      },
+      {
+        "id": "rimozione-immunita-speciali",
+        "heading": "Rimuovere, prevenire e riconoscere gli effetti speciali",
+        "paragraphs": [
+          "“Remove” e “nullify” descrivono risposte diverse: rimuovere cura una condizione presente, mentre una protezione valida impedisce l’applicazione prevista dal suo testo. Controlla anche quando avviene la rimozione: al lancio, all’uso di un’abilità o dopo un’eliminazione non sono lo stesso comportamento. Una protezione può inoltre riguardare soltanto chi la riceve, non tutta la squadra.",
+          "Debuff ordinari, special debuff, status ailments e special status ailments sono categorie distinte. Cost reduction e Unison gauge reduction possono richiedere protezioni nominate separatamente. Per risolvere una meccanica, abbina il nome e la categoria del problema alla descrizione della risposta: una generica promessa di “protezione dagli status” non dimostra copertura contro ogni effetto speciale."
+        ],
+        "paragraphsEn": [
+          "“Remove” and “nullify” describe different answers: removal clears an existing condition, while a valid protection prevents the application covered by its text. Also check when removal happens: on cast, on ability use and after a kill are different triggers. A protection may cover only its recipient rather than the whole party.",
+          "Ordinary debuffs, special debuffs, status ailments and special status ailments are separate categories. Cost reduction and Unison gauge reduction may require separately named protections. To answer a mechanic, match the problem’s name and category to the response’s description: a generic promise of “ailment protection” does not establish coverage against every special effect."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
       }
     ]
   },
@@ -1035,6 +2370,60 @@
           "Initial, fully Reforged and fully Infused stats are separate in official entries. For monsters, maximum stats may include unlocked potentials.",
           "Check in-game infusion costs and combinations before using materials: values may differ between variants.",
           "For the sixth ring and later content, check in-game requirements and abilities before defining a class build."
+        ]
+      },
+      {
+        "id": "infusione-progetto-materiali",
+        "heading": "Prima dell’infusione: progetto e materiali",
+        "paragraphs": [
+          "Livellare un pezzo, aumentarne il livello skill, reforgiarlo e infonderlo sono interventi diversi. Identifica il beneficio che stai cercando prima di consumare copie o Ether. Una copia tenuta separata può completare un set elementale; consumarla per aumentare il Gear Score di un solo pezzo può ridurre le opzioni disponibili per la quest successiva.",
+          "Prima di confermare un’infusione, verifica in gioco compatibilità del materiale, costo complessivo e risultato della sequenza prevista. Tipo di equipaggiamento e costo dei pezzi possono cambiare l’efficienza del percorso. Pianifica fino al traguardo utile, invece di scegliere ogni passaggio isolatamente, e conserva risorse per il pezzo che prevedi davvero di usare a lungo."
+        ],
+        "paragraphsEn": [
+          "Leveling a piece, raising its skill level, reforging it and infusing it are different upgrades. Identify the benefit you want before consuming copies or Ether. Keeping a copy separate may complete an elemental set; consuming it to raise one piece’s Gear Score can reduce your options for the next quest.",
+          "Before confirming an infusion, check material compatibility, total cost and the expected sequence’s result in game. Equipment type and piece cost can change the path’s efficiency. Plan toward a useful endpoint instead of choosing each step in isolation, and preserve resources for equipment you actually expect to use long term."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "scegliere-enchant-funzione",
+        "heading": "Scegliere un enchant in base all’uso dell’abilità",
+        "paragraphs": [
+          "Incanta prima le abilità che usi nella barra attuale. Per una utility, confronta quanto migliora ogni utilizzo con quante volte potrai usarla: cooldown più breve, durata maggiore e Cost inferiore risolvono problemi diversi. Per un’abilità offensiva considera anche combo, recupero risorse ed effetti secondari prima di scegliere soltanto l’aumento di AP.",
+          "Una durata più lunga può ridurre le azioni necessarie a mantenere un buff; un cooldown minore può facilitare una seconda applicazione ma aumentare il consumo di Cost e il tempo occupato dalle animazioni. In PvP può bastare rendere più efficace il primo utilizzo, mentre una quest lunga può premiare la sostenibilità. Leggi i percorsi attualmente disponibili per il ring interessato: una scelta valida per un’abilità non diventa una prescrizione per tutte quelle della stessa classe."
+        ],
+        "paragraphsEn": [
+          "Enchant the abilities you actually use first. For a utility, compare improvement per use with how often you can use it: shorter cooldown, longer duration and lower Cost solve different problems. For an attack, also consider combos, resource recovery and secondary effects before choosing solely by the AP increase.",
+          "Longer duration can reduce the actions needed to maintain a buff; a shorter cooldown can enable another application but increase Cost consumption and time spent in animations. In PvP, improving the first use may be enough, while a long quest can reward sustainability. Read the paths currently available for the relevant ring: a valid choice for one ability is not a prescription for every ability in that class."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
         ]
       }
     ]
@@ -1072,6 +2461,110 @@
           "Spendable budget is available gems minus reserve. Conservative advice chooses the cheapest reachable guaranteed milestone; if it is outside the budget, it suggests saving. A random average is not a recommended spending limit.",
           "Simulations require known rates and rules. The Treasure Spawn Calculator’s Random Curve is a configurable hypothesis rather than an official probability. Stop once you obtain the target: prior spending does not justify additional spawns."
         ]
+      },
+      {
+        "id": "leggere-banner-scambio",
+        "heading": "Leggere il banner fino al traguardo",
+        "paragraphs": [
+          "Prima di spendere, individua l’oggetto esatto, la sua presenza nel pool e l’eventuale scambio o garanzia che permette di sceglierlo. “UR garantita” può significare una ricompensa casuale dentro un gruppo: non equivale a scegliere il bersaglio. Controlla inoltre quali step danno valuta di scambio, quanto ne serve e se la valuta vale per quel bersaglio.",
+          "Somma il costo dell’intero percorso necessario, inclusi i passaggi iniziali, e confrontalo con il budget dopo la riserva. Leggi scadenze di banner e scambio prima di iniziare: avere una parte delle medaglie non basta se non puoi raggiungere la quantità richiesta entro il termine. Un’uscita casuale anticipata è un vantaggio possibile; il progetto deve restare sensato anche senza ottenerla."
+        ],
+        "paragraphsEn": [
+          "Before spending, identify the exact item, confirm that it is in the pool, and find any exchange or guarantee that lets you select it. “Guaranteed UR” may mean a random reward from a group rather than a choice of target. Also check which steps grant exchange currency, how much is required and whether that currency applies to your target.",
+          "Add the cost of the entire required path, including initial steps, and compare it with your budget after reserving funds. Read banner and exchange deadlines before starting: some medals are insufficient if you cannot reach the required amount before expiry. An early random drop is a possible benefit; the plan should still make sense without one."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "tables": [
+          {
+            "caption": "Verifica prima della spawn",
+            "headers": [
+              "Voce",
+              "Da verificare"
+            ],
+            "rows": [
+              [
+                "Bersaglio",
+                "Oggetto e variante esatti"
+              ],
+              [
+                "Garanzia",
+                "Scelta diretta o estrazione casuale?"
+              ],
+              [
+                "Scambio",
+                "Valuta valida, quantità e scadenza"
+              ],
+              [
+                "Budget",
+                "Costo totale del percorso dopo la riserva"
+              ]
+            ],
+            "captionEn": "Before spawning",
+            "headersEn": [
+              "Entry",
+              "Verify"
+            ],
+            "rowsEn": [
+              [
+                "Target",
+                "Exact item and variant"
+              ],
+              [
+                "Guarantee",
+                "Direct choice or random draw?"
+              ],
+              [
+                "Exchange",
+                "Valid currency, amount and deadline"
+              ],
+              [
+                "Budget",
+                "Full path cost after setting aside a reserve"
+              ]
+            ]
+          }
+        ],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "risparmio-miglioramento-concreto",
+        "heading": "Risparmiare per un miglioramento riconoscibile",
+        "paragraphs": [
+          "Descrivi il risultato prima del nome dell’oggetto: “mi serve una main weapon che renda sostenibile il ciclo” oppure “mi manca una protezione contro gli status della quest”. Poi confronta i bersagli con il set posseduto e con i potenziali che puoi davvero sbloccare. Un mostro interessante al massimo può risolvere poco nell’immediato se il beneficio cercato richiede materiali che non hai.",
+          "Raccogli con regolarità le ricompense disponibili di missioni, login, eventi e prime clear, senza trasformare una vecchia stima di gemme mensili in una promessa. Per un evento, confronta il traguardo raggiungibile con AP e tempo necessari. La decisione di spawnare deve nascere da un miglioramento preciso e finanziabile, non dal bisogno di utilizzare ogni nuovo banner."
+        ],
+        "paragraphsEn": [
+          "Describe the outcome before naming an item: “I need a main weapon that makes my cycle sustainable” or “I lack protection against this quest’s ailments.” Then compare targets with your owned set and the potentials you can actually unlock. A monster that looks attractive when maxed may offer little immediately if the needed benefit requires materials you do not have.",
+          "Regularly collect available mission, login, event and first-clear rewards without treating an old monthly gem estimate as a promise. For an event, compare a reachable milestone with the AP and time required. A spawn decision should come from a specific, affordable improvement rather than a need to participate in every new banner."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
       }
     ]
   },
@@ -1107,6 +2600,60 @@
           "Pets have their own progression and can support the build. Evaluate abilities, requirements and investments before choosing a direction.",
           "Compare development priorities with your set and the content you play.",
           "Before spending resources, consider whether the improvement addresses a more urgent need than weapons, a main slot monster or potentials. The catalogue and inventory keep your set’s context visible."
+        ]
+      },
+      {
+        "id": "pet-crescita-abilita",
+        "heading": "Crescita, personalità e abilità del pet",
+        "paragraphs": [
+          "Per valutare un pet separa statistiche, bonus elementale e abilità di supporto. Le abilità del pet sono destinate alle quest PvE e non si attivano in Guild Battle o Colosseum: il loro valore in quest non va trasferito automaticamente al PvP. Guarda il bonus elementale effettivo del singolo pet, senza presumere che ogni famiglia dia sempre lo stesso tipo di contributo.",
+          "I frutti alimentano la crescita delle statistiche; la personalità rende alcuni tipi di crescita più rapidi e altri più lenti. Una preferenza favorevole facilita l’allenamento, ma non alza da sola il limite finale delle statistiche. Quando il pet impara un’abilità, scegli consapevolmente cosa conservare e cosa sostituire: uno spazio occupato da un effetto poco utile può impedire di mantenere il supporto che volevi sviluppare."
+        ],
+        "paragraphsEn": [
+          "To assess a pet, separate stats, elemental bonus and support abilities. Pet abilities are intended for PvE quests and do not activate in Guild Battle or Colosseum: their quest value should not be transferred automatically to PvP. Inspect the individual pet’s actual elemental bonus instead of assuming every family always provides the same type of contribution.",
+          "Fruits drive stat growth; personality makes some growth types faster and others slower. A favorable preference makes training easier but does not itself raise the final stat cap. When a pet learns an ability, deliberately choose what to keep and what to replace: a slot occupied by an unhelpful effect may prevent you from retaining the support you intended to develop."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "pet-allevamento-tracciamento",
+        "heading": "Allevamento: scegliere cosa trasmettere e registrare i risultati",
+        "paragraphs": [
+          "Prima dell’accoppiamento scegli l’obiettivo: elemento, abilità, personalità o limite delle statistiche. Non sono lo stesso progetto e non vengono ereditati necessariamente insieme. I due giocatori ricevono uova distinte, quindi ottenere il tratto desiderato da una parte non garantisce lo stesso risultato all’altra. Controlla i requisiti dei pet e l’intervallo disponibile prima di pianificare una serie di accoppiamenti.",
+          "Per seguire il limite delle statistiche, conserva un registro dei genitori e dei risultati, distinguendo il limite a livello massimo dalle statistiche attuali del pet ancora in crescita. Accoppiare senza conoscere la progressione dell’altro genitore può rallentare il progetto. Dopo la schiusa verifica elemento, personalità e abilità ereditate prima di investire altri frutti; un risultato utile per l’elemento può meritare di essere conservato anche se non è quello ideale per aumentare il limite."
+        ],
+        "paragraphsEn": [
+          "Before pairing, choose the objective: element, abilities, personality or stat cap. These are different projects and are not necessarily inherited together. The two players receive separate eggs, so a desired trait appearing on one side does not guarantee the same result on the other. Check pet requirements and the available breeding interval before planning a sequence of pairings.",
+          "To track stat cap progression, keep a record of parents and offspring, distinguishing the cap at maximum level from a growing pet’s current stats. Breeding without knowing the other parent’s progression can slow the project. After hatching, check element, personality and inherited abilities before investing more fruit; an offspring useful for its element may be worth keeping even if it is not ideal for raising the cap."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
         ]
       }
     ]

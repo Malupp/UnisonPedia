@@ -8,12 +8,23 @@ L'obiettivo è rendere comprensibili le scelte di build: quali proc cercare, com
 
 - **Catalogo** di armi, difensivi e mostri UR, con ricerca, filtri, schede dettagliate e confronto degli oggetti.
 - **Meta** organizzato in tre colonne: offensivi, difensivi e mostri. I talenti della stessa famiglia sono raggruppati, con le corrispondenze degli elementi e i collegamenti agli oggetti.
-- **Guide** su classi, statistiche, proc, condizioni di attivazione e meccaniche, con descrizioni consultabili in italiano e inglese.
+- **Guida unica** con 73 argomenti su classi, statistiche, proc e meccaniche, ricerca nei contenuti e atlante Aura e Bubble con 21 immagini. Spiegazioni consultabili in italiano e inglese.
+- **Caricamento rapido** con selezione multipla dal catalogo e suggerimenti dalle icone negli screenshot, elaborati nel browser e confermati manualmente.
 - **Inventario e build personali**, con copie degli oggetti, livelli, infusioni e configurazioni per PvE e PvP. PvP e GvG sono trattati come un'unica modalità.
 - **Consigli sulle build e analisi delle spawn**, basati sui dati disponibili, sulle condizioni degli effetti e sul budget in gemme.
 - **Backup dell'inventario** tramite esportazione e importazione JSON.
 
 Le raccomandazioni distinguono le informazioni verificate da quelle ancora da confermare. Le indicazioni di meta dipendono dalle fonti e dalle date analizzate: non costituiscono una classifica aggiornata automaticamente a ogni modifica del gioco.
+
+## Caricare il proprio equipaggiamento
+
+Da **Inventario → Carica equipaggiamento** puoi usare entrambi i metodi nello stesso elenco:
+
+1. **Cerca e aggiungi**: filtra per nome, tipo o elemento, seleziona più oggetti e imposta quantità e livelli.
+2. **Da screenshot**: apri un PNG, JPEG o WebP (massimo 12 MB), clicca un’icona o ritaglia un quadrato e scegli tra le proposte del catalogo. Regola il ritaglio se le proposte non corrispondono. Il confronto avviene localmente; lo screenshot non viene caricato su un server.
+3. Controlla **La tua selezione**, apri **Livelli e statistiche** e conferma il riepilogo. Ogni oggetto viene aggiunto come nuova copia; l’inventario esistente e le build rimangono conservati. Il limite è 200 copie per aggiunta.
+
+I suggerimenti visivi confrontano le icone: richiedono sempre una scelta manuale e non leggono livelli o potenziali. Artwork simili e screenshot piccoli possono produrre proposte ambigue; la ricerca per nome resta disponibile.
 
 ## Dati e fonti
 
@@ -60,7 +71,7 @@ Il repository contiene i sorgenti, gli asset e i JSON utilizzati dalla webapp, l
 
 ## Account, salvataggio e obiettivi
 
-All’apertura trovi una breve presentazione di UnisonPedia e puoi accedere, creare un account oppure scegliere **Entra come ospite**. La wiki si apre dopo questa scelta; chi ha già una sessione valida entra direttamente. La scelta ospite viene ricordata nella scheda del browser, con salvataggio dell’inventario in IndexedDB. L’uscita da un account riporta alla schermata iniziale. Ogni account ha un personaggio, inventario con copie distinte e più build PvE/PvP. Dalla pagina Account puoi unire esplicitamente l'inventario ospite al tuo account. Cache ospite e cache di ciascun account sono separate.
+All’apertura trovi una breve presentazione di UnisonPedia e puoi accedere, creare un account oppure scegliere **Entra come ospite**. La wiki si apre dopo questa scelta; chi ha già una sessione valida entra direttamente. La scelta ospite viene ricordata per due ore anche aprendo altre schede dello stesso browser, con salvataggio dell’inventario in IndexedDB. L’uscita da un account riporta alla schermata iniziale. Ogni account ha un personaggio, inventario con copie distinte e più build PvE/PvP. Dalla pagina Account puoi unire esplicitamente l'inventario ospite al tuo account. Cache ospite e cache di ciascun account sono separate.
 
 Le modifiche vengono conservate localmente e inviate a Supabase. Lo stato distingue salvataggio online, modifiche in attesa e conflitti tra dispositivi. Un conflitto conserva la versione locale e permette di esportare entrambe le versioni prima di scegliere. I backup JSON v1 vengono migrati automaticamente alla versione 2, che include gli obiettivi.
 

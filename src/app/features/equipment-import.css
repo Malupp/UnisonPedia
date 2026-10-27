@@ -1,0 +1,199 @@
+:host {
+  display: block;
+}
+.import-tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+.quick-import-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 0.85fr);
+  gap: 22px;
+  align-items: start;
+}
+.quick-import-layout > .panel {
+  min-width: 0;
+  margin: 0;
+}
+.quick-import-filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 12px;
+}
+.quick-import-filters label {
+  min-width: 0;
+}
+.quick-import-filters input,
+.quick-import-filters select {
+  width: 100%;
+  min-width: 0;
+}
+.import-result-count {
+  color: var(--muted);
+  font-size: 14px;
+}
+.quick-import-results {
+  max-height: 720px;
+  overflow: auto;
+  position: relative;
+  display: grid;
+  gap: 8px;
+  padding: 2px;
+}
+.quick-import-result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  min-width: 0;
+}
+.quick-import-result:has(input:checked) {
+  border-color: var(--teal);
+  background: rgba(85, 232, 241, 0.06);
+}
+.quick-import-result input {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  accent-color: #55e8f1;
+}
+.quick-import-result img {
+  object-fit: contain;
+  flex: none;
+}
+.quick-import-result span {
+  min-width: 0;
+}
+.quick-import-result strong,
+.quick-import-result small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.quick-import-result small {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.import-more {
+  width: 100%;
+  margin-top: 14px;
+}
+.import-selection {
+  position: sticky;
+  top: 22px;
+}
+.import-pick {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.import-pick-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.import-pick-heading img {
+  object-fit: contain;
+}
+.import-pick-heading strong {
+  flex: 1;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.import-pick-heading button {
+  font-size: 24px;
+  padding: 3px 8px;
+  flex: none;
+}
+.import-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px 0;
+}
+.import-quantity input {
+  width: 90px;
+  min-width: 0;
+}
+.import-pick summary {
+  font-size: 13px;
+  color: var(--muted);
+  cursor: pointer;
+}
+.import-copy-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 12px;
+}
+.import-copy-fields label {
+  font-size: 12px;
+  min-width: 0;
+}
+.import-copy-fields input,
+.import-copy-fields select {
+  min-width: 0;
+  width: 100%;
+  padding: 9px;
+}
+.import-defaults {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.import-confirm {
+  width: 100%;
+}
+.quick-import-dialog {
+  max-width: 540px;
+  width: calc(100% - 32px);
+  padding: 26px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+  color: var(--text, #f2f4f8);
+}
+.quick-import-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+.quick-import-dialog .actions {
+  flex-wrap: wrap;
+}
+.message {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 1000px) {
+  .quick-import-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.8fr);
+  }
+  .quick-import-filters {
+    grid-template-columns: 1fr 1fr;
+  }
+  .quick-import-filters label:first-child {
+    grid-column: 1/-1;
+  }
+}
+@media (max-width: 760px) {
+  .quick-import-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .import-selection {
+    position: static;
+  }
+  .quick-import-results {
+    max-height: 440px;
+  }
+  .quick-import-layout > .panel {
+    padding: 18px;
+  }
+  .import-tabs button {
+    flex: 1;
+  }
+}

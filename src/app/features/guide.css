@@ -1,0 +1,145 @@
+:host {
+  display: block;
+}
+.guide-tools {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin: 0 0 28px;
+}
+.guide-tools > label {
+  flex: 1;
+  min-width: 220px;
+}
+.guide-tools .text-link {
+  padding-bottom: 11px;
+}
+.guide-search-results > div > h2 {
+  font-size: 18px;
+}
+.guide-search-results > a {
+  display: block;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+}
+.guide-search-results strong {
+  display: block;
+  margin: 6px 0;
+  font-size: 16px;
+}
+.guide-search-results p {
+  margin: 0;
+  font-size: 13px;
+}
+.guide-chapter-index {
+  margin: 22px 0;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.guide-chapter-index > summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-size: 13px;
+}
+.guide-chapter-index nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 8px 16px;
+  margin-top: 14px;
+}
+.guide-chapter-index a {
+  font-size: 12px;
+  color: var(--muted);
+}
+.guide-topic,
+.guide-topic-card {
+  scroll-margin-top: 24px;
+}
+.guide-topic {
+  border-top: 1px solid var(--border);
+  margin-top: 24px;
+  padding-top: 2px;
+}
+.guide-topic-card {
+  margin: 12px 0;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  overflow: hidden;
+}
+.guide-topic-card:target {
+  border-color: var(--teal);
+}
+.guide-topic-card > summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  padding: 12px;
+  list-style: none;
+}
+.guide-topic-card > summary::-webkit-details-marker {
+  display: none;
+}
+.guide-topic-card > summary > img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  border-radius: 5px;
+  background: var(--bg);
+}
+.guide-topic-card > summary > span:first-of-type {
+  font-size: 16px;
+  color: var(--green);
+}
+.guide-topic-toggle {
+  margin-left: auto;
+  color: var(--teal);
+  font-size: 22px;
+}
+.guide-topic-toggle::before {
+  content: "+";
+}
+.guide-topic-card[open] .guide-topic-toggle::before {
+  content: "−";
+}
+.guide-topic-body {
+  padding: 0 18px 18px;
+}
+.guide-topic-body p {
+  font-size: 14px;
+  line-height: 1.85;
+}
+.guide-images {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.guide-images figure {
+  max-width: 100%;
+  margin: 16px 0;
+}
+.guide-images figure > img {
+  display: block;
+  max-height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+.chapter-nav {
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+}
+@media (max-width: 900px) {
+  .chapter-nav {
+    max-height: none;
+    overflow: visible;
+  }
+  .guide-tools {
+    align-items: stretch;
+  }
+  .guide-tools > label {
+    flex-basis: 100%;
+  }
+}

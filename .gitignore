@@ -17,6 +17,8 @@ research/
 # Browser test output and generated previews
 test-results/
 playwright-report/
+.playwright/
+.playwright-cli/
 blob-report/
 output/
 
@@ -89,6 +91,7 @@ Thumbs.db
 !/public/data/sources.json
 !/public/data/video-meta.json
 !/public/data/catalogue/index.json
+!/public/data/catalogue/visual-index.json
 !/public/data/catalogue/details/*.json
 
 # Build-generated public connection settings

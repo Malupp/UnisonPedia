@@ -19,8 +19,8 @@ import { validateBackup, mergeBackup, assignCopy } from "../domain/inventory";
         <h1>Il tuo inventario.</h1>
         <p>Copie reali, potenziali reali. {{ s.syncLabel() }}.</p>
       </div>
-      <a class="button primary" routerLink="/catalogue"
-        >+ Aggiungi dal catalogo</a
+      <a class="button primary" routerLink="/inventory/import"
+        >+ Carica equipaggiamento</a
       >
     </div>
     <div class="inventory-summary">
@@ -134,9 +134,9 @@ import { validateBackup, mergeBackup, assignCopy } from "../domain/inventory";
       <div class="empty-state">
         <span>▣</span>
         <h2>Un set tutto da costruire</h2>
-        <p>Cerca gli oggetti che possiedi e aggiungi una copia dalla scheda.</p>
-        <a class="button primary" routerLink="/catalogue"
-          >Esplora il catalogo →</a
+        <p>Seleziona più oggetti dal catalogo o parti da uno screenshot del tuo equipaggiamento.</p>
+        <a class="button primary" routerLink="/inventory/import"
+          >Carica equipaggiamento →</a
         >
       </div>
     } @else {
