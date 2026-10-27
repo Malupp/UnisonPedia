@@ -95,7 +95,7 @@ export class AppComponent {
   router=inject(Router);
   private destroyRef=inject(DestroyRef);
   path=signal(this.router.url);
-  screen=computed(()=>entryScreen({loading:this.s.auth.loading(),signedIn:!!this.s.auth.session(),recovery:this.s.auth.recovery(),guest:this.s.auth.guestMode(),path:this.path()}));
+  screen=computed(()=>entryScreen({loading:this.s.auth.loading()&&this.pwa.online(),signedIn:!!this.s.auth.session(),recovery:this.s.auth.recovery(),guest:this.s.auth.guestMode(),path:this.path()}));
   constructor(){const subscription=this.router.events.subscribe(event=>{if(event instanceof NavigationEnd)this.path.set(event.urlAfterRedirects);});this.destroyRef.onDestroy(()=>subscription.unsubscribe());}
   openLogin(){this.s.auth.leaveGuest();void this.router.navigateByUrl("/account");}
   secondary(path:string){return ["/frontline","/advice","/spawns","/account"].includes(path);}

@@ -127,7 +127,7 @@ export class OfflineDownload {
     await meta.put(ACTIVE_URL, json({ version: index.version, previous: previous === index.version ? null : previous }));
     // Retain the previous release for bundles still used by already-open tabs.
     for (const name of await this.deps.storage.keys()) {
-      if ((name.startsWith('unison-content-') || name.startsWith('unison-shell-')) && !name.endsWith(index.version) && !(previous && name.endsWith(previous))) await this.deps.storage.delete(name);
+      if (name.startsWith('unison-content-') && !name.endsWith(index.version) && !(previous && name.endsWith(previous))) await this.deps.storage.delete(name);
     }
   }
 }

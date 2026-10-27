@@ -1,5 +1,5 @@
 import { Injectable, DestroyRef, computed, inject, isDevMode, signal } from '@angular/core';
-import { OfflineDownload, OfflineIndex, META_CACHE, activeVersion, validateIndex } from '../domain/offline';
+import { OfflineDownload, OfflineIndex, activeVersion, validateIndex } from '../domain/offline';
 
 interface InstallPrompt extends Event {
   prompt(): Promise<void>;
@@ -53,17 +53,23 @@ export class PwaService {
       await this.refreshStatus();
       this.supported.set(true);
       this.persistent.set(await navigator.storage?.persisted?.() ?? false);
-      // Bootstrap configuration is fetched before the worker controls this first page.
-      // Keep only its public connection settings so offline startup uses the same origin.
+      // Let the worker validate and cache public config, including on the first visit.
       try {
-        const response = await fetch('/app-config.json', { cache: 'no-store', signal: AbortSignal.timeout(5000) });
-        if (response.ok && response.headers.get('content-type')?.includes('application/json')) {
-          const config = await response.clone().json();
-          if (typeof config.supabaseUrl === 'string' && typeof config.publishableKey === 'string' && typeof config.appUrl === 'string') await (await caches.open(META_CACHE)).put('/app-config.json', response);
-        }
+        await this.waitForWorker();
+        await fetch('/app-config.json', { cache: 'no-store', signal: AbortSignal.timeout(5000) });
       } catch { /* Keep the previous public config while offline. */ }
     } catch { this.error.set('La preparazione offline non è riuscita. Ricarica la pagina per riprovare.'); }
     finally { this.preparing.set(false); }
+  }
+  private async waitForWorker() {
+    if (navigator.serviceWorker.controller) return;
+    await new Promise<void>((resolve, reject) => {
+      const finish = () => { clearTimeout(timer); navigator.serviceWorker.removeEventListener('controllerchange', changed); };
+      const changed = () => { if (navigator.serviceWorker.controller) { finish(); resolve(); } };
+      const timer = setTimeout(() => { finish(); reject(Error('Service worker not ready')); }, 10000);
+      navigator.serviceWorker.addEventListener('controllerchange', changed);
+      changed();
+    });
   }
   async refreshStatus() {
     if (!this.engine) return;
