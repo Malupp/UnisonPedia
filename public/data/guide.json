@@ -124,6 +124,131 @@
         ]
       },
       {
+        "id": "armi-della-classe",
+        "heading": "Le armi della tua classe",
+        "paragraphs": [
+          "Il contesto in alto filtra le famiglie di armi su cui la classe riceve i propri bonus. Il filtro si applica a catalogo, selezione META e ricerca per caricare l’equipaggiamento. Difensivi, mostri e copie già possedute restano disponibili. Puoi includere anche le armi delle altre classi per cercare utility o pezzi da collezione.",
+          "Le famiglie indicate descrivono le armi on-class e non un divieto assoluto di equipaggiare altri oggetti: un’arma fuori classe può servire per una utility specifica, ma non riceve automaticamente gli stessi bonus. Per Ninja le doppie lame sono la famiglia caratteristica; lance, falci e bastoni fanno parte delle famiglie aggiuntive. Controlla anche il ring e le restrizioni delle abilità che userai."
+        ],
+        "paragraphsEn": [
+          "The context bar filters the weapon families supported by your class traits. The filter applies to the catalogue, META selection and equipment import search. Defence gear, monsters and already owned copies remain available. You can include other classes’ weapons when looking for utility or collection pieces.",
+          "These are on-class weapon families, not an absolute ban on equipping other items. An off-class utility weapon does not automatically receive the same bonuses. Dual Blades are Ninja’s signature family; Lances, Scythes and Staves are additional supported families. Also check your ring and the restrictions of the abilities you will use."
+        ],
+        "tables": [
+          {
+            "caption": "Armi on-class",
+            "headers": [
+              "Classe",
+              "Tipi di arma"
+            ],
+            "rows": [
+              [
+                "Soldier",
+                "Spade, Asce"
+              ],
+              [
+                "Lancer",
+                "Lance, Falci"
+              ],
+              [
+                "Archer",
+                "Archi, Pistole"
+              ],
+              [
+                "Mage",
+                "Bastoni"
+              ],
+              [
+                "Cleric",
+                "Libri, Reliquie"
+              ],
+              [
+                "Rook",
+                "Spade, Libri"
+              ],
+              [
+                "Berserker",
+                "Asce, Falci, Pistole, Bastoni, Reliquie"
+              ],
+              [
+                "Treasure Hunter",
+                "Lance, Archi, Bastoni, Doppie lame"
+              ],
+              [
+                "Ninja",
+                "Doppie lame, Lance, Falci, Bastoni"
+              ],
+              [
+                "Morpher",
+                "Spade, Asce, Archi, Pistole, Libri, Reliquie"
+              ]
+            ],
+            "captionEn": "On-class weapons",
+            "headersEn": [
+              "Class",
+              "Weapon types"
+            ],
+            "rowsEn": [
+              [
+                "Soldier",
+                "Sword, Axe"
+              ],
+              [
+                "Lancer",
+                "Lance, Scythe"
+              ],
+              [
+                "Archer",
+                "Bow, Gun"
+              ],
+              [
+                "Mage",
+                "Staff"
+              ],
+              [
+                "Cleric",
+                "Book, Relic"
+              ],
+              [
+                "Rook",
+                "Sword, Book"
+              ],
+              [
+                "Berserker",
+                "Axe, Scythe, Gun, Staff, Relic"
+              ],
+              [
+                "Treasure Hunter",
+                "Lance, Bow, Staff, Dual Blade"
+              ],
+              [
+                "Ninja",
+                "Dual Blade, Lance, Scythe, Staff"
+              ],
+              [
+                "Morpher",
+                "Sword, Axe, Bow, Gun, Book, Relic"
+              ]
+            ]
+          }
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
         "id": "ruolo-prima-statistiche",
         "heading": "Definire il lavoro della classe",
         "paragraphs": [
@@ -533,6 +658,37 @@
         "paragraphsEn": [
           "When a weapon offers an Ability Unlock, often called an ARA, read both the equipment skill and the ability it makes available. The weapon is more than a bundle of stats: it can change the actions you can use and therefore how the build works. Verify class compatibility and slot requirements before making it central to your setup.",
           "Then place that ability in a concrete cycle: Cost, cooldown, targets, possible combos and recovery must work with the other slots. A suitable main-slot weapon can solve a different problem from a good supporting sub-slot weapon. After moving a piece, recheck what remains active and what changes in your ability loadout instead of assuming the same setup works everywhere."
+        ],
+        "itemIds": [],
+        "effectIds": [],
+        "images": [],
+        "sourceRefs": [
+          {
+            "id": "unisonpedia",
+            "title": "UnisonPedia · Studi dell’autore",
+            "url": null,
+            "declaredUpdated": null,
+            "fetchedAt": "2026-10-26",
+            "kind": "editorial",
+            "edition": null,
+            "notes": null
+          }
+        ]
+      },
+      {
+        "id": "talenti-pve-pvp",
+        "heading": "Talenti PvE, PvP e versatili",
+        "paragraphs": [
+          "La modalità non dipende dalla forma dell’arma: due archi possono avere talenti con scopi diversi. Leggi la skill dell’equipaggiamento e la sua attivazione, poi abbinala alle abilità della classe e alla meccanica da affrontare. Le indicazioni nel catalogo sono orientamenti motivati, non una graduatoria automatica di potenza.",
+          "Un proc che aumenta danno, accuratezza e risorse può lavorare in entrambe le modalità. Triumph, Obliterating e le famiglie offensive moderne vanno quindi confrontate per bonus, scaling e ciclo reale, senza escluderle dal PvE perché compaiono in una selezione PvP. Il solo nome del talento o il costo dell’oggetto non bastano a stabilire una preferenza.",
+          "Pulverize e Penetrate danno un orientamento PvP quando serve superare le protezioni avversarie: il primo contrasta invulnerabilità e annullamento, il secondo riduzione del danno e riflesso. È una preferenza condizionale ricavata dagli effetti, non un limite: possono servire anche contro boss con le stesse difese. Ignorare una parte di DEF/MDEF è un effetto diverso e non dimostra che il talento superi queste protezioni.",
+          "Controlla le eccezioni scritte nella skill: Crystal Breaker si attiva nelle Crystal Assault delle Guild Battle e nel Crystal of the Sacred Altar, quindi comprende un uso PvP e uno PvE ma non ogni fase di combattimento. Se gli effetti non permettono di attribuire un orientamento, l’indicazione resta “Modalità da verificare”. Cambiare modalità mette in evidenza i talenti pertinenti e mantiene consultabili quelli versatili."
+        ],
+        "paragraphsEn": [
+          "Mode does not follow weapon shape: two bows may have talents with different purposes. Read the equipment skill and its activation, then match it to class abilities and the encounter mechanics. Catalogue labels are explained orientations, not an automatic power ranking.",
+          "A proc improving damage, accuracy and resources may work in both modes. Compare Triumph, Obliterating and modern offensive families through their effects, scaling and actual rotation rather than excluding them from PvE because they appear in a PvP selection. A talent name or item Cost alone cannot establish a preference.",
+          "Pulverize and Penetrate suggest a PvP preference when enemy protections must be bypassed: the former addresses invulnerability and nullification, the latter damage reduction and reflection. This is a conditional inference from effects, not a restriction; bosses with the same protections may also make these skills useful. Ignoring some DEF/MDEF is a different effect and does not establish protection piercing.",
+          "Always check written exceptions: Crystal Breaker activates during Crystal Assaults in Guild Battles and Crystal of the Sacred Altar, covering a PvP and a PvE use without applying to every combat phase. If the effects do not support a mode orientation, the label remains unverified. Switching modes prioritizes relevant talents while retaining versatile ones."
         ],
         "itemIds": [],
         "effectIds": [],

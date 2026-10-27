@@ -1,4 +1,5 @@
 import { Entry } from "./contracts";
+import { isClassWeapon } from "./class-weapons";
 export interface Filters {
   query: string;
   kind: string;
@@ -15,10 +16,15 @@ export const defaultFilters: Filters = {
   maxCost: 999,
   costs: [],
 };
-export function filterCatalogue(entries: Entry[], f: Filters) {
+export function filterCatalogue(
+  entries: Entry[],
+  f: Filters,
+  classId?: string | null,
+) {
   const tokens = f.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
   return entries.filter(
     (e) =>
+      isClassWeapon(e, classId) &&
       tokens.every((t) =>
         (e.name + " " + e.gearType + " " + e.id).toLowerCase().includes(t),
       ) &&

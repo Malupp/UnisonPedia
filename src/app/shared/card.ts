@@ -2,10 +2,11 @@ import { Component, input, inject } from "@angular/core";
 import { RouterLink } from "@angular/router";
 import { Entry } from "../domain/contracts";
 import { Store } from "../core/store";
+import { WeaponTalentComponent } from "./weapon-talent";
 @Component({
   selector: "app-item-card",
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, WeaponTalentComponent],
   template: `<article class="item-card">
     <div class="card-art" [attr.data-element]="item().element">
       <span class="cost-badge">COST {{ item().cost }}</span
@@ -25,6 +26,9 @@ import { Store } from "../core/store";
       ><a class="card-title" [routerLink]="['/item', item().id]">{{
         item().name
       }}</a>
+      @if (item().kind === "weapon") {
+        <app-weapon-talent [itemId]="item().id" />
+      }
       <div class="card-footer">
         <span>{{ item().gearType || "Tipo da verificare" }}</span
         ><button

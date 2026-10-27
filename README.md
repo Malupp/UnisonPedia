@@ -6,13 +6,15 @@ L'obiettivo è rendere comprensibili le scelte di build: quali proc cercare, com
 
 ## Cosa offre la wiki
 
-- **Catalogo** di armi, difensivi e mostri UR, con ricerca, filtri, schede dettagliate e confronto degli oggetti.
+- **Catalogo** di armi, difensivi e mostri UR, con ricerca, filtri, schede dettagliate e confronto degli oggetti. La classe selezionata nel contesto mostra e filtra automaticamente le famiglie di armi in catalogo, META e ricerca per l’importazione; un’opzione permette di includere anche le armi fuori classe.
 - **Meta** organizzato in tre colonne: offensivi, difensivi e mostri. I talenti della stessa famiglia sono raggruppati, con le corrispondenze degli elementi e i collegamenti agli oggetti.
-- **Guida unica** con 73 argomenti su classi, statistiche, proc e meccaniche, ricerca nei contenuti e atlante Aura e Bubble con 21 immagini. Spiegazioni consultabili in italiano e inglese.
+- **Guida unica** con 75 argomenti su classi, statistiche, proc e meccaniche, ricerca nei contenuti e atlante Aura e Bubble con 21 immagini. Spiegazioni consultabili in italiano e inglese.
 - **Caricamento rapido** con selezione multipla dal catalogo e suggerimenti dalle icone negli screenshot, elaborati nel browser e confermati manualmente.
 - **Inventario e build personali**, con copie degli oggetti, livelli, infusioni e configurazioni per PvE e PvP. PvP e GvG sono trattati come un'unica modalità.
 - **Consigli sulle build e analisi delle spawn**, basati sui dati disponibili, sulle condizioni degli effetti e sul budget in gemme.
 - **Backup dell'inventario** tramite esportazione e importazione JSON.
+
+I talenti delle armi riportano un orientamento PvE/PvP motivato dalle descrizioni delle skill, con condizioni e casi da verificare. La modalità ordina le priorità senza nascondere i proc versatili; un bonus contro le protezioni avversarie resta utilizzabile anche contro boss con le stesse difese.
 
 Le raccomandazioni distinguono le informazioni verificate da quelle ancora da confermare. Le indicazioni di meta dipendono dalle fonti e dalle date analizzate: non costituiscono una classifica aggiornata automaticamente a ogni modifica del gioco.
 

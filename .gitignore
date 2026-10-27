@@ -92,6 +92,7 @@ Thumbs.db
 !/public/data/video-meta.json
 !/public/data/catalogue/index.json
 !/public/data/catalogue/visual-index.json
+!/public/data/catalogue/weapon-context.json
 !/public/data/catalogue/details/*.json
 
 # Build-generated public connection settings

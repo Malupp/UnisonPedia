@@ -1,4 +1,11 @@
-import { Component, inject, signal, computed, DestroyRef } from "@angular/core";
+import {
+  Component,
+  inject,
+  signal,
+  computed,
+  DestroyRef,
+  effect,
+} from "@angular/core";
 import { ReactiveFormsModule, FormGroup, FormControl } from "@angular/forms";
 import { Router, ActivatedRoute, RouterLink } from "@angular/router";
 import { takeUntilDestroyed } from "@angular/core/rxjs-interop";
@@ -12,9 +19,17 @@ import {
   Filters,
   COST_OPTIONS,
 } from "../domain/catalogue";
+import { sortWeaponTalents } from "../domain/weapon-context";
+import { WeaponContextFilterComponent } from "../shared/weapon-context-filter";
 @Component({
   standalone: true,
-  imports: [ReactiveFormsModule, RouterLink, ItemCardComponent, VideoSummaryComponent],
+  imports: [
+    ReactiveFormsModule,
+    RouterLink,
+    ItemCardComponent,
+    VideoSummaryComponent,
+    WeaponContextFilterComponent,
+  ],
   template: `<section class="hero">
       <div class="hero-copy">
         <div class="eyebrow">
@@ -84,6 +99,7 @@ import {
           Costi 45–46 <span aria-hidden="true">↗</span>
         </button>
       </div>
+      <app-weapon-context-filter />
       <form [formGroup]="form" class="filter-bar">
         <label class="search-field"
           ><span class="sr-only">Cerca nel catalogo</span
@@ -202,7 +218,13 @@ export class CatalogueComponent {
     maxCost: new FormControl(999, { nonNullable: true }),
     costs: new FormControl<number[]>([], { nonNullable: true }),
   });
-  filtered = computed(() => filterCatalogue(this.s.entries(), this.filters()));
+  filtered = computed(() =>
+    sortWeaponTalents(
+      filterCatalogue(this.s.entries(), this.filters(), this.s.weaponClass()),
+      this.s.weaponTalents(),
+      this.s.profile().mode,
+    ),
+  );
   shown = computed(() =>
     this.filtered().slice(this.page() * 48, this.page() * 48 + 48),
   );
@@ -214,6 +236,11 @@ export class CatalogueComponent {
       .filter((e) => !!e);
   });
   constructor() {
+    effect(() => {
+      this.s.weaponClass();
+      this.s.profile().mode;
+      this.page.set(0);
+    });
     this.route.queryParamMap
       .pipe(takeUntilDestroyed(this.destroy))
       .subscribe((p) => {

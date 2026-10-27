@@ -17,9 +17,15 @@ import {
 } from "../domain/equipment-import";
 import { ScreenshotImportComponent } from "./screenshot-import";
 
+import { WeaponContextFilterComponent } from "../shared/weapon-context-filter";
+import { sortWeaponTalents } from "../domain/weapon-context";
 @Component({
   standalone: true,
-  imports: [RouterLink, ScreenshotImportComponent],
+  imports: [
+    RouterLink,
+    ScreenshotImportComponent,
+    WeaponContextFilterComponent,
+  ],
   styleUrl: "./equipment-import.css",
   template: `<header class="page-heading">
       <span class="eyebrow">IL TUO SET, PIÙ VELOCEMENTE</span>
@@ -59,6 +65,7 @@ import { ScreenshotImportComponent } from "./screenshot-import";
       <section class="panel import-source" aria-label="Scegli equipaggiamenti">
         @if (mode() === "search") {
           <h2>Seleziona dal catalogo</h2>
+          <app-weapon-context-filter />
           <div class="quick-import-filters">
             <label
               >Cerca equipaggiamento<input
@@ -316,12 +323,20 @@ export class EquipmentImportComponent {
     () => new Set(this.selection().map((row) => row.itemId)),
   );
   filtered = computed(() =>
-    filterCatalogue(this.s.entries(), {
-      ...defaultFilters,
-      query: this.query(),
-      kind: this.kind(),
-      element: this.element(),
-    }),
+    sortWeaponTalents(
+      filterCatalogue(
+        this.s.entries(),
+        {
+          ...defaultFilters,
+          query: this.query(),
+          kind: this.kind(),
+          element: this.element(),
+        },
+        this.s.weaponClass(),
+      ),
+      this.s.weaponTalents(),
+      this.s.profile().mode,
+    ),
   );
   total = computed(() =>
     this.selection().reduce(

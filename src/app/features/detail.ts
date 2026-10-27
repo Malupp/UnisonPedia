@@ -12,6 +12,7 @@ import { Store } from "../core/store";
 import { normalizeMode } from "../domain/contracts";
 import { Item, Evaluation } from "../domain/contracts";
 import { evaluateItem } from "../domain/evaluation";
+import { WeaponTalentComponent } from "../shared/weapon-talent";
 @Component({
   selector: "app-evaluation",
   standalone: true,
@@ -97,7 +98,7 @@ export class EvaluationComponent {
 
 @Component({
   standalone: true,
-  imports: [RouterLink, EvaluationComponent],
+  imports: [RouterLink, EvaluationComponent, WeaponTalentComponent],
   template: `<a class="back-link" routerLink="/catalogue"
       >← Torna al catalogo</a
     >
@@ -125,6 +126,9 @@ export class EvaluationComponent {
         <div>
           <span class="eyebrow">UR · {{ d.gearType }} · {{ d.element }}</span>
           <h1>{{ d.name }}</h1>
+          @if (d.kind === "weapon") {
+            <app-weapon-talent [itemId]="d.id" />
+          }
           <div class="detail-tags">
             <span>Costo {{ d.cost }}</span
             ><span>{{

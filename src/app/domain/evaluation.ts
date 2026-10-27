@@ -9,13 +9,8 @@ import {
   normalizeMode,
 } from "./contracts";
 export const RULE_VERSION = "1.0.0-editorial";
-export const CLASS_WEAPONS: Record<string, string[]> = {
-  Soldier: ["Sword"],
-  Lancer: ["Lance", "Scythe"],
-  Archer: ["Bow", "Gun"],
-  Mage: ["Staff"],
-  Cleric: ["Book", "Relic"],
-};
+import { CLASS_WEAPONS } from './class-weapons';
+export { CLASS_WEAPONS } from './class-weapons';
 const rubrics: [RegExp, string, Partial<Record<Axis, number>>][] = [
   [
     /increases.*damage when using|damage dealt.*increase/i,

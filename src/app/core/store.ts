@@ -16,6 +16,8 @@ import { cloudTransport } from "./cloud-sync";
 import { PlayerSync, SyncSnapshot } from "../domain/sync";
 import { mergeBackup } from "../domain/inventory";
 import { normalizeSections } from "../domain/evaluation";
+import { classWeaponLabel } from "../domain/class-weapons";
+import { WeaponContextIndex, WeaponTalent } from "../domain/weapon-context";
 @Injectable({ providedIn: "root" })
 export class Store {
   entries = signal<Entry[]>([]);
@@ -24,6 +26,21 @@ export class Store {
   chapters = signal<any[]>([]);
   glossary = signal<any[]>([]);
   classes = signal<any[]>([]);
+  showAllWeapons = signal(false);
+  weaponTypes = computed(() => classWeaponLabel(this.profile().classId));
+  weaponClass = computed(() =>
+    this.showAllWeapons() ? null : this.profile().classId,
+  );
+  weaponContext = signal<WeaponContextIndex | null>(null);
+  weaponContextError = signal("");
+  weaponTalents = computed(() => {
+    const data = this.weaponContext(),
+      result: Record<string, WeaponTalent> = {};
+    if (data)
+      for (const [id, key] of Object.entries(data.items))
+        if (data.talents[key]) result[id] = data.talents[key];
+    return result;
+  });
   state = signal<UserState>(emptyState());
   ready = signal(false);
   loading = signal(true);
@@ -33,23 +50,69 @@ export class Store {
   compared = signal<string[]>([]);
   private details = new Map<string, Promise<Item>>();
   auth = inject(AuthService);
-  sync = signal<SyncSnapshot>({owner:null,state:emptyState(),revision:0,dirty:false,status:"loading",error:"",cacheError:false,remote:null});
-  private engine = new PlayerSync(cloudTransport(this.auth), owner => createInventoryStore(indexedDB,"unisonpedia-v1",owner??"guest"), snapshot => {
-    this.sync.set(snapshot);this.state.set(snapshot.state);this.ready.set(snapshot.status!=="loading");this.storageDenied.set(snapshot.cacheError);
+  sync = signal<SyncSnapshot>({
+    owner: null,
+    state: emptyState(),
+    revision: 0,
+    dirty: false,
+    status: "loading",
+    error: "",
+    cacheError: false,
+    remote: null,
   });
-  private activeOwner: string|null|undefined = undefined;
-  syncLabel = computed(()=>({loading:"Caricamento inventario…",local:"Salvato nel browser",saving:"Salvataggio online…",synced:"Salvato online",pending:this.sync().dirty?"Modifiche in attesa di invio":"Cloud da verificare",conflict:"Conflitto da risolvere"})[this.sync().status]);
+  private engine = new PlayerSync(
+    cloudTransport(this.auth),
+    (owner) =>
+      createInventoryStore(indexedDB, "unisonpedia-v1", owner ?? "guest"),
+    (snapshot) => {
+      this.sync.set(snapshot);
+      this.state.set(snapshot.state);
+      this.ready.set(snapshot.status !== "loading");
+      this.storageDenied.set(snapshot.cacheError);
+    },
+  );
+  private activeOwner: string | null | undefined = undefined;
+  syncLabel = computed(
+    () =>
+      ({
+        loading: "Caricamento inventario…",
+        local: "Salvato nel browser",
+        saving: "Salvataggio online…",
+        synced: "Salvato online",
+        pending: this.sync().dirty
+          ? "Modifiche in attesa di invio"
+          : "Cloud da verificare",
+        conflict: "Conflitto da risolvere",
+      })[this.sync().status],
+  );
   profile = computed(() => this.state().profile);
   constructor() {
-    effect(()=>{
-      const session=this.auth.session();
-      if(this.auth.loading())return;
-      const owner=session?.user.id??null;
-      if(owner!==this.activeOwner){this.activeOwner=owner;void this.engine.activate(owner);}
+    effect(() => {
+      const session = this.auth.session();
+      if (this.auth.loading()) return;
+      const owner = session?.user.id ?? null;
+      if (owner !== this.activeOwner) {
+        this.activeOwner = owner;
+        void this.engine.activate(owner);
+      }
     });
-    window.addEventListener("online",()=>{void this.retrySync();});
-    document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible"&&this.activeOwner)void this.retrySync();});
+    window.addEventListener("online", () => {
+      void this.retrySync();
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible" && this.activeOwner)
+        void this.retrySync();
+    });
     void this.initialize();
+    void this.read("catalogue/weapon-context")
+      .then((data: WeaponContextIndex) => {
+        if (data.version !== 1 || !data.items || !data.talents)
+          throw Error("Invalid talent index");
+        this.weaponContext.set(data);
+      })
+      .catch(() =>
+        this.weaponContextError.set("Indicazioni PvE/PvP non disponibili."),
+      );
   }
   async initialize() {
     this.loading.set(true);
@@ -104,17 +167,58 @@ export class Store {
     return this.details.get(id)!;
   }
   update(change: (state: UserState) => UserState) {
-    return this.engine.update(change).then(()=>{this.notice.set(this.syncLabel());return true;}).catch(e=>{this.notice.set(e instanceof Error?e.message:"Modifica non riuscita");return false;});
+    return this.engine
+      .update(change)
+      .then(() => {
+        this.notice.set(this.syncLabel());
+        return true;
+      })
+      .catch((e) => {
+        this.notice.set(
+          e instanceof Error ? e.message : "Modifica non riuscita",
+        );
+        return false;
+      });
   }
-  retrySync(){return this.engine.retry().catch(()=>this.notice.set("Sincronizzazione non riuscita. Riprova."));}
-  resolveConflict(choice:"local"|"remote"){return this.engine.resolve(choice).catch(e=>this.notice.set(e.message));}
-  async importGuest(){
-    const owner=this.sync().owner;
-    if(!owner)return false;
-    try{const guest=await createInventoryStore(indexedDB).load();if(this.sync().owner!==owner)throw new Error("Account cambiato");return await this.update(s=>mergeBackup(s,guest,!s.copies.length&&!s.builds.length&&!s.goals.length&&!s.profile.classId?"replace":"merge"));}
-    catch{this.notice.set("Inventario ospite non disponibile");return false;}
+  retrySync() {
+    return this.engine
+      .retry()
+      .catch(() => this.notice.set("Sincronizzazione non riuscita. Riprova."));
   }
-  async guestSummary(){const guest=await createInventoryStore(indexedDB).load();return {copies:guest.copies.length,builds:guest.builds.length,goals:guest.goals.length};}
+  resolveConflict(choice: "local" | "remote") {
+    return this.engine.resolve(choice).catch((e) => this.notice.set(e.message));
+  }
+  async importGuest() {
+    const owner = this.sync().owner;
+    if (!owner) return false;
+    try {
+      const guest = await createInventoryStore(indexedDB).load();
+      if (this.sync().owner !== owner) throw new Error("Account cambiato");
+      return await this.update((s) =>
+        mergeBackup(
+          s,
+          guest,
+          !s.copies.length &&
+            !s.builds.length &&
+            !s.goals.length &&
+            !s.profile.classId
+            ? "replace"
+            : "merge",
+        ),
+      );
+    } catch {
+      this.notice.set("Inventario ospite non disponibile");
+      return false;
+    }
+  }
+  async guestSummary() {
+    const guest = await createInventoryStore(indexedDB).load();
+    return {
+      copies: guest.copies.length,
+      builds: guest.builds.length,
+      goals: guest.goals.length,
+    };
+  }
   setProfile(p: Partial<Profile>) {
     return this.update((s) => ({ ...s, profile: { ...s.profile, ...p } }));
   }

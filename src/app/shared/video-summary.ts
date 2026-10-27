@@ -14,7 +14,7 @@ import { VideoMetaStore } from "../core/video-meta";
       </div>
       <a class="text-link" routerLink="/meta">Esplora Meta <span aria-hidden="true">↗</span></a>
     </div>
-    <p>Proc e mostri per il PvP (GvG): la selezione dell’autore e le alternative con effetti simili.</p>
+    <p>Proc e mostri per la tua build: la selezione dell’autore e le alternative con effetti simili.</p>
     @if (v.data()) {
       <div class="video-highlights">
         @for (highlight of v.highlights(); track highlight.title) {
