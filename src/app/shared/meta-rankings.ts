@@ -1,8 +1,8 @@
 import { Component, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Store } from '../core/store';
-import { normalizeMode } from '../domain/contracts';
-import { RankingCategory, RankingGuide, RankingFamily, rankedFamilies } from '../domain/meta-rankings';
+import { Entry, normalizeMode } from '../domain/contracts';
+import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamilies } from '../domain/meta-rankings';
 
 @Component({
   selector: 'app-meta-rankings',
@@ -15,7 +15,6 @@ import { RankingCategory, RankingGuide, RankingFamily, rankedFamilies } from '..
         <span class="ranking-mode">{{ mode() === 'pve' ? 'PvE' : 'PvP (GvG)' }} · ordine consigliato</span>
       </div>
       <p class="ranking-intro">Parti dalle prime posizioni, poi confronta requisiti e note con il tuo set. La priorità cambia con la modalità selezionata in alto.</p>
-      <p class="ranking-count">Priorità editoriali · revisione {{ date(guide.reviewedAt) }} · catalogo {{ date(guide.catalogueAsOf) }} · requisiti soddisfatti e livello skill comparabile.</p>
       <div class="ranking-categories" role="group" aria-label="Tipo di proc">
         @for (option of categories; track option.id) {
           <button type="button" [attr.aria-pressed]="category() === option.id" (click)="category.set(option.id)">{{ option.label }}</button>
@@ -25,11 +24,8 @@ import { RankingCategory, RankingGuide, RankingFamily, rankedFamilies } from '..
         <label>Cerca nelle classifiche
           <input type="search" [value]="query()" (input)="query.set($any($event.target).value)" placeholder="Regent, Translucent, Frenzy, nome equip o ID…" />
         </label>
-        <a routerLink="/guide/armi" fragment="talenti-pve-pvp">Guida ai talenti →</a>
+        <a routerLink="/guide/armi" fragment="talenti-pve-pvp">Come funzionano i talenti →</a>
       </div>
-      @if (category() === 'defence') {
-        <p class="ranking-callout"><strong>Regent, Translucent o Phantasm?</strong> Regent combina riduzione danni, riduzione AP e scudo per un colpo; Translucent offre due livelli di riduzione e scala sull’elemento; Phantasm offre riduzione e scudo. Confronta le note delle tre famiglie e il numero di pezzi richiesti.</p>
-      }
       <p class="ranking-count" role="status">{{ rows().length }} famiglie · {{ categoryLabel() }} · {{ mode() === 'pve' ? 'PvE' : 'PvP (GvG)' }}@if (s.weaponTypes() && (category() === 'weapon' || category() === 'healing')) { · {{ s.showAllWeapons() ? 'Tutte le armi' : s.profile().classId }} }</p>
       @if (rows().length) {
         <table class="ranking-table">
@@ -39,11 +35,16 @@ import { RankingCategory, RankingGuide, RankingFamily, rankedFamilies } from '..
             @for (row of rows(); track row.id) {
               <tr [attr.data-family]="row.id">
                 <th scope="row" class="ranking-family"><span class="ranking-position" [class.ranking-top]="row.position <= 3">{{ row.position }}</span><strong>{{ row.name }}</strong>
-                  @if (row.authorRank) { <small>Ordine guida 2024/25: {{ row.authorRank }}</small> }
+                  <div class="ranking-previews">
+                    @for (item of previews(row); track item.id) {
+                      <a class="ranking-preview" [routerLink]="['/item', item.id]" [attr.aria-label]="item.name" [title]="item.name">
+                        <img [src]="item.iconPath || 'assets/fallback.svg'" (error)="fallback($event)" alt="" width="48" height="48" loading="lazy" />
+                      </a>
+                    }
+                  </div>
                 </th>
                 <td data-label="Effetti"><ul class="ranking-effects">@for (effect of row.effects; track $index) { <li>{{ effect }}</li> }</ul></td>
                 <td data-label="Note guida"><p>{{ row.advice[mode()] }}</p>
-                  @for (source of row.additionalSources ?? []; track source.url) { <a class="ranking-source" [href]="source.url" target="_blank" rel="noopener noreferrer">{{ source.label }} ↗</a> }
                 </td>
                 <td data-label="Requisiti ed equip">
                   @for (condition of requirements(row); track condition) { <p class="ranking-requirement">{{ condition }}</p> }
@@ -70,11 +71,6 @@ import { RankingCategory, RankingGuide, RankingFamily, rankedFamilies } from '..
       } @else {
         <div class="ranking-empty"><h3>Nessun proc con questi filtri</h3><p>Cambia ricerca o categoria. Per i proc offensivi e di cura puoi anche includere le armi delle altre classi dal filtro in alto.</p><button type="button" (click)="query.set('')">Cancella ricerca</button></div>
       }
-      <details class="ranking-method"><summary>Criteri della classifica, fonti e date</summary>
-        <p>{{ guide.methodology }}</p><p><strong>Revisione:</strong> {{ date(guide.reviewedAt) }} · <strong>Catalogo:</strong> {{ date(guide.catalogueAsOf) }}</p>
-        <p>Base storica: {{ guide.authorGuide }}. Gli effetti sono documentati dalle schede ufficiali; la priorità e le note di scelta sono valutazioni editoriali.</p>
-        <ul>@for (note of guide.notes; track $index) { <li>{{ note }}</li> }</ul>
-      </details>
     </section>
   }`,
   styleUrl: './meta-rankings.css',
@@ -102,6 +98,15 @@ export class MetaRankingsComponent {
       .replace(/\b(?:Sword|Axe|Lance|Scythe|Bow|Gun|Staff|Book|Relic|Hat|Helm|Armor|Clothing)(?:\/(?:Sword|Axe|Lance|Scythe|Bow|Gun|Staff|Book|Relic|Hat|Helm|Armor|Clothing))*\b/g, 'del tipo richiesto')
       .replace(/(\d+) pezzi dell’elemento richiesto (difensivi|armi)/g, '$1 $2 dell’elemento richiesto')
     ))];
+  }
+  previews(row: RankedFamily): Entry[] {
+    const items: Entry[] = [];
+    const add = (item: Entry | undefined) => {
+      if (item && items.length < 4 && !items.some(existing => existing.id === item.id)) items.push(item);
+    };
+    for (const variant of row.variants) add(variant.items[0]);
+    for (const variant of row.variants) for (const item of variant.items) add(item);
+    return items;
   }
   date(value: string): string { return value.slice(0, 10).split('-').reverse().join('/'); }
   expand(id: string, open: boolean) { this.expanded.update(state => ({ ...state, [id]: open })); }

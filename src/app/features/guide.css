@@ -143,3 +143,8 @@
     flex-basis: 100%;
   }
 }
+
+@media(min-width: 1001px) {
+  .guide-article p, .guide-topic-body p, .guide-table td, .guide-table th { font-size: 16px; }
+  .guide-chapter-index a, .guide-images figcaption { font-size: 14px; }
+}

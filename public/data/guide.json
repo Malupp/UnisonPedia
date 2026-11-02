@@ -314,7 +314,7 @@
         "heading": "Cosa valutare",
         "paragraphs": [
           "Leggi quanti pezzi e quale categoria richiede lo scaling. Cinque armi Water non sono cinque oggetti Water qualunque. Un requisito non soddisfatto resta visibile e impedisce una stima completa del contributo personale.",
-          "Il calcolatore elementale fornito è una base per esplorare combinazioni, non una soglia universale di statistiche. Gli esempi già compilati nel foglio non diventano valori consigliati a tutti.",
+          "Confronta le combinazioni elementali in base ai requisiti del set e al contenuto da affrontare. Non esiste una soglia universale di statistiche adatta a ogni build.",
           "Per una build F2P, concentrare gli investimenti su pochi elementi rende più facile soddisfare i requisiti. Il costo di gioco dell’oggetto indica lo spazio nel set; le gemme indicano il costo della spawn e sono una misura distinta."
         ],
         "itemIds": [],
@@ -334,7 +334,7 @@
         ],
         "paragraphsEn": [
           "Read how many pieces and which category the scaling requires. Five Water weapons are different from any five Water items. An unmet requirement remains visible and prevents a complete estimate of the item’s personal contribution.",
-          "The supplied elemental calculator is a starting point for exploring combinations rather than a universal stat threshold. Examples already filled into the spreadsheet are not recommendations for every player.",
+          "Compare elemental combinations against set requirements and the content you play. There is no universal stat threshold for every build.",
           "For a F2P build, focusing investment on a few elements makes requirements easier to meet. An item’s in-game cost determines set capacity; gems measure spawn spending, which is a separate quantity."
         ]
       },
@@ -404,7 +404,7 @@
         "heading": "Cosa valutare",
         "paragraphs": [
           "Un proc può aumentare Ability Power, amplificare il danno, migliorare accuracy o recuperare risorse. Valuta l’intera skill e i requisiti di attivazione, non soltanto le statistiche dell’arma.",
-          "Le conversioni AP e Scala Proc riportate sotto sono state confermate dall’autore. Il tasso della singola variante va letto nella voce Proc Talento, insieme a condizioni, livello skill e slot.",
+          "Le scale AP e Scala Proc descrivono rispettivamente il contributo AP e la probabilità di attivazione. Il tasso della singola variante va letto nella voce Proc Talento, insieme a condizioni, livello skill e slot.",
           "Le Ability Unlock possono cambiare le abilità disponibili. Le condizioni main slot e la compatibilità della classe vanno controllate prima di considerare un oggetto un upgrade. Valuta ogni proc nel contesto del tuo set e delle sue condizioni di attivazione."
         ],
         "itemIds": [],
@@ -431,7 +431,7 @@
       {
         "heading": "Scale AP e probabilità di attivazione",
         "paragraphs": [
-          "Le due scale riportate dall’autore sono regole distinte: Scale AP converte la forza del contributo AP; Scala Proc converte la probabilità di attivazione del talento. La taglia nel nome del talento non coincide automaticamente con la sua attivazione. Leggi la voce Proc Talento della variante.",
+          "Le due scale seguono regole distinte: Scale AP converte la forza del contributo AP; Scala Proc converte la probabilità di attivazione del talento. La taglia nel nome del talento non coincide automaticamente con la sua attivazione. Leggi la voce Proc Talento della variante.",
           "Esempio: una riga con aumento 5XL+ e Proc Talento base L indica 60 AP e attivazione 15%. Ability success, critical hit e DPS increase sono effetti separati; non si sommano automaticamente al proc dell’equipaggiamento.",
           "La qualità dipende anche da Fills Unison, Critical Hit, Recovery Cost e dagli altri contributi documentati. Il numero di pezzi richiesti, l’elemento, il tipo di gear e le condizioni determinano se la tua build raggiunge lo scaling indicato. I pesi di armi e difensivi sono approvati; l’estensione ai tier del catalogo e ai mostri è in progettazione. La scala AP prosegue fino a 7XL=75 AP e oltre secondo la progressione autorizzata."
         ],
@@ -743,7 +743,7 @@
         ]
       },
       {
-        "heading": "Opening e Constant: studi dell’autore",
+        "heading": "Opening e Constant",
         "paragraphs": [
           "Le spiegazioni seguenti distinguono categorie, durata e concatenazioni di Opening e Constant. Verifica sempre i valori della variante equipaggiata.",
           "Opening si attiva all’inizio e ha una finestra temporale. Constant continua a offrire il proprio effetto mentre è valido. Un proc ordinario ha invece la sua attivazione: i tre comportamenti vanno distinti anche nel punteggio."
@@ -2139,7 +2139,7 @@
         ]
       },
       {
-        "heading": "Status speciali: studi dell’autore",
+        "heading": "Status speciali",
         "paragraphs": [
           "I nomi ufficiali degli status restano in inglese. Percentuali approssimative e ipotesi restano stime; non costituiscono una nuova regola numerica del valutatore.",
           "Sono citate Circle Innocence, Gospel Heal e Survival Aid tra le abilità per rimuovere alcuni malus speciali. La compatibilità va verificata sul testo della singola abilità e dello status."

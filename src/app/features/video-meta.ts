@@ -39,8 +39,8 @@ import { MetaRankingsComponent } from "../shared/meta-rankings";
     } @else if (v.data()) {
       <app-weapon-context-filter />
       <app-meta-rankings [guide]="v.data()?.rankingGuide" />
-      <h2>Selezione dell’autore e mostri</h2>
-      <p>Famiglie osservate e alternative simili, con i collegamenti alle schede.</p>
+      <h2>Proc e mostri</h2>
+      <p>Effetti, sinergie e alternative per completare la build.</p>
       <div class="meta-highlights">
         @for (highlight of v.highlights(); track highlight.title) {
           <section class="panel">
@@ -147,7 +147,7 @@ import { MetaRankingsComponent } from "../shared/meta-rankings";
                             {{
                               row.origin === "similar"
                                 ? "Alternativa simile"
-                                : "Selezione dell’autore"
+                                : "Scelta Meta"
                             }}
                             @if (row.origin === "similar") {
                               · {{ similarNames(row) }}
@@ -223,6 +223,10 @@ import { MetaRankingsComponent } from "../shared/meta-rankings";
     }`,
   styles: [
     `
+      @media(min-width: 1001px) {
+        .meta-entry-body p, .meta-highlights li, .meta-condition, .meta-items p { font-size: 15px; }
+        .meta-entry summary { font-size: 17px; }
+      }
       :host {
         display: block;
       }

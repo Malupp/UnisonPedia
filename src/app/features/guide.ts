@@ -11,8 +11,8 @@ import { guideSectionId, searchGuide } from "../domain/guide-search";
       <span class="eyebrow">CAPIRE, PRIMA DI INVESTIRE</span>
       <h1>La guida italiana.</h1>
       <p>
-        Una guida unica, frutto degli studi dell’autore: le basi, gli effetti e
-        le scelte che fanno crescere il tuo set.
+        Classi, equipaggiamenti, statistiche e meccaniche di Unison League,
+        con spiegazioni e immagini per costruire il tuo set.
       </p>
       <label class="description-language">
         Lingua delle spiegazioni
@@ -85,7 +85,7 @@ import { guideSectionId, searchGuide } from "../domain/guide-search";
           <article class="guide-article">
             <span class="eyebrow"
               >GUIDA ·
-              {{ c.historical ? "BASE STORICA" : "CONTESTO E REGOLE" }}</span
+              CONTESTO E REGOLE</span
             >
             <h2>{{ c.title }}</h2>
             <p class="article-lead">{{ c.summary }}</p>

@@ -9,12 +9,12 @@ import { VideoMetaStore } from "../core/video-meta";
   template: `<section class="video-summary panel" aria-labelledby="video-summary-title">
     <div class="section-heading">
       <div>
-        <span class="eyebrow">DALLE BATTAGLIE ALLA BUILD · 22 OTTOBRE 2026</span>
+        <span class="eyebrow">PROC, MOSTRI E SINERGIE</span>
         <h2 id="video-summary-title">Meta</h2>
       </div>
       <a class="text-link" routerLink="/meta">Esplora Meta <span aria-hidden="true">↗</span></a>
     </div>
-    <p>Proc e mostri per la tua build: la selezione dell’autore e le alternative con effetti simili.</p>
+    <p>Proc e mostri per la tua build, con effetti, requisiti e alternative.</p>
     @if (v.data()) {
       <div class="video-highlights">
         @for (highlight of v.highlights(); track highlight.title) {
@@ -22,7 +22,7 @@ import { VideoMetaStore } from "../core/video-meta";
         }
       </div>
       <p class="video-summary-foot">{{ v.counts().equipment }} equip associati · {{ v.counts().monsters }} mostri · {{ v.counts().pending }} talenti da verificare.
-        Oggetti osservati e alternative sono distinti nella selezione.</p>
+        Confronta i requisiti con il tuo set.</p>
     } @else if (v.error()) {
       <p role="status">{{ v.error() }} <button class="text-link" (click)="v.load()">Riprova</button></p>
     } @else {

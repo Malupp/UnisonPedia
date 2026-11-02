@@ -34,7 +34,7 @@
       "category": "weapon",
       "status": "matched",
       "priority": "Danno e anti-annullamento",
-      "summary": "Nel gruppo offensivo di punta osservato: amplifica il danno, migliora l’accuratezza e applica Pulverize contro invulnerabilità e annullamento.",
+      "summary": "Amplifica il danno, migliora l’accuratezza e applica Pulverize contro invulnerabilità e annullamento.",
       "conditions": "Massimo con 3 armi Fire. La priorità rispetto a Ravaging dipende dalle protezioni nemiche.",
       "skillNames": [
         "Mandate of Fire XL"
@@ -76,7 +76,7 @@
       "category": "weapon",
       "status": "matched",
       "priority": "Danno e anti-riduzione",
-      "summary": "Nel gruppo offensivo di punta osservato: amplifica il danno, genera Unison e applica Penetrate contro riduzione e riflesso.",
+      "summary": "Amplifica il danno, genera Unison e applica Penetrate contro riduzione e riflesso.",
       "conditions": "Massimo con 3 armi Water. Non fornisce l’accuratezza di Mandate; il matchup determina la scelta.",
       "skillNames": [
         "Ravaging Water XL"
@@ -443,7 +443,7 @@
       "status": "matched",
       "priority": "Difesa e resistenza agli status",
       "summary": "Copre danno fisico e magico, riduce entrambe le Ability Power in arrivo e aumenta la resistenza agli status.",
-      "conditions": "Massimo con 3 difensivi Fire. Nel gruppo difensivo più completo osservato, senza un primato universale.",
+      "conditions": "Massimo con 3 difensivi Fire. Copre più esigenze difensive; confronta danno e status che devi affrontare.",
       "skillNames": [
         "Mastery Over Fire XL"
       ],
@@ -1149,7 +1149,7 @@
       "category": "weapon",
       "status": "pending",
       "priority": "Descrizione da verificare",
-      "summary": "Mostro selezionato dall’autore, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "summary": "La descrizione esatta di questa variante non è ancora disponibile. Effetti e requisiti richiedono verifica.",
       "conditions": "Serve la scheda esatta della variante per completare il confronto.",
       "skillNames": [
         "Empyrean of Wind XL"
@@ -1180,7 +1180,7 @@
       "category": "defence",
       "status": "pending",
       "priority": "Descrizione da verificare",
-      "summary": "Mostro selezionato dall’autore, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "summary": "La descrizione esatta di questa variante non è ancora disponibile. Effetti e requisiti richiedono verifica.",
       "conditions": "Serve la scheda esatta della variante per completare il confronto.",
       "skillNames": [
         "Unassailable Wind XL"
@@ -1211,7 +1211,7 @@
       "category": "defence",
       "status": "pending",
       "priority": "Descrizione da verificare",
-      "summary": "Mostro selezionato dall’autore, assente dallo snapshot del catalogo. Non sono attribuiti effetti, requisiti o un primato tramite varianti di altri elementi.",
+      "summary": "La descrizione esatta di questa variante non è ancora disponibile. Effetti e requisiti richiedono verifica.",
       "conditions": "Serve la scheda esatta della variante per completare il confronto.",
       "skillNames": [
         "Guardian Dark XL"
@@ -1234,7 +1234,7 @@
       "category": "opening",
       "status": "pending",
       "priority": "Opening da verificare",
-      "summary": "Mostro selezionato dall’autore. La variante L non ha una corrispondenza esatta nel catalogo salvato.",
+      "summary": "La descrizione esatta di questa variante non è ancora disponibile. Effetti e requisiti richiedono verifica.",
       "conditions": "Serve la descrizione della variante L. Non vengono trasferiti gli effetti o gli equip della variante XL.",
       "skillNames": [
         "[Opening] Ward L"
@@ -2488,7 +2488,7 @@
       "status": "pending",
       "origin": "video",
       "priority": "Da verificare",
-      "summary": "Mostro selezionato dall’autore, ma nessuna scheda esatta è presente nel catalogo acquisito.",
+      "summary": "La descrizione esatta di questa variante non è ancora disponibile. Effetti e requisiti richiedono verifica.",
       "conditions": "Non sono attribuiti effetti, grado alternativo o equip per analogia. Serve una scheda ufficiale o in gioco con il testo esatto.",
       "skillNames": [
         "Revelation Prowess XL"
@@ -2519,7 +2519,7 @@
       "points": [
         "Mandate supera invulnerabilità e annullamento; Ravaging supera riduzione e riflesso.",
         "Triumph ed Essence sostengono accuratezza e Cost; Resolution aggiunge critico e risorse.",
-        "Empyrean Star e Flickering Time fanno parte della selezione dell’autore; ogni elemento conserva i propri requisiti."
+        "Empyrean Star e Flickering Time offrono effetti complementari; ogni elemento conserva i propri requisiti."
       ]
     },
     {
@@ -2528,7 +2528,7 @@
       "points": [
         "Mastery, Obsidian e Intercepting coprono esigenze diverse di difesa e status.",
         "Bloom sostiene il ciclo Unison; Tiger e Serpent rispondono a fisico e magico.",
-        "Obsidian Dark fa parte della selezione dell’autore; le altre varianti di catalogo restano indicate come alternative."
+        "Obsidian offre varianti elementali da scegliere in base ai requisiti del set."
       ]
     },
     {
@@ -2595,7 +2595,7 @@
         ],
         "advice": {
           "pve": "Priorità per il danno quando sostieni il critico e completi lo scaling della variante. Può superare proc più comodi nel picco di AP, ma un set incompleto perde parte del vantaggio.",
-          "pvp": "Sceglilo per il danno dopo aver coperto accuratezza e protezioni nemiche. Non sostituisce un proc che attraversa annullamento o riduzione; verifica i requisiti della variante, aggiornati rispetto alla guida."
+          "pvp": "Sceglilo per il danno dopo aver coperto accuratezza e protezioni nemiche. Non sostituisce un proc che attraversa annullamento o riduzione; verifica i requisiti della variante, indicati per il tuo equip."
         },
         "priority": {
           "pve": 3,
@@ -3853,7 +3853,7 @@
           "Aumento di AP e ulteriore potenziamento sul critico; requisiti elementali."
         ],
         "advice": {
-          "pve": "Alternativa di danno della guida storica. Preferisci famiglie più complete quando richiedono un investimento simile; il critico e i requisiti del set restano decisivi.",
+          "pve": "Alternativa per il danno. Preferisci famiglie più complete quando richiedono un investimento simile; il critico e i requisiti del set restano decisivi.",
           "pvp": "Priorità contenuta: il solo aumento AP non risolve miss, riduzioni o annullamenti. Mantienilo come alternativa se già potenziato e coerente con il set."
         },
         "priority": {
@@ -5155,7 +5155,7 @@
           "Aumento AP, recupero di Cost e bonus sul critico."
         ],
         "advice": {
-          "pve": "Alternativa della guida quando mancano i proc con pacchetti più completi. Confronta il recupero Cost e il massimo AP con Virtuoso o Valorous del tuo tipo di arma.",
+          "pve": "Alternativa quando mancano i proc con pacchetti più completi. Confronta il recupero Cost e il massimo AP con Virtuoso o Valorous del tuo tipo di arma.",
           "pvp": "Usabile come riempitivo coerente con il set, ma senza attribuirgli penetrazione o accuratezza non descritte. Dai precedenza alle contromisure richieste dall’avversario."
         },
         "priority": {
@@ -5674,7 +5674,7 @@
           "AP con beneficio legato agli HP correnti e al set elementale."
         ],
         "advice": {
-          "pve": "Alternativa storica quando già scalata e con HP alti. Preferisci i pacchetti più recenti se offrono le risorse o l’accuratezza che mancano alla build.",
+          "pve": "Alternativa quando già scalata e con HP alti. Preferisci i pacchetti più recenti se offrono le risorse o l’accuratezza che mancano alla build.",
           "pvp": "Priorità di ripiego: gli HP variabili rendono il picco poco stabile e il solo AP non basta contro le protezioni. Confronta sempre la scheda della variante."
         },
         "priority": {
@@ -6117,7 +6117,7 @@
           "Aumento AP con condizioni e crescita legate al tipo di arma."
         ],
         "advice": {
-          "pve": "Alternativa della guida storica se già investita e coerente con il set. Confronta le AP effettive e le condizioni con le famiglie più complete prima di spendere risorse.",
+          "pve": "Alternativa se già investita e coerente con il set. Confronta le AP effettive e le condizioni con le famiglie più complete prima di spendere risorse.",
           "pvp": "Priorità di ripiego rispetto ai proc che risolvono accuratezza e protezioni. Non trasferire effetti da altre famiglie solo perché condividono il tipo di arma."
         },
         "priority": {
@@ -7319,7 +7319,7 @@
           "Aumento AP che migliora con gli HP correnti e i pezzi richiesti."
         ],
         "advice": {
-          "pve": "Alternativa storica per set che mantengono HP elevati. Proc con recupero Cost, accuratezza o vantaggi più stabili hanno normalmente precedenza.",
+          "pve": "Alternativa per set che mantengono HP elevati. Proc con recupero Cost, accuratezza o vantaggi più stabili hanno normalmente precedenza.",
           "pvp": "Sotto pressione può perdere valore per il requisito HP. Mantienilo come ripiego se già sviluppato, verificando le condizioni della tua variante."
         },
         "priority": {
@@ -7982,7 +7982,7 @@
           "Aumento AP basato su valore elementale e composizione del set."
         ],
         "advice": {
-          "pve": "Scelta storica per set elementali già sviluppati. Valuta il valore effettivo del tuo elemento, non soltanto il massimo indicato dalla descrizione.",
+          "pve": "Scelta per set elementali già sviluppati. Valuta il valore effettivo del tuo elemento, non soltanto il massimo indicato dalla descrizione.",
           "pvp": "Riempitivo quando già scalato. La crescita elementale non sostituisce accuratezza o penetrazione; dai precedenza alle necessità dello scontro."
         },
         "priority": {
@@ -8180,7 +8180,7 @@
           "Aumento AP e ignoramento di parte delle difese."
         ],
         "advice": {
-          "pve": "Alternativa storica se già sviluppata. Il taglio delle difese può servire contro alcuni boss, ma confronta il rendimento con famiglie di AP e risorse più recenti.",
+          "pve": "Alternativa se già sviluppata. Il taglio delle difese può servire contro alcuni boss, ma confronta il rendimento con famiglie di AP e risorse più recenti.",
           "pvp": "Non confondere il taglio DEF/MDEF con la capacità di attraversare annullamento o riduzione danni. Di norma è un riempitivo."
         },
         "priority": {
@@ -8435,7 +8435,7 @@
           "Aumento AP con crescita legata al tipo di arma."
         ],
         "advice": {
-          "pve": "Riempitivo della guida storica: conserva un pezzo già sviluppato finché non hai un’alternativa coerente con il set e con le tue risorse.",
+          "pve": "Come riempitivo, conserva un pezzo già sviluppato finché non hai un’alternativa coerente con il set e con le tue risorse.",
           "pvp": "Priorità bassa per un nuovo investimento. Valuta prima proc con accuratezza, critico, Cost o penetrazione documentati."
         },
         "priority": {
@@ -8920,7 +8920,7 @@
           "Aumento AP e attivazione legati al tipo di arma."
         ],
         "advice": {
-          "pve": "Alternativa storica di ingresso. Un proc più completo già scalato merita normalmente l’investimento prima di Resonance.",
+          "pve": "Alternativa di ingresso. Un proc più completo già scalato merita normalmente l’investimento prima di Resonance.",
           "pvp": "Priorità bassa per nuove risorse: confronta rendimento effettivo, accuratezza e protezioni prima del solo numero di AP."
         },
         "priority": {
@@ -9163,7 +9163,7 @@
           "Aumento AP per attacchi compatibili; controllare la variante esatta."
         ],
         "advice": {
-          "pve": "Alternativa storica per danno di ingresso. Non confonderla con Book of Praise, che è un proc di cura; preferisci famiglie più complete quando disponibili.",
+          "pve": "Alternativa per danno di ingresso. Non confonderla con Book of Praise, che è un proc di cura; preferisci famiglie più complete quando disponibili.",
           "pvp": "Riempitivo con priorità bassa. Il nome Praise identifica anche un talento di cura: verifica sempre tipo di arma e attivazione."
         },
         "priority": {
@@ -9708,7 +9708,7 @@
         ],
         "advice": {
           "pve": "Ottima alternativa con 3 difensivi dell’elemento richiesto, anche di tipi diversi. A differenza di Regent e Phantasm non applica lo scudo per un colpo; scegli in base alla composizione reale del set.",
-          "pvp": "La guida della community distingue la seconda riduzione come Guard, utile contro attacchi penetranti. Per questo può avere precedenza su Regent contro tali attacchi. La scheda ufficiale elenca le due riduzioni senza chiamarle Guard: il confronto resta situazionale."
+          "pvp": "La seconda riduzione viene interpretata come Guard, utile contro attacchi penetranti. Per questo può avere precedenza su Regent contro tali attacchi. La scheda ufficiale elenca le due riduzioni senza chiamarle Guard: il confronto resta situazionale."
         },
         "priority": {
           "pve": 7,
@@ -12024,7 +12024,7 @@
         "name": "Mandate",
         "category": "weapon",
         "effects": [
-          "Nel gruppo offensivo di punta osservato: amplifica il danno, migliora l’accuratezza e applica Pulverize contro invulnerabilità e annullamento."
+          "Amplifica il danno, migliora l’accuratezza e applica Pulverize contro invulnerabilità e annullamento."
         ],
         "advice": {
           "pve": "Sceglilo contro boss con invulnerabilità o annullamento. Se tali protezioni non sono presenti, confronta Obliterating, Triumph e i proc di continuità del tuo set.",
@@ -12068,7 +12068,7 @@
         "name": "Ravaging",
         "category": "weapon",
         "effects": [
-          "Nel gruppo offensivo di punta osservato: amplifica il danno, genera Unison e applica Penetrate contro riduzione e riflesso."
+          "Amplifica il danno, genera Unison e applica Penetrate contro riduzione e riflesso."
         ],
         "advice": {
           "pve": "Utile contro boss che usano riduzione danni o riflesso. Il vantaggio specifico può contare meno contro boss senza queste difese; confronta allora danno e risorse.",
