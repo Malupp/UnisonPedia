@@ -77,3 +77,10 @@ summary { cursor: pointer; color: var(--green); font-size: 15px; padding: 8px 0;
   .ranking-table tbody th, .ranking-table td { font-size: 14px; }
   .ranking-previews { margin-left: 0; }
 }
+
+.ranking-english { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); color: var(--muted); }
+.ranking-language { display: block; margin-bottom: 9px; color: var(--teal); font-size: 13px; font-weight: 600; letter-spacing: .03em; }
+.ranking-english select { max-width: 100%; min-width: 0; margin-bottom: 12px; font-size: 14px; }
+.ranking-english-variant { display: block; margin-bottom: 10px; font-size: 14px; font-weight: 600; }
+.ranking-table .ranking-english-text { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; font-size: 15px; line-height: 1.75; }
+@media(max-width: 600px) { .ranking-table .ranking-english-text { font-size: 14px; } }

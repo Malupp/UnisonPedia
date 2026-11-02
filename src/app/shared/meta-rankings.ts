@@ -2,7 +2,7 @@ import { Component, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Store } from '../core/store';
 import { Entry, normalizeMode } from '../domain/contracts';
-import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamilies } from '../domain/meta-rankings';
+import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamilies, originalEffectText } from '../domain/meta-rankings';
 
 @Component({
   selector: 'app-meta-rankings',
@@ -43,7 +43,20 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
                     }
                   </div>
                 </th>
-                <td data-label="Effetti"><ul class="ranking-effects">@for (effect of row.effects; track $index) { <li>{{ effect }}</li> }</ul></td>
+                <td data-label="Effetti">
+                  <ul class="ranking-effects" lang="it">@for (effect of row.effects; track $index) { <li>{{ effect }}</li> }</ul>
+                  @if (englishVariant(row); as variant) {
+                    <div class="ranking-english" lang="en">
+                      <span class="ranking-language">English</span>
+                      @if (row.variants.length > 1) {
+                        <select [attr.aria-label]="'Original English effects for ' + row.name" [title]="variant.skillName" [value]="variant.skillName" (change)="selectEnglish(row.id, $any($event.target).value)">
+                          @for (option of row.variants; track option.skillName) { <option [value]="option.skillName">{{ option.skillName }}</option> }
+                        </select>
+                      } @else { <span class="ranking-english-variant">{{ variant.skillName }}</span> }
+                      <p class="ranking-english-text">{{ originalEffectText(variant.rawEffect) }}</p>
+                    </div>
+                  }
+                </td>
                 <td data-label="Note guida"><p>{{ row.advice[mode()] }}</p>
                 </td>
                 <td data-label="Requisiti ed equip">
@@ -80,6 +93,8 @@ export class MetaRankingsComponent {
   guide = input<RankingGuide | undefined>();
   category = signal<RankingCategory>('defence');
   query = signal('');
+  englishSelections = signal<Record<string, string>>({});
+  originalEffectText = originalEffectText;
   expanded = signal<Record<string, boolean>>({});
   categories: { id: RankingCategory; label: string }[] = [
     { id: 'defence', label: 'Difensivi' }, { id: 'weapon', label: 'Offensivi' },
@@ -98,6 +113,12 @@ export class MetaRankingsComponent {
       .replace(/\b(?:Sword|Axe|Lance|Scythe|Bow|Gun|Staff|Book|Relic|Hat|Helm|Armor|Clothing)(?:\/(?:Sword|Axe|Lance|Scythe|Bow|Gun|Staff|Book|Relic|Hat|Helm|Armor|Clothing))*\b/g, 'del tipo richiesto')
       .replace(/(\d+) pezzi dell’elemento richiesto (difensivi|armi)/g, '$1 $2 dell’elemento richiesto')
     ))];
+  }
+  englishVariant(row: RankedFamily) {
+    return row.variants.find(variant => variant.skillName === this.englishSelections()[row.id]) ?? row.variants[0];
+  }
+  selectEnglish(id: string, skillName: string) {
+    this.englishSelections.update(selected => ({ ...selected, [id]: skillName }));
   }
   previews(row: RankedFamily): Entry[] {
     const items: Entry[] = [];

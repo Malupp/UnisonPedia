@@ -84,3 +84,10 @@ export function rankedFamilies(
     return { ...family, variants };
   }).filter(family => family.variants.length > 0);
 }
+
+
+/** Keep the original effects verbatim; activation remains with requirements. */
+export function originalEffectText(rawEffect: string): string {
+  return rawEffect.replace(/^\s*\[Effects?\]\s*/i, '')
+    .split(/\r?\n\s*\[Activation(?: Category| Rate)?\]/i)[0].trim();
+}
