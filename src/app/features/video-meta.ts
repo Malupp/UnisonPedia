@@ -17,9 +17,10 @@ import { isClassWeapon } from "../domain/class-weapons";
 import { talentPriority } from "../domain/weapon-context";
 import { WeaponContextFilterComponent } from "../shared/weapon-context-filter";
 import { WeaponTalentComponent } from "../shared/weapon-talent";
+import { MetaRankingsComponent } from "../shared/meta-rankings";
 @Component({
   standalone: true,
-  imports: [RouterLink, WeaponContextFilterComponent, WeaponTalentComponent],
+  imports: [RouterLink, WeaponContextFilterComponent, WeaponTalentComponent, MetaRankingsComponent],
   template: `<header class="page-heading">
       <span class="eyebrow"
         >PROC, MOSTRI E SINERGIE ·
@@ -27,8 +28,8 @@ import { WeaponTalentComponent } from "../shared/weapon-talent";
       >
       <h1>Meta</h1>
       <p>
-        La selezione dell’autore e le alternative con effetti simili. Apri una
-        famiglia o un mostro per vedere varianti, consigli, oggetti e schede.
+        Confronta i proc in ordine di priorità per scegliere cosa usare.
+        Effetti, requisiti e note guida per offensivi, difensivi, cura, Opening e Constant.
       </p>
     </header>
     @if (v.error()) {
@@ -36,6 +37,10 @@ import { WeaponTalentComponent } from "../shared/weapon-talent";
         {{ v.error() }} <button (click)="v.load()">Riprova</button>
       </div>
     } @else if (v.data()) {
+      <app-weapon-context-filter />
+      <app-meta-rankings [guide]="v.data()?.rankingGuide" />
+      <h2>Selezione dell’autore e mostri</h2>
+      <p>Famiglie osservate e alternative simili, con i collegamenti alle schede.</p>
       <div class="meta-highlights">
         @for (highlight of v.highlights(); track highlight.title) {
           <section class="panel">
@@ -48,7 +53,6 @@ import { WeaponTalentComponent } from "../shared/weapon-talent";
           </section>
         }
       </div>
-      <app-weapon-context-filter />
       <div class="meta-controls">
         <label
           >Cerca nella selezione

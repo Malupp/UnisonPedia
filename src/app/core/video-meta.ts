@@ -22,6 +22,7 @@ export interface VideoObservation {
   evidence: { video: string; seconds: number }[];
 }
 export interface VideoCollection {
+  rankingGuide?: import("../domain/meta-rankings").RankingGuide;
   analyzedAt: string;
   catalogueAsOf: string;
   videos: { id: string; label: string; recordedAt: string; durationSeconds: number }[];
