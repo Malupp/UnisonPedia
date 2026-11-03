@@ -79,7 +79,8 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
                   @if (apDetails(row).length) {
                     <div class="ranking-ap">
                       <hr />
-                      <strong>AP secondo la guida</strong>
+                      <strong>AP e riduzioni secondo la guida</strong>
+                      <small>Le percentuali AP seguono la tabella dell’autore. Le riduzioni dei danni restano separate per tipo: la guida non ne specifica la cumulabilità.</small>
                       @for (detail of apDetails(row); track detail) { <p>{{ detail }}</p> }
                     </div>
                   }
@@ -104,6 +105,7 @@ export class MetaRankingsComponent {
   originalEffectText = originalEffectText;
   expanded = signal<Record<string, boolean>>({});
   apScale = signal<Record<string, number>>({});
+  defensiveApScale = signal<Record<string, number>>({});
   categories: { id: RankingCategory; label: string }[] = [
     { id: 'defence', label: 'Difensivi' }, { id: 'weapon', label: 'Offensivi' },
     { id: 'healing', label: 'Cura' }, { id: 'opening', label: 'Opening' }, { id: 'constant', label: 'Constant' },
@@ -116,16 +118,22 @@ export class MetaRankingsComponent {
   constructor() { void this.loadApScale(); }
   async loadApScale() {
     try {
-      const response = await fetch('data/talent-scales.json');
+      const response = await fetch(new URL('data/talent-scales.json', document.baseURI));
       if (!response.ok) return;
-      const data = await response.json() as { ap?: Record<string, number>; apExtension?: { examples?: Record<string, number> } };
+      const data = await response.json() as {
+        ap?: Record<string, number>;
+        defensiveAP?: Record<string, number>;
+        apExtension?: { examples?: Record<string, number> };
+      };
       this.apScale.set({ ...data.ap, ...data.apExtension?.examples });
+      this.defensiveApScale.set(data.defensiveAP ?? {});
     } catch {
       // Keep the AP grades visible if the authored scale table is unavailable.
     }
   }
   apDetails(row: RankingFamily): string[] {
     const values = this.apScale();
+    const defensiveValues = this.defensiveApScale();
     const formatGrade = (grade: string) => {
       const value = values[grade];
       return value === undefined ? grade : `${grade} (${value}%)`;
@@ -143,6 +151,28 @@ export class MetaRankingsComponent {
           const grade = formatGrades((direct ?? conditional)![1]);
           const label = /critical/i.test(line) ? 'Con critico' : /current HP|HP is/i.test(line) ? 'Con HP alti' : /Break/i.test(line) ? 'Contro Break' : /based on/i.test(line) ? 'Variabile' : 'Bonus';
           lines.add(`${label}: ${grade}`);
+        }
+        const damageReduction = line.match(/Reduces (physical and magic|physical|magic) damage taken by ([A-Z0-9+]+)/i);
+        if (damageReduction) {
+          const scope = damageReduction[1].toLowerCase() === 'physical and magic'
+            ? 'fisici e magici'
+            : damageReduction[1].toLowerCase() === 'physical' ? 'fisici' : 'magici';
+          lines.add(`Riduzione danni ${scope}: ${damageReduction[2]}`);
+        }
+        const reductionScaling = line.match(/Damage reduction scales with the number of (.+?) equipped up to a max of ([A-Z0-9+]+) \(Gear pieces needed for maximum effect: (\d+)\)/i);
+        if (reductionScaling) {
+          const gear = /elemental (?:Gear pieces|Weapons)/i.test(reductionScaling[1])
+            ? 'equip dell’elemento richiesto'
+            : /type Gear pieces/i.test(reductionScaling[1])
+              ? 'equip del tipo richiesto'
+              : reductionScaling[1];
+          lines.add(`Riduzione massima: ${reductionScaling[2]} con ${reductionScaling[3]} ${gear}`);
+        }
+        const apReduction = line.match(/Reduces (.+?) Ability Power(?: and (.+?) Ability Power)? by ([A-Z0-9+]+)/i);
+        if (apReduction) {
+          const scope = [apReduction[1], apReduction[2]].filter(Boolean).map(value => value!.toLowerCase()).join(' e ');
+          const value = defensiveValues[apReduction[3]];
+          lines.add(`Riduzione AP ${scope}: ${apReduction[3]}${value === undefined ? '' : ` (${value}%)`}`);
         }
         const scaling = line.match(/Ability Power scales with the number of (.+?) equipped up to a max of ([A-Z0-9+]+) \(Gear pieces needed for maximum effect: (\d+)\)/i);
         if (scaling) {
