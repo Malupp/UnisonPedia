@@ -22,18 +22,20 @@ export function filterCatalogue(
   classId?: string | null,
 ) {
   const tokens = f.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
-  return entries.filter(
-    (e) =>
+  return entries.filter((e) => {
+    const searchable = [e.name, e.gearType, e.id, ...(e.skillNames ?? [])]
+      .join(" ")
+      .toLowerCase();
+    return (
       isClassWeapon(e, classId) &&
-      tokens.every((t) =>
-        (e.name + " " + e.gearType + " " + e.id).toLowerCase().includes(t),
-      ) &&
+      tokens.every((t) => searchable.includes(t)) &&
       (!f.kind || e.kind === f.kind) &&
       (!f.element || e.element === f.element) &&
       e.cost >= f.minCost &&
       e.cost <= f.maxCost &&
-      (!f.costs.length || f.costs.includes(e.cost)),
-  );
+      (!f.costs.length || f.costs.includes(e.cost))
+    );
+  });
 }
 export function encodeFilters(f: Filters) {
   const p = new URLSearchParams();

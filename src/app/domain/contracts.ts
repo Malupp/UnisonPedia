@@ -20,6 +20,7 @@ export interface Entry {
   name: string;
   kind: Kind;
   gearType: string;
+  skillNames?: string[];
   rarity: "UR";
   element: string | null;
   cost: number;

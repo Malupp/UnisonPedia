@@ -106,7 +106,7 @@ import { WeaponContextFilterComponent } from "../shared/weapon-context-filter";
           ><span aria-hidden="true">⌕</span
           ><input
             formControlName="query"
-            placeholder="Cerca nome, skill type o ID…" /></label
+            placeholder="Cerca nome, proc/talento, tipo o ID…" /></label
         ><label
           ><span class="sr-only">Categoria</span
           ><select formControlName="kind">
@@ -275,6 +275,7 @@ export class CatalogueComponent {
             max: f.maxCost === 999 ? null : f.maxCost,
           },
           replaceUrl: true,
+          scroll: "manual",
         });
       });
   }
