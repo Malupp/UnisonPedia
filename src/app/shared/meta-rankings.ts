@@ -30,7 +30,7 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
       @if (rows().length) {
         <table class="ranking-table">
           <caption class="sr-only">Priorità consigliate {{ categoryLabel() }} in {{ mode() === 'pve' ? 'PvE' : 'PvP (GvG)' }}, a requisiti soddisfatti</caption>
-          <thead><tr><th scope="col">Priorità e proc</th><th scope="col">Effetti</th><th scope="col">Note guida · quando sceglierlo</th><th scope="col">Requisiti ed equip</th></tr></thead>
+          <thead><tr><th scope="col">Priorità e proc</th><th scope="col">Effetti</th><th scope="col">Note guida · quando sceglierlo</th><th scope="col">Requisiti ed equip</th><th scope="col">AP secondo la guida <small>scala % e requisito</small></th></tr></thead>
           <tbody>
             @for (row of rows(); track row.id) {
               <tr [attr.data-family]="row.id">
@@ -77,6 +77,9 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
                     }
                   </details>
                 </td>
+                <td data-label="AP secondo la guida" class="ranking-ap">
+                  @for (detail of apDetails(row); track detail) { <p>{{ detail }}</p> }
+                </td>
               </tr>
             }
           </tbody>
@@ -96,6 +99,7 @@ export class MetaRankingsComponent {
   englishSelections = signal<Record<string, string>>({});
   originalEffectText = originalEffectText;
   expanded = signal<Record<string, boolean>>({});
+  apScale = signal<Record<string, number>>({});
   categories: { id: RankingCategory; label: string }[] = [
     { id: 'defence', label: 'Difensivi' }, { id: 'weapon', label: 'Offensivi' },
     { id: 'healing', label: 'Cura' }, { id: 'opening', label: 'Opening' }, { id: 'constant', label: 'Constant' },
@@ -105,6 +109,50 @@ export class MetaRankingsComponent {
   rows = computed(() => rankedFamilies(this.guide(), this.s.entries(), {
     mode: this.mode(), classId: this.s.profile().classId, includeOtherWeapons: this.s.showAllWeapons(), category: this.category(), query: this.query(),
   }));
+  constructor() { void this.loadApScale(); }
+  async loadApScale() {
+    try {
+      const response = await fetch('data/talent-scales.json');
+      if (!response.ok) return;
+      const data = await response.json() as { ap?: Record<string, number>; apExtension?: { examples?: Record<string, number> } };
+      this.apScale.set({ ...data.ap, ...data.apExtension?.examples });
+    } catch {
+      // Keep the AP grades visible if the authored scale table is unavailable.
+    }
+  }
+  apDetails(row: RankingFamily): string[] {
+    const values = this.apScale();
+    const formatGrade = (grade: string) => {
+      const value = values[grade];
+      return value === undefined ? grade : `${grade} (+${value}% AP)`;
+    };
+    const formatGrades = (grades: string) => {
+      const parts = grades.split(/\s*-\s*/).map(formatGrade);
+      return parts.length > 1 ? `${parts[0]} → ${parts[parts.length - 1]}` : parts[0];
+    };
+    const lines = new Set<string>();
+    for (const variant of row.variants) {
+      for (const line of variant.rawEffect.split(/\r?\n/)) {
+        const direct = line.match(/Ability Power\s+(?:increases\s+)?by\s+([A-Z0-9+]+(?:\s*-\s*[A-Z0-9+]+)?)/i);
+        const conditional = line.match(/Ability Power up to a max of\s+([A-Z0-9+]+)/i);
+        if (direct || conditional) {
+          const grade = formatGrades((direct ?? conditional)![1]);
+          const label = /critical/i.test(line) ? 'Con critico' : /current HP|HP is/i.test(line) ? 'Con HP alti' : /Break/i.test(line) ? 'Contro Break' : /based on/i.test(line) ? 'Variabile' : 'Bonus';
+          lines.add(`${label}: ${grade}`);
+        }
+        const scaling = line.match(/Ability Power scales with the number of (.+?) equipped up to a max of ([A-Z0-9+]+) \(Gear pieces needed for maximum effect: (\d+)\)/i);
+        if (scaling) {
+          const gear = /elemental Weapons/i.test(scaling[1])
+            ? 'armi dell’elemento richiesto'
+            : /type Gear pieces/i.test(scaling[1])
+              ? 'equip del tipo richiesto'
+              : scaling[1];
+          lines.add(`Massimo da equip: ${formatGrade(scaling[2])} con ${scaling[3]} ${gear}`);
+        }
+      }
+    }
+    return lines.size ? [...lines] : ['Nessun bonus AP indicato'];
+  }
   requirements(row: RankingFamily): string[] {
     // Summarize only matching requirement templates; preserve Neutral, counts and caps.
     return [...new Set(row.variants.flatMap(variant => variant.requirements).map(condition => condition

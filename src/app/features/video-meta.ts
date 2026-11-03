@@ -39,20 +39,6 @@ import { MetaRankingsComponent } from "../shared/meta-rankings";
     } @else if (v.data()) {
       <app-weapon-context-filter />
       <app-meta-rankings [guide]="v.data()?.rankingGuide" />
-      <h2>Proc e mostri</h2>
-      <p>Effetti, sinergie e alternative per completare la build.</p>
-      <div class="meta-highlights">
-        @for (highlight of v.highlights(); track highlight.title) {
-          <section class="panel">
-            <h2>{{ highlight.title }}</h2>
-            <ul>
-              @for (point of highlight.points; track $index) {
-                <li>{{ point }}</li>
-              }
-            </ul>
-          </section>
-        }
-      </div>
       <div class="meta-controls">
         <label
           >Cerca nella selezione
@@ -230,27 +216,6 @@ import { MetaRankingsComponent } from "../shared/meta-rankings";
       :host {
         display: block;
       }
-      .meta-highlights {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 18px;
-      }
-      .meta-highlights .panel {
-        padding: 20px;
-      }
-      .meta-highlights h2 {
-        font-size: 16px;
-        color: var(--green);
-      }
-      .meta-highlights ul {
-        padding-left: 18px;
-        margin-bottom: 0;
-      }
-      .meta-highlights li {
-        color: var(--muted);
-        font-size: 13px;
-        margin: 0 0 9px;
-      }
       .meta-controls {
         display: grid;
         grid-template-columns: minmax(0, 1.35fr) repeat(2, minmax(0, 1fr));
@@ -416,10 +381,6 @@ import { MetaRankingsComponent } from "../shared/meta-rankings";
         margin: 0;
       }
       @media (max-width: 1100px) {
-        .meta-highlights {
-          grid-template-columns: 1fr;
-          gap: 0;
-        }
       }
       @media (max-width: 1000px) {
         .meta-columns {
