@@ -30,7 +30,7 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
       @if (rows().length) {
         <table class="ranking-table">
           <caption class="sr-only">Priorità consigliate {{ categoryLabel() }} in {{ mode() === 'pve' ? 'PvE' : 'PvP (GvG)' }}, a requisiti soddisfatti</caption>
-          <thead><tr><th scope="col">Priorità e proc</th><th scope="col">Effetti</th><th scope="col">Note guida · quando sceglierlo</th><th scope="col">Requisiti ed equip</th><th scope="col">AP secondo la guida <small>scala % e requisito</small></th></tr></thead>
+          <thead><tr><th scope="col">Priorità e proc</th><th scope="col">Effetti</th><th scope="col">Note guida · quando sceglierlo</th><th scope="col">Requisiti ed equip</th></tr></thead>
           <tbody>
             @for (row of rows(); track row.id) {
               <tr [attr.data-family]="row.id">
@@ -76,9 +76,13 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
                       }
                     }
                   </details>
-                </td>
-                <td data-label="AP secondo la guida" class="ranking-ap">
-                  @for (detail of apDetails(row); track detail) { <p>{{ detail }}</p> }
+                  @if (apDetails(row).length) {
+                    <div class="ranking-ap">
+                      <hr />
+                      <strong>AP secondo la guida</strong>
+                      @for (detail of apDetails(row); track detail) { <p>{{ detail }}</p> }
+                    </div>
+                  }
                 </td>
               </tr>
             }
@@ -124,7 +128,7 @@ export class MetaRankingsComponent {
     const values = this.apScale();
     const formatGrade = (grade: string) => {
       const value = values[grade];
-      return value === undefined ? grade : `${grade} (+${value}% AP)`;
+      return value === undefined ? grade : `${grade} (${value}%)`;
     };
     const formatGrades = (grades: string) => {
       const parts = grades.split(/\s*-\s*/).map(formatGrade);
@@ -151,7 +155,7 @@ export class MetaRankingsComponent {
         }
       }
     }
-    return lines.size ? [...lines] : ['Nessun bonus AP indicato'];
+    return [...lines];
   }
   requirements(row: RankingFamily): string[] {
     // Summarize only matching requirement templates; preserve Neutral, counts and caps.
