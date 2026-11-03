@@ -79,8 +79,7 @@ import { RankingCategory, RankingGuide, RankingFamily, RankedFamily, rankedFamil
                   @if (apDetails(row).length) {
                     <div class="ranking-ap">
                       <hr />
-                      <strong>AP e riduzioni secondo la guida</strong>
-                      <small>Le percentuali AP seguono la tabella dell’autore. Le riduzioni dei danni restano separate per tipo: la guida non ne specifica la cumulabilità.</small>
+                      <strong>AP e riduzioni</strong>
                       @for (detail of apDetails(row); track detail) { <p>{{ detail }}</p> }
                     </div>
                   }
