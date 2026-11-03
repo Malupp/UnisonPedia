@@ -13,7 +13,6 @@ addEventListener("message", ({ data }) => {
       banner,
       profile,
       progress,
-      targetAssessment,
       targetItemId,
       risk,
       custom,
@@ -41,7 +40,6 @@ addEventListener("message", ({ data }) => {
       banner,
       profile,
       progress,
-      targetAssessment,
       targetItemId,
       risk,
       custom,
@@ -53,7 +51,6 @@ addEventListener("message", ({ data }) => {
             data.payload.benchmarkTarget,
           )
         : null,
-      alternatives: [],
     });
     postMessage({
       type: "result",

@@ -21,6 +21,7 @@ export interface Entry {
   kind: Kind;
   gearType: string;
   skillNames?: string[];
+  effectFamilies?: string[];
   rarity: "UR";
   element: string | null;
   cost: number;

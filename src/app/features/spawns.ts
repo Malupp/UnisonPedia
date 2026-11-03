@@ -25,7 +25,6 @@ import {
   verdictLabels,
   bannerAvailability,
 } from "../domain/spawn";
-import { assessTargetNeed } from "../domain/evaluation";
 @Component({
   standalone: true,
   imports: [ReactiveFormsModule, RouterLink],
@@ -161,8 +160,8 @@ import { assessTargetNeed } from "../domain/evaluation";
             risolve una mia necessità</label
           >
           <p class="muted small">
-            Nel configuratore l’utilità è una tua ipotesi esplicita. Il voto del
-            catalogo usa invece effetti e condizioni verificabili.
+            La scelta del bersaglio è tua: verifica gli effetti dell’equip e
+            considera le garanzie e il tuo budget.
           </p>
           <div class="risk-box">
             <label class="checkbox-row"
@@ -600,12 +599,7 @@ export class SpawnsComponent {
         pityCount: 0,
       },
       targetItemId: "custom-target",
-      targetAssessment: {
-        evaluation: { status: "complete", score: v.useful ? 1 : 0 },
-        benefit: v.useful ? "profile-fit" : "irrelevant",
-        delta: null,
-        requirements: ["Utilità dichiarata dall’utente"],
-      },
+      usefulTarget: v.useful,
       risk: {
         enabled: v.risk,
         successThreshold: v.threshold / 100,
@@ -746,13 +740,13 @@ export class SpawnsComponent {
             pityCount: 0,
           },
           targetItemId,
-          targetAssessment: assessTargetNeed(item, state, catalogue),
           risk: {
             enabled: v.risk,
             successThreshold: v.threshold / 100,
             budgetCap: v.riskCap,
           },
           custom: false,
+          usefulTarget: true,
           benchmarkRecords: this.registry()?.benchmarks || [],
           benchmarkTarget: {
             targetItemId,

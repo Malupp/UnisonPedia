@@ -542,7 +542,6 @@ export function recommendSpawn(input: any) {
     profile,
     guaranteed: g,
     simulation: s,
-    targetAssessment: t,
   } = input;
   if (
     !profile ||
@@ -570,66 +569,41 @@ export function recommendSpawn(input: any) {
   if (!["active", "custom"].includes(availability)) {
     missing.push("Disponibilità WW non verificata o banner scaduto");
   }
-  if (!t || t.evaluation?.status !== "complete" || t.benefit === "unknown")
-    missing.push("Utilità del bersaglio non verificata");
   if (missing.length) {
     verdict = "insufficient-data";
     limit = null;
-  } else if (["redundant", "irrelevant"].includes(t.benefit)) {
+  } else if (input.custom && input.usefulTarget === false) {
     reasonCodes.push("Il bersaglio non risolve una necessità nuova del set");
-  } else {
-    const dominates = (input.alternatives || []).some(
-      (a: any) =>
-        a.availability === "active" &&
-        a.metric === "guaranteed" &&
-        a.score >= t.evaluation.score &&
-        a.additionalGems <= g.additionalGems &&
-        (a.score > t.evaluation.score || a.additionalGems < g.additionalGems),
+  } else if (g.reachable && g.additionalGems <= spendableGems) {
+    verdict = "recommended";
+    limit = g.additionalGems;
+    stopStepId =
+      g.milestones?.find((m: any) => m.guaranteedTarget)?.stepId || null;
+    reasonCodes.push("Primo traguardo garantito entro il budget");
+  } else if (input.usefulFirstStep && input.usefulFirstStep.additionalGems <= spendableGems) {
+    verdict = "step-only";
+    limit = input.usefulFirstStep.additionalGems;
+    stopStepId = input.usefulFirstStep.stepId;
+    reasonCodes.push("Solo il primo premio garantito è giustificato dal budget");
+  } else if (input.risk?.enabled && s) {
+    const cap = Math.min(spendableGems, input.risk.budgetCap);
+    const milestone = s.costByMilestone.find(
+      (m: any) => m.additionalGems <= cap && m.successProbability >= input.risk.successThreshold,
     );
-    if (dominates)
-      reasonCodes.push(
-        "Alternativa attiva almeno altrettanto utile e meno costosa",
-      );
-    else if (g.reachable && g.additionalGems <= spendableGems) {
-      verdict = "recommended";
-      limit = g.additionalGems;
-      stopStepId =
-        g.milestones?.find((m: any) => m.guaranteedTarget)?.stepId || null;
-      reasonCodes.push("Primo traguardo garantito utile entro il budget");
-    } else if (
-      input.usefulFirstStep &&
-      input.usefulFirstStep.additionalGems <= spendableGems
-    ) {
-      verdict = "step-only";
-      limit = input.usefulFirstStep.additionalGems;
-      stopStepId = input.usefulFirstStep.stepId;
-      reasonCodes.push(
-        "Solo il primo premio garantito è giustificato dal budget",
-      );
-    } else if (input.risk?.enabled && s) {
-      const cap = Math.min(spendableGems, input.risk.budgetCap);
-      const milestone = s.costByMilestone.find(
-        (m: any) =>
-          m.additionalGems <= cap &&
-          m.successProbability >= input.risk.successThreshold,
-      );
-      if (milestone) {
-        verdict = "risk-attempt";
-        limit = milestone.additionalGems;
-        stopStepId = milestone.stepId;
-        reasonCodes.push(
-          "Soglia di successo scelta raggiunta; resta rischio di fallimento",
-        );
-      } else
-        reasonCodes.push(
-          "Soglia di successo non raggiunta entro il tetto scelto",
-        );
-    } else
-      reasonCodes.push(
-        g.reachable
-          ? "Garanzia oltre il budget spendibile"
-          : "Nessuna garanzia raggiungibile: politica prudente",
-      );
+    if (milestone) {
+      verdict = "risk-attempt";
+      limit = milestone.additionalGems;
+      stopStepId = milestone.stepId;
+      reasonCodes.push("Soglia di successo scelta raggiunta; resta rischio di fallimento");
+    } else {
+      reasonCodes.push("Soglia di successo non raggiunta entro il tetto scelto");
+    }
+  } else {
+    reasonCodes.push(
+      g.reachable
+        ? "Garanzia oltre il budget spendibile"
+        : "Nessuna garanzia raggiungibile: politica prudente",
+    );
   }
   if (limit !== null && limit > spendableGems)
     throw new Error("Limite oltre budget");
@@ -706,8 +680,8 @@ export function explainSpawn(
           ] +
           ". " +
           (a.custom
-            ? "Scenario personalizzato: utilità e condizioni dichiarate da te."
-            : "Valutazione per il profilo selezionato."),
+            ? "Scenario personalizzato con il bersaglio che hai scelto."
+            : "Bersaglio scelto per il profilo selezionato."),
       },
       {
         id: "cost",

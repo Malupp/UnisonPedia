@@ -10123,6 +10123,113 @@
         ]
       },
       {
+        "id": "illusions-mirror",
+        "name": "Illusion's Mirror",
+        "category": "defence",
+        "effects": [
+          "Riflette danni fisici e magici, annulla un colpo e riduce i danni in base ai pezzi dello stesso tipo equipaggiati."
+        ],
+        "advice": {
+          "pve": "Alternativa difensiva simile a Phantasm: combina riflesso, annullamento di un colpo e riduzione scalabile. Richiede fino a 5 pezzi dello stesso tipo per gli effetti massimi; Regent può essere più semplice da scalare.",
+          "pvp": "Utile se il set raggiunge lo scaling e il nemico non neutralizza riflesso o annullamento. La probabilità di attivazione cresce anch’essa con i pezzi: verifica i requisiti prima di preferirla a Regent o Translucent."
+        },
+        "priority": {
+          "pve": 14,
+          "pvp": 15
+        },
+        "authorRank": 18,
+        "variants": [
+          {
+            "skillName": "Armor of Illusion's Mirror XL",
+            "itemIds": [
+              "2244411",
+              "2846011",
+              "2447811"
+            ],
+            "requirements": [
+              "Attivazione base: M.",
+              "Riduzione danni: 5 pezzi Armor → XL.",
+              "Attivazione: 5 pezzi Armor → L."
+            ],
+            "rawEffect": "[Effects]\nReflects physical and magic damage taken by L.\nTarget: yourself. Applies an invulnerability effect that nullifies physical or magic damage 1 time.\nDamage reduction scales with the number of Armor type Gear pieces equipped up to a max of XL (Gear pieces needed for maximum effect: 5).\n\n[Activation]\nWhen physical or magic damage is taken.\n\n[Activation Rate]\nM\nActivation rate scales with the number of Armor type Gear pieces equipped up to a max of L (Gear pieces needed for maximum effect: 5).",
+            "source": {
+              "id": "official",
+              "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/equip_detail/2244411.html",
+              "declaredUpdated": "2026-08-25",
+              "fetchedAt": "2026-10-09T12:40:06.437Z",
+              "kind": "official",
+              "edition": "WW"
+            }
+          },
+          {
+            "skillName": "Clothing of Illusion's Mirror XL",
+            "itemIds": [
+              "2244415",
+              "2846015",
+              "2447815"
+            ],
+            "requirements": [
+              "Attivazione base: M.",
+              "Riduzione danni: 5 pezzi Clothing → XL.",
+              "Attivazione: 5 pezzi Clothing → L."
+            ],
+            "rawEffect": "[Effects]\nReflects physical and magic damage taken by L.\nTarget: yourself. Applies an invulnerability effect that nullifies physical or magic damage 1 time.\nDamage reduction scales with the number of Clothing type Gear pieces equipped up to a max of XL (Gear pieces needed for maximum effect: 5).\n\n[Activation]\nWhen physical or magic damage is taken.\n\n[Activation Rate]\nM\nActivation rate scales with the number of Clothing type Gear pieces equipped up to a max of L (Gear pieces needed for maximum effect: 5).",
+            "source": {
+              "id": "official",
+              "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/equip_detail/2244415.html",
+              "declaredUpdated": "2026-08-25",
+              "fetchedAt": "2026-10-09T12:40:04.587Z",
+              "kind": "official",
+              "edition": "WW"
+            }
+          },
+          {
+            "skillName": "Hat of Illusion's Mirror XL",
+            "itemIds": [
+              "2244413",
+              "2846013",
+              "2447813"
+            ],
+            "requirements": [
+              "Attivazione base: M.",
+              "Riduzione danni: 5 pezzi Hat → XL.",
+              "Attivazione: 5 pezzi Hat → L."
+            ],
+            "rawEffect": "[Effects]\nReflects physical and magic damage taken by L.\nTarget: yourself. Applies an invulnerability effect that nullifies physical or magic damage 1 time.\nDamage reduction scales with the number of Hat type Gear pieces equipped up to a max of XL (Gear pieces needed for maximum effect: 5).\n\n[Activation]\nWhen physical or magic damage is taken.\n\n[Activation Rate]\nM\nActivation rate scales with the number of Hat type Gear pieces equipped up to a max of L (Gear pieces needed for maximum effect: 5).",
+            "source": {
+              "id": "official",
+              "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/equip_detail/2244413.html",
+              "declaredUpdated": "2026-08-25",
+              "fetchedAt": "2026-10-09T12:40:07.328Z",
+              "kind": "official",
+              "edition": "WW"
+            }
+          },
+          {
+            "skillName": "Helm of Illusion's Mirror XL",
+            "itemIds": [
+              "2244409",
+              "2846009",
+              "2447809"
+            ],
+            "requirements": [
+              "Attivazione base: M.",
+              "Riduzione danni: 5 pezzi Helm → XL.",
+              "Attivazione: 5 pezzi Helm → L."
+            ],
+            "rawEffect": "[Effects]\nReflects physical and magic damage taken by L.\nTarget: yourself. Applies an invulnerability effect that nullifies physical or magic damage 1 time.\nDamage reduction scales with the number of Helm type Gear pieces equipped up to a max of XL (Gear pieces needed for maximum effect: 5).\n\n[Activation]\nWhen physical or magic damage is taken.\n\n[Activation Rate]\nM\nActivation rate scales with the number of Helm type Gear pieces equipped up to a max of L (Gear pieces needed for maximum effect: 5).",
+            "source": {
+              "id": "official",
+              "url": "https://jam-capture-unisonleague-ww.ateamid.com/en/equip_detail/2244409.html",
+              "declaredUpdated": "2026-08-25",
+              "fetchedAt": "2026-10-09T12:40:05.852Z",
+              "kind": "official",
+              "edition": "WW"
+            }
+          }
+        ]
+      },
+      {
         "id": "harmony",
         "name": "Harmony",
         "category": "defence",

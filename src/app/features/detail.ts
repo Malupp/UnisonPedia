@@ -4,101 +4,17 @@ import {
   signal,
   computed,
   effect,
-  input,
 } from "@angular/core";
 import { ActivatedRoute, RouterLink } from "@angular/router";
 import { toSignal } from "@angular/core/rxjs-interop";
 import { Store } from "../core/store";
-import { normalizeMode } from "../domain/contracts";
-import { Item, Evaluation } from "../domain/contracts";
-import { evaluateItem } from "../domain/evaluation";
+import { Item } from "../domain/contracts";
 import { WeaponTalentComponent } from "../shared/weapon-talent";
-@Component({
-  selector: "app-evaluation",
-  standalone: true,
-  template: `<div class="evaluation-panel">
-    <div class="evaluation-heading">
-      <div>
-        <span class="eyebrow">UTILITÀ EDITORIALE · {{ value().scenario }}</span>
-        <h3>
-          {{
-            value().score === null
-              ? "Dati insufficienti"
-              : value().score?.toFixed(1) + " / 100"
-          }}
-        </h3>
-      </div>
-      <span class="score-ring">{{
-        value().score === null ? "?" : value().score?.toFixed(0)
-      }}</span>
-    </div>
-    <p class="muted">
-      Versione regole {{ value().version }}. Il voto misura utilità per il
-      contesto selezionato.
-    </p>
-    <div class="axis-grid">
-      @for (a of axes; track a.key) {
-        <div>
-          <span>{{ a.label }}</span>
-          <div class="axis-track">
-            <i [style.width.%]="(value().axes[a.key] / 4) * 100"></i>
-          </div>
-          <small
-            >{{ value().axes[a.key] }} / 4 · somma
-            {{ value().rawAxes[a.key] }}</small
-          >
-        </div>
-      }
-    </div>
-    @if (value().conditions.length) {
-      <h4>Condizioni e requisiti</h4>
-      <ul>
-        @for (c of value().conditions; track $index) {
-          <li>{{ c }}</li>
-        }
-      </ul>
-    }
-    @if (value().missing.length) {
-      <details>
-        <summary>{{ value().missing.length }} dati da verificare</summary>
-        <ul>
-          @for (m of value().missing; track $index) {
-            <li>{{ m }}</li>
-          }
-        </ul>
-      </details>
-    }
-    <details>
-      <summary>Come viene calcolato</summary>
-      <p>
-        Danno 40/15/15/30; difesa 15/40/20/25; supporto 10/25/40/25 sui quattro
-        assi. Massimo positivo per famiglia, demeriti distinti una volta.
-      </p>
-      @for (c of value().contributions; track $index) {
-        <div class="contribution">
-          <strong>{{ c.family }}</strong>
-          <p>{{ c.reason }}</p>
-        </div>
-      }
-    </details>
-  </div>`,
-})
-export class EvaluationComponent {
-  value = input.required<Evaluation>();
-  axes: {
-    key: "damage" | "survival" | "support" | "synergy";
-    label: string;
-  }[] = [
-    { key: "damage", label: "Danno" },
-    { key: "survival", label: "Sopravvivenza" },
-    { key: "support", label: "Supporto" },
-    { key: "synergy", label: "Sinergia" },
-  ];
-}
+import { EquipmentAlternativesComponent } from "../shared/equipment-alternatives";
 
 @Component({
   standalone: true,
-  imports: [RouterLink, EvaluationComponent, WeaponTalentComponent],
+  imports: [RouterLink, WeaponTalentComponent, EquipmentAlternativesComponent],
   template: `<a class="back-link" routerLink="/catalogue"
       >← Torna al catalogo</a
     >
@@ -230,10 +146,7 @@ export class EvaluationComponent {
           </section>
         </div>
         <aside>
-          <app-evaluation [value]="evaluation()!" />
-          @if (personal(); as p) {
-            <app-evaluation [value]="p" />
-          }
+          <app-equipment-alternatives [item]="d" />
         </aside>
       </div>
     } @else {
@@ -285,40 +198,6 @@ export class DetailComponent {
         ?.sourceRefs[0]?.url ||
       "",
   );
-  evaluation = computed(() => {
-    const i = this.item();
-    return i
-      ? evaluateItem(i, { profile: this.s.profile(), scenario: "maximum" })
-      : null;
-  });
-  personal = computed(() => {
-    const i = this.item(),
-      state = this.s.state(),
-      copy = state.copies.find((c) => c.itemId === i?.id);
-    if (!i || !copy) return null;
-    const build = state.builds.find(
-      (b) =>
-        normalizeMode(b.mode) === normalizeMode(state.profile.mode) &&
-        b.slots.some((s) => s.copyId === copy.copyId),
-    );
-    const assignment = build?.slots.find((s) => s.copyId === copy.copyId);
-    const count: Record<string, number> = {};
-    for (const a of build?.slots || []) {
-      const c = state.copies.find((c) => c.copyId === a.copyId),
-        e = this.s.entries().find((e) => e.id === c?.itemId);
-      if (e?.element) {
-        const key = e.kind === "weapon" ? e.element : e.element + ":" + e.kind;
-        count[key] = (count[key] || 0) + 1;
-      }
-    }
-    return evaluateItem(i, {
-      profile: state.profile,
-      scenario: "personal",
-      ownedCopy: copy,
-      slot: assignment?.slot,
-      elementCount: count,
-    });
-  });
   constructor() {
     effect(() => {
       if (this.s.entries().length && this.params()?.get("id")) void this.load();
@@ -332,7 +211,10 @@ export class DetailComponent {
     this.item.set(null);
     try {
       const d = await this.s.getDetail(id);
-      if (epoch === this.epoch) this.item.set(d);
+      if (epoch === this.epoch) {
+        const entry = this.s.entries().find((candidate) => candidate.id === id);
+        this.item.set(entry ? { ...entry, ...d } : d);
+      }
     } catch (e) {
       if (epoch === this.epoch) this.error.set((e as Error).message);
     }
@@ -348,14 +230,11 @@ export class DetailComponent {
 }
 @Component({
   standalone: true,
-  imports: [RouterLink, EvaluationComponent],
+  imports: [RouterLink, EquipmentAlternativesComponent],
   template: `<div class="page-heading">
       <span class="eyebrow">FINO A TRE OGGETTI</span>
-      <h1>Confronto nel tuo contesto.</h1>
-      <p>
-        Stesso profilo, stesso scenario massimo. Ogni voto espone le sue
-        condizioni.
-      </p>
+      <h1>Confronta gli equip.</h1>
+      <p>Effetti ufficiali e alternative con talenti simili.</p>
     </div>
     <a class="back-link" routerLink="/catalogue">← Scegli altri oggetti</a>
     @if (error()) {
@@ -369,7 +248,7 @@ export class DetailComponent {
             ><h2>{{ i.name }}</h2></a
           >
           <p>{{ i.gearType }} · {{ i.element }} · COST {{ i.cost }}</p>
-          <app-evaluation [value]="score(i)" />
+          <app-equipment-alternatives [item]="i" />
         </article>
       }
     </div>
@@ -399,13 +278,14 @@ export class CompareComponent {
   async load(ids: string[]) {
     const e = ++this.epoch;
     try {
-      const items = await Promise.all(ids.map((id) => this.s.getDetail(id)));
+      const items = await Promise.all(ids.map(async (id) => {
+        const detail = await this.s.getDetail(id);
+        const entry = this.s.entries().find((candidate) => candidate.id === id);
+        return entry ? { ...entry, ...detail } : detail;
+      }));
       if (e === this.epoch) this.items.set(items);
     } catch (err) {
       if (e === this.epoch) this.error.set((err as Error).message);
     }
-  }
-  score(i: Item) {
-    return evaluateItem(i, { profile: this.s.profile(), scenario: "maximum" });
   }
 }
